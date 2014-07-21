@@ -80,7 +80,7 @@
       <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="65" selection-start="501" selection-end="501" vertical-scroll-proportion="0.6200608" vertical-offset="0" max-vertical-offset="493">
+            <state line="13" column="5" selection-start="508" selection-end="508" vertical-scroll-proportion="0.67173254" vertical-offset="0" max-vertical-offset="493">
               <folding />
             </state>
           </provider>
@@ -107,6 +107,7 @@
       <list>
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/config/application.rb" />
       </list>
     </option>
@@ -321,7 +322,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -430,9 +431,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Rakefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.3100304" vertical-offset="0" max-vertical-offset="329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="65" selection-start="501" selection-end="501" vertical-scroll-proportion="0.6200608" vertical-offset="0" max-vertical-offset="493">
+        <state line="13" column="5" selection-start="508" selection-end="508" vertical-scroll-proportion="0.67173254" vertical-offset="0" max-vertical-offset="493">
           <folding />
         </state>
       </provider>
