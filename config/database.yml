@@ -1,15 +1,28 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: adnan_dental_db
+  database: d6h4kad8pdg0vd
   pool: 5
-  username: postgres
+  username: adnan_dental_db
   password: 123
+
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: d6h4kad8pdg0vd
+  pool: 5
+  username: amasrrvijnkopb
+  password: mRasTksdD9JN7SH0niJv7-gm93
+  host: ec2-54-204-21-178.compute-1.amazonaws.com
+  port: 5432
 
 test:
   adapter: postgresql
   encoding: unicode
-  database: adnan_dental_db
+  database: d6h4kad8pdg0vd
   pool: 5
-  username: postgres
-  password: 123
+  username: amasrrvijnkopb
+  password: mRasTksdD9JN7SH0niJv7-gm93
+  host: ec2-54-204-21-178.compute-1.amazonaws.com
+  port: 5432

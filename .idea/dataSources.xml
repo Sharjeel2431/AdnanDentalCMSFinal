@@ -4,23 +4,25 @@
     <data-source source="LOCAL" name="Rails AdnanDentalCMS: development" uuid="50a0699e-975a-42a2-a62b-9a2cb41bf17b">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:adnan_dental_db</jdbc-url>
-      <user-name>postgres</user-name>
-      <user-password>df9bdf98df99</user-password>
+      <jdbc-url>jdbc:postgresql:d6h4kad8pdg0vd</jdbc-url>
+      <user-name>adnan_dental_db</user-name>
+      <user-password>dfc7dff8dfcbdfd9dffedfc1dfd9dfcedfeedf93dfe0dfe4df9ddff9dfe2df9adfc4dfc3dfe0dfdcdf9ddf87dfcddfc7df93df99</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails AdnanDentalCMS: test" uuid="720b98e6-c4cf-487c-a0c2-a76f6e3ae796">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql:adnan_dental_db</jdbc-url>
-      <user-name>postgres</user-name>
-      <user-password>df9bdf98df99</user-password>
+      <jdbc-url>jdbc:postgresql://ec2-54-204-21-178.compute-1.amazonaws.com:5432/d6h4kad8pdg0vd</jdbc-url>
+      <user-name>amasrrvijnkopb</user-name>
+      <user-password>dfc7dff8dfcbdfd9dffedfc1dfd9dfcedfeedf93dfe0dfe4df9ddff9dfe2df9adfc4dfc3dfe0dfdcdf9ddf87dfcddfc7df93df99</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails AdnanDentalCMS: production" uuid="54a6ef27-d256-4445-830f-34b84e3c3ac3">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\SharjeelAhmadQureshi\RubymineProjects\AdnanDentalCMSFinal\db\production.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://ec2-54-204-21-178.compute-1.amazonaws.com:5432/d6h4kad8pdg0vd</jdbc-url>
+      <user-name>amasrrvijnkopb</user-name>
+      <user-password>dfc7dff8dfcbdfd9dffedfc1dfd9dfcedfeedf93dfe0dfe4df9ddff9dfe2df9adfc4dfc3dfe0dfdcdf9ddf87dfcddfc7df93df99</user-password>
       <libraries />
     </data-source>
   </component>
