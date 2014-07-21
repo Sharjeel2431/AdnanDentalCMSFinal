@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="13" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="799">
+            <state line="8" column="19" selection-start="241" selection-end="241" vertical-scroll-proportion="0.45637584" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -77,10 +77,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/application.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="5" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.8557047" vertical-offset="136" max-vertical-offset="544">
+            <state line="23" column="5" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="544">
               <folding />
             </state>
           </provider>
@@ -116,11 +116,11 @@
       <list>
         <option value="$PROJECT_DIR$/Rakefile" />
         <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/config/environments/production.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -579,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="13" selection-start="760" selection-end="760" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.ru">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="387">
@@ -607,6 +600,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="5" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="544">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="1" selection-start="728" selection-end="728" vertical-scroll-proportion="-2.96" vertical-offset="283" max-vertical-offset="3247">
@@ -621,9 +621,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.8557047" vertical-offset="136" max-vertical-offset="544">
+        <state line="8" column="19" selection-start="241" selection-end="241" vertical-scroll-proportion="0.45637584" vertical-offset="0" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
