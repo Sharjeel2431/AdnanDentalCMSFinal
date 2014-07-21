@@ -1,0 +1,58 @@
+<h1 class="new1">Add New Content</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#content").css("background-color", "red");
+
+
+
+
+        });
+
+</script>
+
+
+
+<%=
+    if params[:id] == nil
+
+    render 'form'
+
+
+        else if params[:id] == "placeholder"
+
+            render 'newplac'
+              else if params[:id] != nil
+
+                      if session[:newplaccont] == 1
+                        if session[:oneditpage] != 1
+                     render 'abcplac'
+                          else
+                         render 'addcontentonedit'
+
+                        end
+
+                     else
+                       render 'addcontentonedit'
+
+                     end
+
+               else
+
+               render 'form'
+                end
+
+        end
+
+
+
+     end
+
+
+
+
+%>
+
+<div class="new2" style="margin-top: 15px;
+        position: relative;">
+<%= link_to 'Back', tbl_contents_path, :class => "btn_submit" %>
+</div>

@@ -1,0 +1,60 @@
+<h1 class="index1">Media Management</h1>
+<div class="index3">
+  <%= link_to 'Add New Media', new_tbl_medium_path , :class => "btn_submit"%>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#media").css("background-color", "red");
+
+    });
+</script>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Value</th>
+      <th>Value2</th>
+      <th>Tooltip</th>
+      <th>Redirectlink</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_media.each do |tbl_medium| %>
+      <tr>
+        <td><%= tbl_medium.MediaID %></td>
+        <td><%= tbl_medium.Value %></td>
+        <td><%= tbl_medium.Value2 %></td>
+        <td><%= tbl_medium.ToolTip %></td>
+        <td><%= tbl_medium.RedirectLink %></td>
+        <td><%= tbl_medium.Type %></td>
+        <td><%= tbl_medium.Status %></td>
+        <td id="viewitem"><%= link_to 'View', tbl_medium %></td>
+        <td id="edititem"><%= link_to 'Edit', edit_tbl_medium_path(tbl_medium) %></td>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_medium, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

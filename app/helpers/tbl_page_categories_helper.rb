@@ -1,0 +1,2 @@
+module TblPageCategoriesHelper
+end

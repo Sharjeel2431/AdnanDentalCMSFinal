@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  FormID: 1
+  FormTitle: MyString
+  FormDescription: MyText
+  Type: MyString
+  Status: false
+
+two:
+  FormID: 1
+  FormTitle: MyString
+  FormDescription: MyText
+  Type: MyString
+  Status: false

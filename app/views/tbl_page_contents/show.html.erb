@@ -1,0 +1,25 @@
+
+<h1  class="show1">PageContent Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pagecontent").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pageid:</strong>
+  <%= @tbl_page_content.PageID %>
+</p>
+
+<p>
+  <strong>Contentid:</strong>
+  <%= @tbl_page_content.ContentID %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_page_content_path(@tbl_page_content) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_page_contents_path , :class => "btn_submit"%>
+</div>

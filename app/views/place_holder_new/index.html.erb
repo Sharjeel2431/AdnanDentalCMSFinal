@@ -1,0 +1,54 @@
+<div class="external">
+  <%= form_for(@tbl_content) do |f| %>
+      <% if @tbl_content.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@tbl_content.errors.count, "error") %> prohibited this tbl_content from being saved:</h2>
+
+            <ul>
+              <% @tbl_content.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+
+      <div class="field">
+        <%= f.label :Pages %><br>
+
+        <%= collection_select(:TblPage, :PageID, TblPage.all, :PageID, :PageTitle , {:selected => TblPage.where(PageTitle: @pagetitle).map(&:PageID)} )%>
+      </div>
+      <div class="field">
+        <%= f.label :Layouts %><br>
+
+        <%= collection_select(:TblLayout, :LayoutID, TblLayout.all, :LayoutID, :LayoutTitle , {:selected => TblLayout.where(LayoutTitle: @layouttitle).map(&:LayoutID)} )%>
+      </div>
+
+
+
+
+      <div class="field">
+        <%= f.label :PlaceHolder %><br>
+
+        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.all, :PlaceHolderID, :PlaceHolderTitle , {:selected => TblPlaceHolder.where(PlaceHolderTitle: @placeTitle).map(&:PlaceHolderID)} )%>
+      </div>
+      <script type="text/javascript">
+
+          $('#TblPlaceHolder_PlaceHolderID').on('change', function() {
+              var id=$(this).val()
+              $("#hidfield").val(id);
+
+          });
+
+      </script>
+      <input type="hidden" id="hidfield" name="placehold_hid"  />
+      <div class="field">
+        <%= f.label :ContentValue %><br>
+        <%= f.text_area :ContentValue %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Submit", :class => "btn_submit" %>
+      </div>
+  <% end %>
+</div>

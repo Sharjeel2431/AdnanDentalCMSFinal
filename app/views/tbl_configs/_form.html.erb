@@ -1,0 +1,36 @@
+<div class="external">
+<%= form_for(@tbl_config) do |f| %>
+  <% if @tbl_config.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_config.errors.count, "error") %> prohibited this tbl_config from being saved:</h2>
+
+      <ul>
+      <% @tbl_config.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :ConfigTitle %><br>
+    <%= f.text_field :ConfigTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :ConfigValue %><br>
+    <%= f.number_field :ConfigValue %>
+  </div>
+  <div class="field">
+    <%= f.label :Type %><br>
+    <%= f.text_field :Type %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br>
+    <%= f.check_box :Status %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" , :class => "btn_submit"%>
+  </div>
+<% end %>
+</div>

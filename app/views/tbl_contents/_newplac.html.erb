@@ -1,0 +1,43 @@
+<div class="external">
+  <%= form_for(@tbl_content) do |f| %>
+      <% if @tbl_content.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@tbl_content.errors.count, "error") %> prohibited this tbl_content from being saved:</h2>
+
+            <ul>
+              <% @tbl_content.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+
+      <div class="field">
+        <%= f.label :Pages %><br>
+
+        <%= collection_select(:TblPage, :PageID, TblPage.all, :PageID, :PageTitle , {:selected => TblPage.where(PageTitle: @pagetitle).map(&:PageID)} )%>
+      </div>
+      <div>
+        <input type="button" id="btnnext" class="btn_submit" value="Next"/>
+      </div>
+      <script type="text/javascript">
+
+          $('#TblPage_PageID').on('change', function() {
+              var id=$(this).val()
+              $("#hidfieldpage").val(id);
+
+
+          });
+          $("#btnnext").click(function(){
+
+              $("#hidfieldpage").val($("#TblPage_PageID").val());
+              window.location.href='/tbl_contents/new/'+$("#TblPage_PageID").val();
+          });
+
+      </script>
+      <input type="hidden" id="hidfieldpage" name="page_hid"  />
+
+
+  <% end %>
+</div>

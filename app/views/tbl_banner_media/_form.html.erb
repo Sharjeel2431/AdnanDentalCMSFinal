@@ -1,0 +1,27 @@
+<div class="external">
+<%= form_for(@tbl_banner_medium) do |f| %>
+  <% if @tbl_banner_medium.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_banner_medium.errors.count, "error") %> prohibited this tbl_banner_medium from being saved:</h2>
+
+      <ul>
+      <% @tbl_banner_medium.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :BannerID %><br>
+    <%= f.number_field :BannerID %>
+  </div>
+  <div class="field">
+    <%= f.label :MediaID %><br>
+    <%= f.number_field :MediaID %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit", :class => "btn_submit" %>
+  </div>
+<% end %>
+</div>

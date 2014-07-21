@@ -1,0 +1,12 @@
+<h1 class="edit1">Editing Page Form</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pageform").css("background-color", "red");
+
+    });
+</script>
+<%= render 'form' %>
+<div class="edit2">
+<%= link_to 'View', @tbl_page_form, :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_page_forms_path, :class => "btn_submit" %>
+</div>

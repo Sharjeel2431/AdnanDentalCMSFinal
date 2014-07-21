@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Layoutid:</strong>
+  <%= @tbl_layout_placeholder.LayoutID %>
+</p>
+
+<p>
+  <strong>Placeholderid:</strong>
+  <%= @tbl_layout_placeholder.PlaceHolderID %>
+</p>
+
+<%= link_to 'Edit', edit_tbl_layout_placeholder_path(@tbl_layout_placeholder) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_layout_placeholders_path, :class => "btn_submit" %>

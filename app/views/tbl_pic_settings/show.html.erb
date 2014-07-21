@@ -1,0 +1,55 @@
+
+<h1  class="show1">Pic Setting's Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#picsettings").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Picsettingid:</strong>
+  <%= @tbl_pic_setting.PicSettingID %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tbl_pic_setting.Title %>
+</p>
+
+<p>
+  <strong>Height:</strong>
+  <%= @tbl_pic_setting.Height %>
+</p>
+
+<p>
+  <strong>Width:</strong>
+  <%= @tbl_pic_setting.Width %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_pic_setting.Type %>
+</p>
+
+<p>
+  <strong>Mode:</strong>
+  <%= @tbl_pic_setting.Mode %>
+</p>
+
+<p>
+  <strong>Constraints:</strong>
+  <%= @tbl_pic_setting.Constraints %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_pic_setting.Status %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_pic_setting_path(@tbl_pic_setting), :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_pic_settings_path, :class => "btn_submit" %>
+</div>

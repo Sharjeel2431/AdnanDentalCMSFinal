@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PicSettingID: 1
+  Title: MyString
+  Height: 1.5
+  Width: 1.5
+  Type: MyString
+  Mode: MyString
+  Constraints: MyString
+  Status: false
+
+two:
+  PicSettingID: 1
+  Title: MyString
+  Height: 1.5
+  Width: 1.5
+  Type: MyString
+  Mode: MyString
+  Constraints: MyString
+  Status: false

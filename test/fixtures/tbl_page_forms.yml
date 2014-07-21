@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PageID: 1
+  FormID: 1
+
+two:
+  PageID: 1
+  FormID: 1

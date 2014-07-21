@@ -1,0 +1,18 @@
+<h1  class="show1">Transition's Information</h1>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Transitionid:</strong>
+  <%= @transition.TransitionID %>
+</p>
+
+<p>
+  <strong>Transitionname:</strong>
+  <%= @transition.TransitionName %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_transition_path(@transition) ,:class => "btn_submit"%> |
+<%= link_to 'Back', transitions_path , :class => "btn_submit"%>
+</div>

@@ -1,0 +1,25 @@
+<h1  class="show1">PageCategories Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#categorymang").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Categoryid:</strong>
+  <%= @tbl_page_category.CategoryID %>
+</p>
+
+<p>
+  <strong>Pageid:</strong>
+  <%= @tbl_page_category.PageID %>
+</p>
+</div>
+
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_page_category_path(@tbl_page_category) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_page_categories_path, :class => "btn_submit" %>
+</div>

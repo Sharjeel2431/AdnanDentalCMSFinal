@@ -1,0 +1,27 @@
+<h1 class="show1">Layer Information</h1>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Layerid:</strong>
+  <%= @tbl_layer.LayerID %>
+</p>
+
+<p>
+  <strong>Class:</strong>
+  <%= @tbl_layer.Class %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_layer.Type %>
+</p>
+  <p>
+    <strong>Content:</strong>
+    <%= @tbl_layer.Content %>
+  </p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_layer_path(@tbl_layer), :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_layers_path, :class => "btn_submit" %>
+</div>

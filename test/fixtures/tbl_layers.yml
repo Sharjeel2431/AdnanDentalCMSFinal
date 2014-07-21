@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LayerID: 1
+  Class: MyString
+  Type: MyString
+
+two:
+  LayerID: 1
+  Class: MyString
+  Type: MyString

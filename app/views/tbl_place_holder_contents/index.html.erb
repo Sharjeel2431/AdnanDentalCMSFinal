@@ -1,0 +1,27 @@
+<h1 class="index1">Place Holder Content Management</h1>
+<div class="index3">
+  <%= link_to 'Add New PlaceHolderContent', new_tbl_place_holder_content_path ,:class => "btn_submit"%>
+</div>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>Placeholderid</th>
+      <th>Contentid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_place_holder_contents.each do |tbl_place_holder_content| %>
+      <tr>
+        <td><%= tbl_place_holder_content.PlaceHolderID %></td>
+        <td><%= tbl_place_holder_content.ContentID %></td>
+        <td><%= link_to 'View', tbl_place_holder_content %></td>
+        <td><%= link_to 'Edit', edit_tbl_place_holder_content_path(tbl_place_holder_content) %></td>
+        <td><%= link_to 'Delete', tbl_place_holder_content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

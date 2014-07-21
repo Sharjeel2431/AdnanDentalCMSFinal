@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Slideid:</strong>
+  <%= @tbl_slide_layer.SlideID %>
+</p>
+
+<p>
+  <strong>Layerid:</strong>
+  <%= @tbl_slide_layer.LayerID %>
+</p>
+
+<%= link_to 'Edit', edit_tbl_slide_layer_path(@tbl_slide_layer) %> |
+<%= link_to 'Back', tbl_slide_layers_path %>

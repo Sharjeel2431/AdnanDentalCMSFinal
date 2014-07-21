@@ -1,0 +1,30 @@
+<h1  class="show1">Global's Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#global").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Token:</strong>
+  <%= @tbl_global.Token %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @tbl_global.Name %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_global.Status %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_global_path(@tbl_global) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_globals_path, :class => "btn_submit" %>
+</div>

@@ -1,0 +1,2 @@
+module TblMediaHelper
+end

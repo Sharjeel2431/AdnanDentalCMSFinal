@@ -1,0 +1,2 @@
+module CosmeticdentistryHelper
+end

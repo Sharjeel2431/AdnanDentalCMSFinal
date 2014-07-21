@@ -1,0 +1,66 @@
+<h1  class="index1">Banner Management</h1>
+<div class="index3">
+  <%= link_to 'Add New Banner', new_tbl_banner_path , :class => "btn_submit"%>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#banner").css("background-color", "red");
+
+    });
+</script>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>PicSettingID</th>
+      <th>Title</th>
+      <th>PlaceHolder</th>
+      <th>Description</th>
+      <th>Tooltip</th>
+      <th>Redirectlink</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_banners.each do |tbl_banner| %>
+      <tr>
+        <td><%= tbl_banner.BannerID %></td>
+        <td><%= tbl_banner.PicSettingID %></td>
+        <td><%= tbl_banner.Title %></td>
+        <td><%= tbl_banner.PlaceHolder %></td>
+        <td><%= tbl_banner.Description %></td>
+        <td><%= tbl_banner.ToolTip %></td>
+        <td><%= tbl_banner.RedirectLink %></td>
+        <td><%= tbl_banner.Type %></td>
+        <td><%= tbl_banner.Status %></td>
+
+        <td id="viewitem"><%= link_to 'View', tbl_banner %></td>
+        <td id="edititem"><%= link_to 'Edit', edit_tbl_banner_path(tbl_banner) %></td>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_banner, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

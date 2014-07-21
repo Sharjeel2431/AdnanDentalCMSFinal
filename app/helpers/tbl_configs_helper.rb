@@ -1,0 +1,2 @@
+module TblConfigsHelper
+end

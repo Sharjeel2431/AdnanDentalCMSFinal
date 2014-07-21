@@ -1,0 +1,12 @@
+<h1 class="edit1">Editing Form Field Helper</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#formfieldhelper").css("background-color", "red");
+
+    });
+</script>
+<%= render 'form' %>
+<div class="edit2">
+<%= link_to 'View', @tbl_form_field_helper, :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_form_field_helpers_path , :class => "btn_submit"%>
+</div>

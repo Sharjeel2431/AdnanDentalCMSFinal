@@ -1,0 +1,2 @@
+module TblGlobalsHelper
+end

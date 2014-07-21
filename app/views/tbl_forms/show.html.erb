@@ -1,0 +1,40 @@
+<h1  class="show1">Form's Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#form").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Formid:</strong>
+  <%= @tbl_form.FormID %>
+</p>
+
+<p>
+  <strong>Formtitle:</strong>
+  <%= @tbl_form.FormTitle %>
+</p>
+
+<p>
+  <strong>Formdescription:</strong>
+  <%= @tbl_form.FormDescription %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_form.Type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_form.Status %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_form_path(@tbl_form), :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_forms_path, :class => "btn_submit" %>
+</div>

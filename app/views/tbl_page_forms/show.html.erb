@@ -1,0 +1,26 @@
+
+<h1  class="show1">PageForm Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pageform").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pageid:</strong>
+  <%= @tbl_page_form.PageID %>
+</p>
+
+<p>
+  <strong>Formid:</strong>
+  <%= @tbl_page_form.FormID %>
+</p>
+</div>
+
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_page_form_path(@tbl_page_form), :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_page_forms_path, :class => "btn_submit" %>
+</div>

@@ -1,0 +1,13 @@
+<h1  class="edit1">Editing Categories</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#category").css("background-color", "red");
+
+    });
+</script>
+<%= render 'form' %>
+
+<div class="edit2">
+<%= link_to 'View', @tbl_category, :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_categories_path , :class => "btn_submit"%>
+</div>

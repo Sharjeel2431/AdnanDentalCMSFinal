@@ -1,0 +1,13 @@
+<h1 class="edit1">Edit PlaceHolder</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#placeholder").css("background-color", "red");
+
+    });
+</script>
+<h1>session=<%= session[:placeholderdeleted] %></h1>
+<%= render 'form' %>
+<div class="edit2">
+<%= link_to 'View', @tbl_place_holder , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_place_holders_path, :class => "btn_submit" %>
+</div>

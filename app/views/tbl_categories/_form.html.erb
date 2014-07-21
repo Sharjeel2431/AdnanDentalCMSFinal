@@ -1,0 +1,44 @@
+<div class="external">
+
+<%= form_for(@tbl_category) do |f| %>
+  <% if @tbl_category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_category.errors.count, "error") %> prohibited this tbl_category from being saved:</h2>
+
+      <ul>
+      <% @tbl_category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CategoryTitle %><br>
+    <%= f.text_field :CategoryTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :CategoryURL %><br>
+    <%= f.text_field :CategoryURL %>
+  </div>
+  <div class="field">
+    <%= f.label :Type %><br>
+    <%= f.text_field :Type %>
+  </div>
+  <div class="field">
+    <%= f.label :IsPrimaryNav %><br>
+    <%= f.check_box :IsPrimaryNav %>
+  </div>
+  <div class="field">
+    <%= f.label :IsSecondaryNav %><br>
+    <%= f.check_box :IsSecondaryNav %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br>
+    <%= f.check_box :Status %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" , :class => "btn_submit"%>
+  </div>
+<% end %>
+</div>

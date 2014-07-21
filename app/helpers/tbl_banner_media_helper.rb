@@ -1,0 +1,2 @@
+module TblBannerMediaHelper
+end

@@ -1,0 +1,98 @@
+<div class="external">
+  <%= form_for(@tbl_page) do |f| %>
+      <% if @tbl_page.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@tbl_page.errors.count, "error") %> prohibited this tbl_page from being saved:</h2>
+
+            <ul>
+              <% @tbl_page.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+
+      <div class="field">
+        <%= f.label :Category %><br>
+
+        <%= collection_select(:TblCategory, :CategoryID, TblCategory.all, :CategoryID, :CategoryTitle ,{prompt: @cattitle, :selected => TblCategory.where(CategoryTitle: @cattitle).map(&:CategoryID)} )
+        %>
+        <script type="text/javascript">
+
+            $('#TblCategory_CategoryID').on('change', function() {
+                var id=$(this).val()
+                $("#hidfieldcat").val(id);
+            });
+
+        </script>
+
+        <input type="hidden" id="hidfieldcat" name="cat_hid"  />
+
+      </div>
+      <div class="field">
+        <%= f.label :Layout %><br>
+
+        <%= collection_select(:TblLayout, :LayoutID, TblLayout.all, :LayoutID, :LayoutTitle , {prompt: @cattitle,:selected => TblLayout.where(LayoutTitle: @laytitle).map(&:LayoutID)} )%>
+      </div>
+      <script type="text/javascript">
+
+          $('#TblLayout_LayoutID').on('change', function() {
+              var id=$(this).val()
+              $("#hidfield").val(id);
+
+          });
+
+      </script>
+      <input type="hidden" id="hidfield" name="layout_hid"  />
+
+      <div class="field" style="display: none;">
+        <%= f.label :PageID %><br>
+        <%= f.number_field :PageID %>
+
+      </div>
+      <div class="field">
+        <%= f.label :PageTitle %><br>
+        <%= f.text_field :PageTitle, :placeholder => "Enter Page Title" %>
+
+      </div>
+      <div class="field">
+        <%= f.label :PageName %><br>
+        <%= f.text_field :PageName, :placeholder => "Enter Page Name"  %>
+      </div>
+      <div class="field" style="display: none;">
+        <%= f.label :PageURL %><br>
+        <%= f.text_field :PageURL%>
+      </div>
+      <div class="field" >
+        <%= f.label :Keywords %><br>
+        <%= f.text_field :Keywords, :placeholder => "Enter KeyWords" %>
+      </div>
+      <div class="field" >
+        <%= f.label :Description %><br>
+        <%= f.text_field :Description, :placeholder => "Enter Page Description" %>
+      </div>
+      <div class="field" >
+        <%= f.label :LayoutID %><br>
+        <%= f.number_field :LayoutID %>
+      </div>
+      <div class="field" >
+        <%= f.label :Status %><br>
+        <%= f.check_box :Status %>
+
+      </div>
+      <div class="field" >
+        <%= f.label :Type %><br>
+        <%= f.text_field :Type, :placeholder => "Enter Page Type" %>
+      </div>
+      <div class="field" style="visibility: hidden;">
+        <%= f.label :DateTime %><br>
+        <%= f.datetime_select :DateTime %>
+      </div>
+
+      <div class="actions">
+        <%= f.submit "Submit", :class => "btn_submit" %>
+
+      </div>
+  <% end %>
+</div>

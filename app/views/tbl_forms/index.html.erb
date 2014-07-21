@@ -1,0 +1,56 @@
+<h1 class="index1">Form Management</h1>
+<div class="index3">
+  <%= link_to 'Add New Form', new_tbl_form_path , :class => "btn_submit"%>
+</div>
+<table class="index2">
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $("#form").css("background-color", "red");
+
+      });
+  </script>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Description</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_forms.each do |tbl_form| %>
+      <tr>
+        <td><%= tbl_form.FormID %></td>
+        <td><%= tbl_form.FormTitle %></td>
+        <td><%= tbl_form.FormDescription %></td>
+        <td><%= tbl_form.Type %></td>
+        <td><%= tbl_form.Status %></td>
+        <td id="viewitem"><%= link_to 'View', tbl_form %></td>
+        <td id="edititem"><%= link_to 'Edit', edit_tbl_form_path(tbl_form) %></td>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_form, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1154313190">
+    <data-source source="LOCAL" name="Rails AdnanDentalCMS: development" uuid="50a0699e-975a-42a2-a62b-9a2cb41bf17b">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:adnan_dental_db</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails AdnanDentalCMS: test" uuid="720b98e6-c4cf-487c-a0c2-a76f6e3ae796">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql:adnan_dental_db</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>df9bdf98df99</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails AdnanDentalCMS: production" uuid="54a6ef27-d256-4445-830f-34b84e3c3ac3">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Users\SharjeelAhmadQureshi\RubymineProjects\AdnanDentalCMSFinal\db\production.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

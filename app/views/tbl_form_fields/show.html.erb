@@ -1,0 +1,46 @@
+<h1  class="show1">FormField Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#formfield").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fieldid:</strong>
+  <%= @tbl_form_field.FieldID %>
+</p>
+
+<p>
+  <strong>Fieldtitle:</strong>
+  <%= @tbl_form_field.FieldTitle %>
+</p>
+
+<p>
+  <strong>Fieldtype:</strong>
+  <%= @tbl_form_field.FieldType %>
+</p>
+
+<p>
+  <strong>Fieldvalue:</strong>
+  <%= @tbl_form_field.FieldValue %>
+</p>
+
+<p>
+  <strong>Tooltip:</strong>
+  <%= @tbl_form_field.Tooltip %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_form_field.Status %>
+</p>
+</div>
+
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_form_field_path(@tbl_form_field) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_form_fields_path, :class => "btn_submit" %>
+</div>

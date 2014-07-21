@@ -1,0 +1,50 @@
+<h1 class="index1">Page Content Management</h1>
+<div class="index3">
+  <%= link_to 'Add New Page Content', new_tbl_page_content_path, :class => "btn_submit" %>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pagecontent").css("background-color", "red");
+
+    });
+</script>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>Page ID</th>
+      <th>Content ID</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_page_contents.each do |tbl_page_content| %>
+      <tr>
+        <td><%= tbl_page_content.PageID %></td>
+        <td><%= tbl_page_content.ContentID %></td>
+        <td id="viewitem"><%= link_to 'View', tbl_page_content %></td>
+        <td id="edititem"><%= link_to 'Edit', edit_tbl_page_content_path(tbl_page_content) %></td>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_page_content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

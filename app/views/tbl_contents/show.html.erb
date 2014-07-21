@@ -1,0 +1,41 @@
+
+<h1  class="show1">Content Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#content").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contentid:</strong>
+  <%= @tbl_content.ContentID %>
+</p>
+
+<p>
+  <strong>Contentname:</strong>
+  <%= @tbl_content.ContentName %>
+</p>
+
+<p>
+  <strong>Contentvalue:</strong>
+  <%= @tbl_content.ContentValue %>
+</p>
+
+<p>
+  <strong>Contenttype:</strong>
+  <%= @tbl_content.ContentType %>
+</p>
+
+<p>
+  <strong>Contentstatus:</strong>
+  <%= @tbl_content.ContentStatus %>
+</p>
+
+  </div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_content_path(@tbl_content), :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_contents_path, :class => "btn_submit" %>
+</div>

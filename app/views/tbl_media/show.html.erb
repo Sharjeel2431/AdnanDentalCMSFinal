@@ -1,0 +1,49 @@
+<h1  class="show1">Media Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#media").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Mediaid:</strong>
+  <%= @tbl_medium.MediaID %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @tbl_medium.Value %>
+</p>
+
+<p>
+  <strong>Value2:</strong>
+  <%= @tbl_medium.Value2 %>
+</p>
+
+<p>
+  <strong>Tooltip:</strong>
+  <%= @tbl_medium.ToolTip %>
+</p>
+
+<p>
+  <strong>Redirectlink:</strong>
+  <%= @tbl_medium.RedirectLink %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_medium.Type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_medium.Status %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_medium_path(@tbl_medium), :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_media_path, :class => "btn_submit" %>
+</div>

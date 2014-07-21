@@ -1,0 +1,112 @@
+a{color:#250352}
+/* header */
+.logo{background:url(images/logo.png) no-repeat}   
+#header{background:url(images/02.png) repeat-x top #fff}
+#header.main{background:url(images/01.png) repeat-x top #fff}
+#header .header-bg{background:url(images/06.png) no-repeat center top}
+#header.main .dec-left{background:url(images/07.jpg) no-repeat bottom right}
+#header.main .dec-right{background:url(images/08.jpg) no-repeat bottom right}
+	/* Social Contact */	
+	.facebook a{background-image:url(images/s1.png)}
+	.twitter a{background-image:url(images/s2.png)}
+	.linkedin a{background-image:url(images/s3.png)}
+	.googleplus a{background-image:url(images/s4.png)}
+	.youtube a{background-image:url(images/s5.png)}
+	.rss a{background-image:url(images/s6.png)}
+	.skype a{background-image:url(images/s7.png)}
+	.pinterest a{background-image:url(images/s8.png)}
+	.vimeo a{background-image:url(images/s9.png)}
+	/* Details */
+	.contact-details a{color:#250352}
+	/* Search */
+	.search-text-submit{background:url(images/04.png) no-repeat}
+	/* Menu */
+	#menu {background:#848d82} 
+	#menu li a:hover{background:#657062}
+	.select-menu{background:#848d82}
+	/* Main Slider */
+	.main-slider{background:url(images/09.jpg) no-repeat -0px -4px}
+	#menu ul{border-bottom:5px solid #848d82}
+/* slider */	
+.ls-bottom-slidebuttons a.ls-nav-active{background:#250352}	
+	.bg1{background:url(images/50.png) no-repeat}
+	.bg2{background:url(images/53.png) no-repeat}
+	.bg3{background:url(images/54.png) no-repeat}
+/* footer */
+#footer{background:url(images/12.png) repeat-x #f7f7f6}
+#footer .link{color:#250352}
+#footer .slogo{background:url(images/logofooter.png) no-repeat}
+/* arrow-up */	
+.back-top{background:url(images/14.png) no-repeat}
+/* Base tag */
+#content li{color:#250352}
+h1,h2,h3,h4,h5{color:#250352}
+div.title{background:url(images/10.png) no-repeat bottom left;padding:0 0 23px;margin:0 0 23px;width:100%}
+/* Dropcap */
+.dropcap{background:#250352;color:#fff}
+.dropcap2{background:#dcdee0;color:#250352} 
+/* Highlight */
+.highlight1{background:#250352;color:#fff}
+.highlight2{background:#ff0000;color:#fff}
+.highlight3{background:#fcff00}
+/* Blockquote */
+blockquote{border-left:6px solid #250352}
+/* Navigation */
+#content .navigation li a:hover,#content .navigation li.active a{color:#250352;border-left:8px solid #250352}
+/* Tagcloud */
+.tagcloud a:hover{background:#250352;color:#fff}
+/* Form */
+label {color:#250352}
+/* Buttoms */
+	.button.s1{background:#67b9e8}
+	.button.s1:hover{background:#474747}
+	.button.s2{background:#5f6061}
+	.button.s2:hover{background:#474747}
+	.button.s3{background:#848d82}	
+	.button.s3:hover{background:#474747}
+	.ls-s2{background:url(images/51.png) no-repeat}
+/* Media */	
+.carousel-control{color:#250352;background:#f2f0f2}	
+.carousel-control:hover{color:#ff0000}	
+/* Review */
+.md-name strong{color:#250352}
+/* Tabs */
+#content .nav-tabs li{border-bottom:5px solid #250352;background:#ededea}
+#content .nav-tabs li.active{background:#250352}
+.nav-tabs a{color:#250352} 
+/* Awards */   	
+.award:hover{background-image:url(images/26.png);}	
+/* Accordion */
+.accordion-heading .accordion-toggle{background:#ededea;color:#250352}
+.marker{background:url(images/36.png) no-repeat}
+.accordion-heading .accordion-toggle.target{background:#250352;color:#fff}
+/* Service Option */
+.move-bg-icon{background-color:#250352}
+.link-block:hover{background:url(images/26.png) repeat-x bottom #3e3e3e;color:#848d82}
+h2.move-item{color:#250352}
+.link-block:hover h2.move-item{color:#848d82}
+/* Meet Our Doctors 1 */	
+.link-img h4{color:#ff0000}
+.link-img:hover{background:url(images/26.png) repeat-x bottom}
+/* Table */
+.column h4{border-bottom:5px solid #250352}
+/* Price Table */
+.pricecolumn h3{background:url(images/41.png) repeat-x bottom #ededea}
+.dollar{color:#575757}
+.number{color:#250352}	
+.cents{color:#250352}
+.time{color:#575757}
+
+.button-price.active{background:#250352;border-bottom:7px solid #250352;color:#fff}
+.pricecolumn h3.active{border-top:7px solid #250352;background:#250352;color:#fff}
+#content .col li.price-td.active{background:#250352;color:#fff}
+.dollar.active,.cents.active,.time.active,.number.active{color:#fff}
+
+
+/* Pages Under Construction & 404 */
+.under-wrapper .date span{color:#250352;border-bottom:4px solid #250352}
+#footer-under{background:url(images/45.png) no-repeat center #250352}
+@media (max-width:979px){
+	#header,#header .header-bg,#header.main,#header.main .header-bg{background:none;height:auto;margin-bottom:10px}
+	.main-slider{height:310px;background:none}
+} 

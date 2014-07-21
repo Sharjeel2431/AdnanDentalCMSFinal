@@ -1,0 +1,2 @@
+module TblPageBannersHelper
+end

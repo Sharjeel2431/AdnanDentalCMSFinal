@@ -1,0 +1,19 @@
+<%@pagecontentinfo.each do |index|%>
+
+    <h1 style="display: none;"><%=@contentID=index.ContentID %>
+      <%=@contentinfo=TblContent.where(ContentID: @contentID)%>
+    </h1>
+
+
+    <%@contentinfo.each do |index|%>
+
+        <h1 style="display: none;"><%=@contentVal=index.ContentValue %></h1>
+
+        <%=
+            if params[:id] != 0
+              sanitize   @contentVal
+            end
+        %>
+
+    <%end%>
+<%end%>

@@ -1,0 +1,54 @@
+
+<h1 class="index1">Page Categories Management</h1>
+
+<div class="index3">
+  <%= link_to 'Add New Page Category', new_tbl_page_category_path , :class => "btn_submit"%>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#categorymang").css("background-color", "red");
+
+    });
+</script>
+
+<table class="index2">
+  <thead>
+    <tr>
+      <th>Category ID</th>
+      <th>Page ID</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_page_categories.each do |tbl_page_category| %>
+      <tr>
+        <td><%= tbl_page_category.CategoryID %></td>
+        <td><%= tbl_page_category.PageID %></td>
+        <td id="viewitem"><%= link_to 'View', tbl_page_category %></td>
+        <td id="edititem"><%= link_to 'Edit', edit_tbl_page_category_path(tbl_page_category) %></td>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_page_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

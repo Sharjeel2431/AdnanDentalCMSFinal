@@ -1,0 +1,25 @@
+
+<h1  class="show1">FormField Helper Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#formfieldhelper").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Formid:</strong>
+  <%= @tbl_form_field_helper.FormID %>
+</p>
+
+<p>
+  <strong>Fieldid:</strong>
+  <%= @tbl_form_field_helper.FieldID %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_form_field_helper_path(@tbl_form_field_helper) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_form_field_helpers_path, :class => "btn_submit" %>
+</div>

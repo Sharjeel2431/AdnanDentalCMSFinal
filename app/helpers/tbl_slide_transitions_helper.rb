@@ -1,0 +1,2 @@
+module TblSlideTransitionsHelper
+end

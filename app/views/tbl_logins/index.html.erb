@@ -1,0 +1,27 @@
+<h1>Login Management</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Username</th>
+      <th>Password</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_logins.each do |tbl_login| %>
+      <tr>
+        <td><%= tbl_login.UserName %></td>
+        <td><%= tbl_login.Password %></td>
+        <td><%= link_to 'View', tbl_login %></td>
+        <td><%= link_to 'Edit', edit_tbl_login_path(tbl_login) %></td>
+        <td><%= link_to 'Delete', tbl_login, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tbl login', new_tbl_login_path %>

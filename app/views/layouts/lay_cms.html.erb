@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdnanDentalCMS</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header id="header" class="">
+  <div class="header-bg">
+    <div class="container">
+      <div class="decoration dec-left visible-desktop"></div>
+      <div class="decoration dec-right visible-desktop"></div>
+      <div class="row">
+        <div id="logo" class="span3">
+          <a href="/" class="" alt="Medex HTML"><img src="/assets/logo.png"></a>
+        </div>
+        <div class="span9">
+          <!-- Social Icons -->
+          <ul class="social-icons">
+            <li class="facebook"><a href="#" style="top: -24px;">Facebook</a></li>
+            <li class="twitter"><a href="#" style="top: -24px;">Twitter</a></li>
+            <li class="linkedin"><a href="#" style="top: -24px;">LinkedIn</a></li>
+            <li class="googleplus"><a href="#">GooglePlus</a></li>
+            <li class="youtube"><a href="#" style="top: -24px;">youtube</a></li>
+            <li class="rss"><a href="#" style="top: -24px;">Rss</a></li>
+          </ul>
+          <!-- Contact Details -->
+          <div class="contact-details visible-desktop">
+            <ul>
+              <li>Call us: <a href="#" class="tel">051-2290923</a></li>
+              <li>09-Hill View Plaza,Sawan Road,G-9 Markaz Islamabad</li>
+            </ul>
+          </div>
+          <!-- Search Form -->
+          <div class="search-form">
+
+            <input name="ctl00$txtsearch" type="text" id="ctl00_txtsearch" class="search-text-box">
+            <input type="image" name="ctl00$ImageButton1" id="ctl00_ImageButton1" src="/assets/04.png" style="border-width:0px;">
+
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+
+
+
+
+
+
+          <ul class="clearfix" id="menu">
+
+
+
+
+
+
+
+
+
+
+          </ul>
+
+
+
+        </div>
+      </div>
+
+      <div id="maincontent">
+
+
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnkeyword" id="ctl00_ContentPlaceHolder1_hdnkeyword">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdndesc" id="ctl00_ContentPlaceHolder1_hdndesc" value="Colon Hydrotherapy Hydrotherapist: Lisa da Silva">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnteam" id="ctl00_ContentPlaceHolder1_hdnteam" value="447">
+        <script type="text/javascript">
+            //<![CDATA[
+            //     Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$smSubmit', document.getElementById('aspnetForm'));
+            //   Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+            //]]>
+        </script>
+
+
+      </div>
+    </div>
+  </div></header>
+
+
+<%= yield %>
+
+
+
+<footer id="footer" class="container-fluid" >
+  <div class="container">
+    <section class="row">
+      <article class="span3">
+
+        <div class="link">
+          Website: <a href="http://yoursitename.com">http://yoursitename.com</a><br>
+          Email: <a href="mailto:info@yoursitename.com<">info@yoursitename.com</a>
+        </div>
+        <ul class="social-icons">
+          <li class="facebook"><a href="#">Facebook</a></li>
+          <li class="twitter"><a href="#">Twitter</a></li>
+          <li class="linkedin"><a href="#">LinkedIn</a></li>
+          <li class="googleplus"><a href="#">GooglePlus</a></li>
+          <li class="youtube"><a href="#">youtube</a></li>
+          <li class="rss"><a href="#">Rss</a></li>
+        </ul>
+      </article>
+
+    </section>
+    <div class="back-top up"><a href="#top"></a></div>
+  </div>
+  <footer class="footer-line container-fluid">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span8 alignleft">Medex - medical, doctor and health care theme | <a href="http://themeforest.net/user/Russian-Themes">RussianTheme</a></div>
+        <div class="span4 alignright hidden-phone"><a href="index.html">Home</a> | <a href="Pages_Contact.html">Contact</a> | <a href="Blog_Large_Image.html">Blog</a> | <a href="#top" class="top up">Top</a></div>
+      </div>
+    </div>
+  </footer>
+</footer>
+
+</body>
+</html>

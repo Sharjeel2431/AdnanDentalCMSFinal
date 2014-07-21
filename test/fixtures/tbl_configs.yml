@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ConfigID: 1
+  ConfigTitle: MyString
+  ConfigValue: 1
+  Type: MyString
+  Status: false
+
+two:
+  ConfigID: 1
+  ConfigTitle: MyString
+  ConfigValue: 1
+  Type: MyString
+  Status: false

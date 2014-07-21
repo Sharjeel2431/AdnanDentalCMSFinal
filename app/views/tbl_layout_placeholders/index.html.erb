@@ -1,0 +1,27 @@
+<h1 class="index1">Layout PlaceHolder Mangement</h1>
+<div class="index3">
+  <%= link_to 'Add New layout placeholder', new_tbl_layout_placeholder_path, :class => "btn_submit" %>
+</div>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>Layoutid</th>
+      <th>Placeholderid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_layout_placeholders.each do |tbl_layout_placeholder| %>
+      <tr>
+        <td><%= tbl_layout_placeholder.LayoutID %></td>
+        <td><%= tbl_layout_placeholder.PlaceHolderID %></td>
+        <td><%= link_to 'View', tbl_layout_placeholder %></td>
+        <td><%= link_to 'Edit', edit_tbl_layout_placeholder_path(tbl_layout_placeholder) %></td>
+        <td><%= link_to 'Delete', tbl_layout_placeholder, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

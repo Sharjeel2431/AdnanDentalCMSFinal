@@ -1,0 +1,115 @@
+a{color:#53495f}
+/* header */
+.logo{background:url(images/logo.png) no-repeat}   
+#header{background:url(images/02.png) repeat-x top #fff}
+#header.main{background:url(images/01.png) repeat-x top #fff}
+#header .header-bg{background:url(images/06.png) no-repeat center top}
+#header.main .dec-left{background:url(images/07.jpg) no-repeat bottom right}
+#header.main .dec-right{background:url(images/08.jpg) no-repeat bottom right}
+	/* Social Contact */	
+	.facebook a{background-image:url(images/s1.png)}
+	.twitter a{background-image:url(images/s2.png)}
+	.linkedin a{background-image:url(images/s3.png)}
+	.googleplus a{background-image:url(images/s4.png)}
+	.youtube a{background-image:url(images/s5.png)}
+	.rss a{background-image:url(images/s6.png)}
+	.skype a{background-image:url(images/s7.png)}
+	.pinterest a{background-image:url(images/s8.png)}
+	.vimeo a{background-image:url(images/s9.png)}
+	/* Details */
+	.contact-details a{color:#53495f}
+	/* Search */
+	.search-text-submit{background:url(images/04.png) no-repeat}
+	/* Menu */
+	#menu {background:#f1ee1a} 
+	#menu li a{color:#53495f}
+	#menu li a:hover{background:#53495f;color:#ffffff}
+	.select-menu{background:#f1ee1a}
+	/* Main Slider */
+	.main-slider{background:url(images/09.jpg) no-repeat -0px -4px}
+	#menu ul{border-bottom:5px solid #f1ee1a}
+	#menu li ul a{color:#fff}
+/* slider */	
+.ls-bottom-slidebuttons a.ls-nav-active{background:#53495f}	
+	.bg1{background:url(images/50.png) no-repeat}
+	.bg2{background:url(images/53.png) no-repeat}
+	.bg3{background:url(images/54.png) no-repeat}
+/* footer */
+#footer{background:url(images/12.png) repeat-x #f7f7f6}
+#footer .link{color:#53495f}
+#footer .slogo{background:url(images/logofooter.png) no-repeat}
+/* arrow-up */	
+.back-top{background:url(images/14.png) no-repeat}
+/* Base tag */
+#content li{color:#53495f}
+h1,h2,h3,h4,h5{color:#53495f}
+div.title{background:url(images/10.png) no-repeat bottom left;padding:0 0 23px;margin:0 0 23px;width:100%}
+/* Dropcap */
+.dropcap{background:#53495f;color:#fff}
+.dropcap2{background:#dcdee0;color:#53495f} 
+/* Highlight */
+.highlight1{background:#53495f;color:#fff}
+.highlight2{background:#f1ee1a;color:#fff}
+.highlight3{background:#fcff00}
+/* Blockquote */
+blockquote{border-left:6px solid #53495f}
+/* Navigation */
+#content .navigation li a:hover,#content .navigation li.active a{color:#53495f;border-left:8px solid #53495f}
+/* Tagcloud */
+.tagcloud a:hover{background:#53495f;color:#fff}
+/* Form */
+label {color:#53495f}
+/* Buttoms */
+	.button.s1{background:#53495f}
+	.button.s1:hover{background:#bbb}
+	.button.s2{background:#5f6061}
+	.button.s2:hover{background:#4e4f50}
+	.button.s3{background:#f1ee1a;color:#53495f}	
+	.button.s3:hover{background:#e2df18;color:#53495f}
+	.ls-s2{background:url(images/51.png) no-repeat}
+/* Media */	
+.carousel-control{color:#53495f;background:#f2f0f2}	
+.carousel-control:hover{color:#f1ee1a}	
+/* Review */
+.md-name strong{color:#53495f}
+/* Tabs */
+#content .nav-tabs li{border-bottom:5px solid #53495f;background:#ededea}
+#content .nav-tabs li.active{background:#53495f}
+.nav-tabs a{color:#53495f} 
+/* Awards */   	
+.award:hover{background-image:url(images/26.png);}	
+/* Accordion */
+.accordion-heading .accordion-toggle{background:#ededea;color:#53495f}
+.marker{background:url(images/36.png) no-repeat}
+.accordion-heading .accordion-toggle.target{background:#53495f;color:#fff}
+/* Service Option */
+.move-bg-icon{background-color:#f1ee1a}
+.link-block:hover{background:url(images/26.png) repeat-x bottom #3e3e3e;color:#bebfc0}
+h2.move-item{color:#53495f}
+.link-block:hover .move-bg-icon{background-color:#f1ee1a}
+.link-block:hover h2.move-item{color:#f1ee1a}
+/* Meet Our Doctors 1 */	
+.link-img h4{color:#f1ee1a}
+.link-img:hover{background:url(images/26.png) repeat-x bottom}
+/* Table */
+.column h4{border-bottom:5px solid #53495f}
+/* Price Table */
+.pricecolumn h3{background:url(images/41.png) repeat-x bottom #ededea}
+.dollar{color:#575757}
+.number{color:#53495f}	
+.cents{color:#53495f}
+.time{color:#575757}
+
+.button-price.active{background:#53495f;border-bottom:7px solid #53495f;color:#fff}
+.pricecolumn h3.active{border-top:7px solid #53495f;background:#53495f;color:#fff}
+#content .col li.price-td.active{background:#53495f;color:#fff}
+.dollar.active,.cents.active,.time.active,.number.active{color:#fff}
+
+
+/* Pages Under Construction & 404 */
+.under-wrapper .date span{color:#53495f;border-bottom:4px solid #53495f}
+#footer-under{background:url(images/45.png) no-repeat center #53495f}
+@media (max-width:979px){
+	#header,#header .header-bg,#header.main,#header.main .header-bg{background:none;height:auto;margin-bottom:10px}
+	.main-slider{height:310px;background:none}
+} 

@@ -1,0 +1,47 @@
+<div class="external">
+<%= form_for(@tbl_place_holder) do |f| %>
+  <% if @tbl_place_holder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_place_holder.errors.count, "error") %> prohibited this tbl_place_holder from being saved:</h2>
+
+      <ul>
+      <% @tbl_place_holder.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :PlaceHolderTitle %><br>
+    <%= f.text_field :PlaceHolderTitle %>
+  </div>
+      <div class="field">
+        <%= f.label :PlaceHolderType %><br>
+
+        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql(" SELECT Type,PlaceHolderID FROM tbl_place_holders GROUP by Type order by PlaceHolderID; "), :PlaceHolderID, :Type , {:selected => TblPlaceHolder.where(Type: @placeTitle).map(&:PlaceHolderID)} )%>
+      </div>
+      <script type="text/javascript">
+
+          $('#TblPlaceHolder_PlaceHolderID').on('change', function() {
+              var id=$(this).val()
+              $("#hidfield").val(id);
+
+          });
+
+      </script>
+      <input type="hidden" id="hidfield" name="placehold_hid"  />
+  <div class="field">
+    <%= f.label :PlaceHolderDesc %><br>
+    <%= f.text_field :PlaceHolderDesc %>
+  </div>
+  <div class="field">
+    <%= f.label :IsActive %><br>
+    <%= f.check_box :IsActive %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit", :class => "btn_submit"%>
+  </div>
+<% end %>
+</div>

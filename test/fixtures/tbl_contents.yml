@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ContentID: 1
+  ContentName: MyString
+  ContentValue: MyText
+  ContentType: MyString
+  ContentStatus: false
+
+two:
+  ContentID: 1
+  ContentName: MyString
+  ContentValue: MyText
+  ContentType: MyString
+  ContentStatus: false

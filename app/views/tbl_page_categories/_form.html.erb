@@ -1,0 +1,27 @@
+<div class="external">
+<%= form_for(@tbl_page_category) do |f| %>
+  <% if @tbl_page_category.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_page_category.errors.count, "error") %> prohibited this tbl_page_category from being saved:</h2>
+
+      <ul>
+      <% @tbl_page_category.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :CategoryID %><br>
+    <%= f.number_field :CategoryID %>
+  </div>
+  <div class="field">
+    <%= f.label :PageID %><br>
+    <%= f.number_field :PageID %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit", :class => "btn_submit" %>
+  </div>
+<% end %>
+</div>

@@ -1,0 +1,78 @@
+<h1 class="index1">Page Management</h1>
+
+<div class="index3">
+
+  <%= link_to 'Add New Page', new_tbl_page_path, :class => "btn_submit" %>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pagemang").css("background-color", "red");
+
+    });
+</script>
+<table class="index_2">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Name</th>
+      <th>URL</th>
+      <th style="display: none;">Keywords</th>
+      <th style="display: none;">Description</th>
+      <th style="display: none;">Layout ID</th>
+      <th style="display: none;">Status</th>
+      <th style="display: none;">Type</th>
+      <th style="display: none;">Datetime</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_pages.each do |tbl_page| %>
+      <tr>
+        <td><%= tbl_page.PageID %></td>
+        <td><%= tbl_page.PageTitle %></td>
+        <td><%= tbl_page.PageName %></td>
+        <td><%= tbl_page.PageURL %></td>
+        <td><%= tbl_page.Keywords %></td>
+        <td style="display: none;"><%= tbl_page.Description %></td>
+        <td style="display: none;"><%= tbl_page.LayoutID %></td>
+        <td style="display: none;"><%= tbl_page.Status %></td>
+        <td style="display: none;"><%= tbl_page.Type %></td>
+        <td style="display: none;"><%= tbl_page.DateTime %></td>
+
+        <td id="viewitem"><a href="<%= tbl_page.PageURL %>" target="_blank">View</a><td>
+        <td id="edititem">   <a href="/<%= tbl_page.PageID %>/edit/<%= tbl_page.PageID %>" >Edit</a>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<div style="position: relative;
+        bottom: 136px;
+        right: -205px;">
+  <h1>Total Pages: <h1 style="color: red;position: relative;
+          bottom: 29px;
+          right: -143px;"><%= @totpage %></h1></h1>
+
+</div>
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

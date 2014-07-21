@@ -1,0 +1,17 @@
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Placeholderid:</strong>
+  <%= @tbl_place_holder_content.PlaceHolderID %>
+</p>
+
+<p>
+  <strong>Contentid:</strong>
+  <%= @tbl_place_holder_content.ContentID %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_place_holder_content_path(@tbl_place_holder_content),:class => "btn_submit" %> |
+<%= link_to 'Back', tbl_place_holder_contents_path, :class => "btn_submit" %>
+</div>

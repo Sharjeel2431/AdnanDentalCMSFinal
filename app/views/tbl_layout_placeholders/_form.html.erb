@@ -1,0 +1,27 @@
+<div class="external">
+<%= form_for(@tbl_layout_placeholder) do |f| %>
+  <% if @tbl_layout_placeholder.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_layout_placeholder.errors.count, "error") %> prohibited this tbl_layout_placeholder from being saved:</h2>
+
+      <ul>
+      <% @tbl_layout_placeholder.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :LayoutID %><br>
+    <%= f.number_field :LayoutID %>
+  </div>
+  <div class="field">
+    <%= f.label :PlaceHolderID %><br>
+    <%= f.number_field :PlaceHolderID %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit", :class => "btn_submit" %>
+  </div>
+<% end %>
+</div>

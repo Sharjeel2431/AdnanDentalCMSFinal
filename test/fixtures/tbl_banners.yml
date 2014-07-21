@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  BannerID: 1
+  Title: MyString
+  Description: MyString
+  ToolTip: MyString
+  RedirectLink: MyString
+  Type: MyString
+  Status: false
+
+two:
+  BannerID: 1
+  Title: MyString
+  Description: MyString
+  ToolTip: MyString
+  RedirectLink: MyString
+  Type: MyString
+  Status: false

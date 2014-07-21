@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails AdnanDentalCMS: development" uuid="50a0699e-975a-42a2-a62b-9a2cb41bf17b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails AdnanDentalCMS: test" uuid="720b98e6-c4cf-487c-a0c2-a76f6e3ae796">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails AdnanDentalCMS: production" uuid="54a6ef27-d256-4445-830f-34b84e3c3ac3">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

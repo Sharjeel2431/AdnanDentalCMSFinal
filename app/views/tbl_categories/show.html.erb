@@ -1,0 +1,50 @@
+
+<h1  class="show1">Categories Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#category").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Categoryid:</strong>
+  <%= @tbl_category.CategoryID %>
+</p>
+
+<p>
+  <strong>Categorytitle:</strong>
+  <%= @tbl_category.CategoryTitle %>
+</p>
+
+<p>
+  <strong>Categoryurl:</strong>
+  <%= @tbl_category.CategoryURL %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_category.Type %>
+</p>
+
+<p>
+  <strong>Isprimarynav:</strong>
+  <%= @tbl_category.IsPrimaryNav %>
+</p>
+
+<p>
+  <strong>Issecondarynav:</strong>
+  <%= @tbl_category.IsSecondaryNav %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_category.Status %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_category_path(@tbl_category) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_categories_path, :class => "btn_submit" %>
+</div>

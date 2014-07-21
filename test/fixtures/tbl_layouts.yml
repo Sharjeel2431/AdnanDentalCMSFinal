@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  LayoutID: 1
+  LayoutTitle: MyString
+  Value: 1
+  Type: MyString
+  Status: false
+
+two:
+  LayoutID: 1
+  LayoutTitle: MyString
+  Value: 1
+  Type: MyString
+  Status: false

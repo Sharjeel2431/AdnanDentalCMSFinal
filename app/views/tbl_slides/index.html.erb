@@ -1,0 +1,37 @@
+<h1 class="index1">Slide Management</h1>
+<div class="index3">
+  <%= link_to 'Add New Slide', new_tbl_slide_path %>
+</div>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>Slideid</th>
+      <th>Slideclass</th>
+      <th>Slidedelay</th>
+      <th>Transition</th>
+      <th>Backgroundimage</th>
+      <th>Slidetransition</th>
+      <th>Bannerid</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_slides.each do |tbl_slide| %>
+      <tr>
+        <td><%= tbl_slide.SlideID %></td>
+        <td><%= tbl_slide.SlideClass %></td>
+        <td><%= tbl_slide.SlideDelay %></td>
+        <td><%= tbl_slide.Transition %></td>
+        <td><%= tbl_slide.BackgroundImage %></td>
+        <td><%= tbl_slide.SlideTransition %></td>
+        <td><%= tbl_slide.BannerID %></td>
+        <td><%= link_to 'View', tbl_slide %></td>
+        <td><%= link_to 'Edit', edit_tbl_slide_path(tbl_slide) %></td>
+        <td><%= link_to 'Delete', tbl_slide, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>

@@ -1,0 +1,46 @@
+<h1  class="show1">Slide Information</h1>
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Slideid:</strong>
+  <%= @tbl_slide.SlideID %>
+
+</p>
+
+<p>
+  <strong>Slideclass:</strong>
+  <%= @tbl_slide.SlideClass %>
+</p>
+
+<p>
+  <strong>Slidedelay:</strong>
+  <%= @tbl_slide.SlideDelay %>
+</p>
+
+<p>
+  <strong>Transition:</strong>
+  <%= @tbl_slide.Transition %>
+</p>
+
+<p>
+  <strong>Backgroundimage:</strong>
+
+   <%= image_tag @tbl_slide.avatar.url %>
+
+</p>
+
+<p>
+  <strong>Slidetransition:</strong>
+  <%= @tbl_slide.SlideTransition %>
+</p>
+
+<p>
+  <strong>Bannerid:</strong>
+  <%= @tbl_slide.BannerID %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_slide_path(@tbl_slide) %> |
+<%= link_to 'Back', tbl_slides_path %>
+</div>

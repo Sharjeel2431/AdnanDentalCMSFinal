@@ -1,0 +1,23 @@
+<h1 class="edit1">Editing Content</h1>
+<%=     session[:contentindex]  %>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#content").css("background-color", "red");
+
+    });
+</script>
+<%=
+if session[:contentedittoplaceholder] == 0
+  render 'form'
+  else if session[:contentedittoplaceholder] == 1
+         render 'editcontent'
+       end
+
+  end
+
+
+%>
+<div class="edit2">
+<%= link_to 'View', @tbl_content , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_contents_path , :class => "btn_submit"%>
+</div>

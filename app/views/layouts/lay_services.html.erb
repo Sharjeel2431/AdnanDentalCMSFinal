@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdnanDentalCMS</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<header id="header" class="">
+  <div class="header-bg">
+    <div class="container">
+      <div class="decoration dec-left visible-desktop"></div>
+      <div class="decoration dec-right visible-desktop"></div>
+      <div class="row">
+        <div id="logo" class="span3">
+          <a href="/" class="" alt="Medex HTML"><img src="/assets/logo.png"></a>
+        </div>
+        <div class="span9">
+          <!-- Social Icons -->
+          <ul class="social-icons">
+            <li class="facebook"><a href="#" style="top: -24px;">Facebook</a></li>
+            <li class="twitter"><a href="#" style="top: -24px;">Twitter</a></li>
+            <li class="linkedin"><a href="#" style="top: -24px;">LinkedIn</a></li>
+            <li class="googleplus"><a href="#">GooglePlus</a></li>
+            <li class="youtube"><a href="#" style="top: -24px;">youtube</a></li>
+            <li class="rss"><a href="#" style="top: -24px;">Rss</a></li>
+          </ul>
+          <!-- Contact Details -->
+          <div class="contact-details visible-desktop">
+            <ul>
+              <li>Call us: <a href="#" class="tel">051-2290923</a></li>
+              <li>09-Hill View Plaza,Sawan Road,G-9 Markaz Islamabad</li>
+            </ul>
+          </div>
+          <!-- Search Form -->
+          <div class="search-form">
+
+            <input name="ctl00$txtsearch" type="text" id="ctl00_txtsearch" class="search-text-box">
+            <input type="image" name="ctl00$ImageButton1" id="ctl00_ImageButton1" src="/assets/04.png" style="border-width:0px;">
+
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+
+
+
+
+
+
+          <ul class="clearfix" id="menu">
+
+
+
+
+
+            <% @categories.each do |index| %>
+                <h1 style="display: none;"><%= @categoryInfo=TblCategory.where(CategoryTitle: index.CategoryTitle)
+                %></h1>
+                <% @categoryInfo.each do |index|%>
+                    <h1 style="display: none;"> <%= @categoryID=index.CategoryID
+                                                    @pageContent=TblPageCategory.where(CategoryID: @categoryID)
+
+
+                    %></h1>
+
+                    <% @pageContent.each do |index| %>
+                        <h1 style="display: none;"> <%= @pageID=index.PageID
+                                                        @pageinfo=TblPage.where(PageID: @pageID)
+
+                        %></h1>
+                        <% @pageinfo.each do |index| %>
+                            <h1 style="display: none;">  <%= @pageURL=index.PageURL %></h1>
+                        <%end%>
+                    <%end%>
+                <%end%>
+
+
+                <li class="active"><a href="/<%= @pageURL %>"> <%= index.CategoryTitle %>    </a></li>
+            <% end%>
+
+
+
+
+
+          </ul>
+
+
+
+        </div>
+      </div>
+
+      <div id="maincontent">
+
+
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnkeyword" id="ctl00_ContentPlaceHolder1_hdnkeyword">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdndesc" id="ctl00_ContentPlaceHolder1_hdndesc" value="Colon Hydrotherapy Hydrotherapist: Lisa da Silva">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnteam" id="ctl00_ContentPlaceHolder1_hdnteam" value="447">
+        <script type="text/javascript">
+            //<![CDATA[
+            //     Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$smSubmit', document.getElementById('aspnetForm'));
+            //   Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+            //]]>
+        </script>
+
+
+      </div>
+    </div>
+  </div></header>
+
+
+<section id="content" class="container-fluid">
+  <div class="container">
+
+    <div class="row">
+
+      <div class="span4">
+
+
+
+        <div class="headline"><h3>Services</h3></div>
+
+        <ul class="link-list">
+
+          <% @pagecategoryinfo.each do |index| %>
+              <h1 style="display: none;">    <%= @pageID=index.PageID
+                                                 @pageinfo=TblPage.where(PageID:@pageID)
+              %></h1>
+              <%  @pageinfo.each do |index| %>
+                  <h1 style="display: none;"> <%= @pageURL=index.PageURL
+                                                  @pageName=index.PageName
+                  %></h1>
+              <% end %>
+              <li class="active"><a href="/<%= @pageURL %>"><%= @pageName %></a></li>
+              <ul class="tree"> </ul>
+          <%end%>
+
+
+
+
+
+        </ul>
+
+        <div class="headline">
+          <h4>Sterilization</h4>
+        </div>
+        <p>Our office uses state of the art sterilization to ensure patient safety. Sterilization and disinfection are the basic steps in instrument processing and surface asepsis. Sterilization refers to the use of a physical or chemical procedure to destroy all forms of microorganisms, including the highly resistant spores.</p>
+
+        <div class="tagcloud" style="display:none;">
+          <a href="#">Gastroenterology</a>
+          <a href="#">Obstetrics</a>
+          <a href="#">Gynecology</a>
+          <a href="#">Hematology</a>
+          <a href="#">Oncology</a>
+          <a href="#">Hospital</a>
+          <a href="#">Medicine</a>
+          <a href="#">Infectious</a>
+          <a href="#">Diseases &amp; Wound</a>
+          <a href="#">Care</a>
+          <a href="#">Nephrology</a>
+        </div>
+
+      </div>
+
+      <%@pagecontentinfo.each do |index|%>
+
+          <h1 style="display: none;"><%=@contentID=index.ContentID %>
+            <%=@contentinfo=TblContent.where(ContentID: @contentID)%>
+          </h1>
+
+
+          <%@contentinfo.each do |index|%>
+
+              <h1 style="display: none;"><%=@contentVal=index.ContentValue %></h1>
+
+              <%=
+                  if params[:id] != 0
+                    sanitize   @contentVal
+                  end
+              %>
+
+          <%end%>
+      <%end%>
+    </div>
+  </div>
+</section>
+
+
+
+<footer id="footer" class="container-fluid" >
+  <div class="container">
+    <section class="row">
+      <article class="span3">
+
+        <div class="link">
+          Website: <a href="http://yoursitename.com">http://yoursitename.com</a><br>
+          Email: <a href="mailto:info@yoursitename.com<">info@yoursitename.com</a>
+        </div>
+        <ul class="social-icons">
+          <li class="facebook"><a href="#">Facebook</a></li>
+          <li class="twitter"><a href="#">Twitter</a></li>
+          <li class="linkedin"><a href="#">LinkedIn</a></li>
+          <li class="googleplus"><a href="#">GooglePlus</a></li>
+          <li class="youtube"><a href="#">youtube</a></li>
+          <li class="rss"><a href="#">Rss</a></li>
+        </ul>
+      </article>
+
+    </section>
+    <div class="back-top up"><a href="#top"></a></div>
+  </div>
+
+
+
+</footer>
+</body>
+</html>

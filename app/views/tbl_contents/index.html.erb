@@ -1,0 +1,60 @@
+<h1  class="index1">Content Management</h1>
+<%=     session[:contentindex]  %>
+<div class="index3">
+  <%= link_to 'Add New Content', new_tbl_content_path , :class => "btn_submit"%>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#content").css("background-color", "red");
+
+    });
+</script>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>PlaceHolder</th>
+      <th>Value</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_contents.each do |tbl_content| %>
+      <tr>
+        <td><%= tbl_content.ContentID %></td>
+        <td><%= tbl_content.ContentName %></td>
+        <td><%= tbl_content.PlaceHolder %></td>
+        <td><%= tbl_content.ContentValue %></td>
+        <td><%= tbl_content.ContentType %></td>
+        <td><%= tbl_content.ContentStatus %></td>
+        <td id="viewitem"><%= link_to 'View', tbl_content %></td>
+        <td id="edititem"><%= link_to 'Edit', edit_tbl_content_path(tbl_content) %></td>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

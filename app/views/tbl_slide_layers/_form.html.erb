@@ -1,0 +1,25 @@
+<%= form_for(@tbl_slide_layer) do |f| %>
+  <% if @tbl_slide_layer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_slide_layer.errors.count, "error") %> prohibited this tbl_slide_layer from being saved:</h2>
+
+      <ul>
+      <% @tbl_slide_layer.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :SlideID %><br>
+    <%= f.number_field :SlideID %>
+  </div>
+  <div class="field">
+    <%= f.label :LayerID %><br>
+    <%= f.number_field :LayerID %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

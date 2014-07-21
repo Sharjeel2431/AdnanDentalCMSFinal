@@ -1,0 +1,51 @@
+<h1 class="show1">Banner Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#banner").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bannerid:</strong>
+  <%= @tbl_banner.BannerID %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @tbl_banner.Title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tbl_banner.Description %>
+</p>
+
+<p>
+  <strong>Tooltip:</strong>
+  <%= @tbl_banner.ToolTip %>
+</p>
+
+<p>
+  <strong>Redirectlink:</strong>
+  <%= @tbl_banner.RedirectLink %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_banner.Type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_banner.Status %>
+</p>
+</div>
+
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_banner_path(@tbl_banner) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_banners_path, :class => "btn_submit" %>
+</div>

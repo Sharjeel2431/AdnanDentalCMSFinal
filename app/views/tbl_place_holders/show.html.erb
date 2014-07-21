@@ -1,0 +1,37 @@
+<h1  class="show1">PlaceHolder Information</h1>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#placeholder").css("background-color", "red");
+
+    });
+</script>
+
+<div class="show2">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Placeholderid:</strong>
+  <%= @tbl_place_holder.PlaceHolderID %>
+</p>
+
+<p>
+  <strong>Placeholdertitle:</strong>
+  <%= @tbl_place_holder.PlaceHolderTitle %>
+</p>
+
+<p>
+  <strong>Placeholderdesc:</strong>
+  <%= @tbl_place_holder.PlaceHolderDesc %>
+</p>
+
+<p>
+  <strong>Isactive:</strong>
+  <%= @tbl_place_holder.IsActive %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'View', edit_tbl_place_holder_path(@tbl_place_holder) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_place_holders_path, :class => "btn_submit" %>
+</div>

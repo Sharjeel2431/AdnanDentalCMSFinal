@@ -1,0 +1,41 @@
+<div class="external">
+
+<%= form_for(@tbl_form_field) do |f| %>
+  <% if @tbl_form_field.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_form_field.errors.count, "error") %> prohibited this tbl_form_field from being saved:</h2>
+
+      <ul>
+      <% @tbl_form_field.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :FieldTitle %><br>
+    <%= f.text_field :FieldTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :FieldType %><br>
+    <%= f.text_field :FieldType %>
+  </div>
+  <div class="field">
+    <%= f.label :FieldValue %><br>
+    <%= f.number_field :FieldValue %>
+  </div>
+  <div class="field">
+    <%= f.label :Tooltip %><br>
+    <%= f.text_field :Tooltip %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br>
+    <%= f.check_box :Status %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" , :class => "btn_submit"%>
+  </div>
+<% end %>
+</div>

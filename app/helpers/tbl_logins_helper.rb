@@ -1,0 +1,2 @@
+module TblLoginsHelper
+end

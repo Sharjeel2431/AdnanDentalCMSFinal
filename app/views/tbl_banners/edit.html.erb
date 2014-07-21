@@ -1,0 +1,23 @@
+<h1 class="edit1">Editing Banner</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#banner").css("background-color", "red");
+
+    });
+</script>
+
+<%= if session[:oneditpage] == 1
+    render 'form1'
+
+      else
+        render 'form'
+    end
+%>
+
+
+<div style="position: relative;
+        right: -225px;
+        bottom: 197px;">
+<%= link_to 'View', @tbl_banner, :class => "btn_submit" %> |
+<%= link_to 'Back', tbl_banners_path, :class => "btn_submit" %>
+</div>

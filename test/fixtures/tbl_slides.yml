@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  SlideID: 1
+  SlideClass: MyString
+  SlideDelay: 
+  Transition: MyString
+  BackgroundImage: MyString
+  SlideTransition: MyString
+  BannerID: 1
+
+two:
+  SlideID: 1
+  SlideClass: MyString
+  SlideDelay: 
+  Transition: MyString
+  BackgroundImage: MyString
+  SlideTransition: MyString
+  BannerID: 1

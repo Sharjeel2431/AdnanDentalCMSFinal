@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  TransitionID: 1
+  TransitionName: MyString
+
+two:
+  TransitionID: 1
+  TransitionName: MyString

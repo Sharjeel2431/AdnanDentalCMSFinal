@@ -1,0 +1,11 @@
+<h1 class="new1">Add New Form</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#form").css("background-color", "red");
+
+    });
+</script>
+<%= render 'form' %>
+<div class="new2">
+<%= link_to 'Back', tbl_forms_path , :class => "btn_submit"%>
+</div>

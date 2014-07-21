@@ -1,0 +1,54 @@
+<h1  class="show1">Layout Information</h1>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#layout").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Layoutid:</strong>
+  <%= @tbl_layout.LayoutID %>
+</p>
+
+<p>
+  <strong>Layouttitle:</strong>
+  <%= @tbl_layout.LayoutTitle %>
+</p>
+
+<p>
+  <strong>Value:</strong>
+  <%= @tbl_layout.Value %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_layout.Type %>
+</p>
+
+  <p>
+    <strong>OnStateTag:</strong>
+    <%= @tbl_layout.OnStateTag %>
+  </p>
+
+  <p>
+    <strong>FilePath:</strong>
+    <%= @tbl_layout.FilePath %>
+  </p>
+
+
+
+  <p>
+  <strong>Status:</strong>
+  <%= @tbl_layout.Status %>
+</p>
+</div>
+<div class="show3">
+ <a href="/<%= @tbl_layout.LayoutID %>/edit/<%= @tbl_layout.LayoutID  %>" class="btn_submit">Edit</a> |
+<%= link_to 'Back', tbl_layouts_path , :class => "btn_submit"%>
+</div>

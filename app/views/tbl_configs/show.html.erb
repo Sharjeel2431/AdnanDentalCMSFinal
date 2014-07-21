@@ -1,0 +1,41 @@
+
+<h1  class="show1">Configuration Information</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#config").css("background-color", "red");
+
+    });
+</script>
+<div class="show2">
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Configid:</strong>
+  <%= @tbl_config.ConfigID %>
+</p>
+
+<p>
+  <strong>Configtitle:</strong>
+  <%= @tbl_config.ConfigTitle %>
+</p>
+
+<p>
+  <strong>Configvalue:</strong>
+  <%= @tbl_config.ConfigValue %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_config.Type %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_config.Status %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit', edit_tbl_config_path(@tbl_config) , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_configs_path, :class => "btn_submit" %>
+</div>

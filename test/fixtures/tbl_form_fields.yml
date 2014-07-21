@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  FieldID: 1
+  FieldTitle: MyString
+  FieldType: MyString
+  FieldValue: 1
+  Tooltip: MyString
+  Status: false
+
+two:
+  FieldID: 1
+  FieldTitle: MyString
+  FieldType: MyString
+  FieldValue: 1
+  Tooltip: MyString
+  Status: false

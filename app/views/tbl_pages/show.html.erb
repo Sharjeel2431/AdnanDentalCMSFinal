@@ -1,0 +1,68 @@
+<h1  class="show1">Page's Information</h1>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pagemang").css("background-color", "red");
+
+    });
+</script>
+
+
+<div class="show2">
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pageid:</strong>
+  <%= @tbl_page.PageID %>
+</p>
+
+<p>
+  <strong>Pagetitle:</strong>
+  <%= @tbl_page.PageTitle %>
+</p>
+
+<p>
+  <strong>Pagename:</strong>
+  <%= @tbl_page.PageName %>
+</p>
+
+<p>
+  <strong>Pageurl:</strong>
+  <%= @tbl_page.PageURL %>
+</p>
+
+<p>
+  <strong>Keywords:</strong>
+  <%= @tbl_page.Keywords %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tbl_page.Description %>
+</p>
+
+<p>
+  <strong>Layoutid:</strong>
+  <%= @tbl_page.LayoutID %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @tbl_page.Status %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @tbl_page.Type %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @tbl_page.DateTime %>
+</p>
+</div>
+<div class="show3">
+
+  <a href="/<%= @tbl_page.PageID %>/edit/<%= @tbl_page.PageID %>" class="btn_submit">Edit</a>|
+<%= link_to 'Back', tbl_pages_path , :class => "btn_submit"%>
+</div>

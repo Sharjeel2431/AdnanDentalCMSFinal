@@ -1,0 +1,55 @@
+<div class="external">
+
+<%= form_for(@tbl_layout) do |f| %>
+  <% if @tbl_layout.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_layout.errors.count, "error") %> prohibited this tbl_layout from being saved:</h2>
+
+      <ul>
+      <% @tbl_layout.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :LayoutTitle %><br>
+    <%= f.text_field :LayoutTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :Value %><br>
+    <%= f.number_field :Value %>
+  </div>
+  <div class="field">
+    <%= f.label :Type %><br>
+    <%= collection_select(:TblLayout, :Type, TblLayout.find_by_sql("select Distinct Type from tbl_layouts;"), :Type, :Type , {prompt: @layoutType, :selected => @type_layout} )%>
+    <script type="text/javascript">
+
+        $('#TblLayout_Type').on('change', function() {
+            var id=$(this).val()
+            $("#hidfieldlayout").val(id);
+        });
+
+    </script>
+
+    <input type="hidden" id="hidfieldlayout" name="layout_hid"  />
+
+  </div>
+      <div class="field">
+        <%= f.label :OnStateTag %><br>
+        <%= f.text_field :OnStateTag %>
+      </div>
+      <div class="field">
+        <%= f.label :FilePath %><br>
+        <%= f.text_field :FilePath %>
+      </div>
+  <div class="field">
+    <%= f.label :Status %><br>
+    <%= f.check_box :Status %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" , :class => "btn_submit"%>
+  </div>
+<% end %>
+</div>

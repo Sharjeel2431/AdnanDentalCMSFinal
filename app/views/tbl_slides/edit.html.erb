@@ -1,0 +1,58 @@
+<h1 class="edit1">Editing Slide Information</h1>
+
+<%= render 'form' %>
+
+
+<div style="position: relative;
+        bottom: 203px;
+        right: -224px;">
+  <h1>Add Layer to the Slide</h1>
+
+  <div style="position: relative;
+          bottom: -6px;">
+
+  <a href="/tbl_layers/new/<%= params[:id] %>" class="btn_submit">Add New Layer</a>
+</div>
+<table style="position: relative;
+        bottom: 22px;">
+  <thead>
+  <tr>
+    <th>Layerid</th>
+    <th>Class</th>
+    <th>Type</th>
+    <th>Content</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <h1 style="visibility: hidden;"><%= @slide=TblSlideLayer.where(SlideID: params[:id]) %></h1>
+  <% @slide.each do |slide| %>
+
+
+      <h1 style="visibility: hidden;"> <%= @tbl_layers=TblLayer.where(LayerID: slide.LayerID) %>
+      </h1>
+
+
+      <% @tbl_layers.each do |tbl_layer| %>
+      <tr>
+        <td><%= tbl_layer.LayerID %></td>
+        <td><%= tbl_layer.Class %></td>
+        <td><%= tbl_layer.Type %></td>
+        <td><%= tbl_layer.Content %></td>
+
+        <td><%= link_to 'View', tbl_layer %></td>
+        <td><%= link_to 'Edit', edit_tbl_layer_path(tbl_layer) %></td>
+        <td><%= link_to 'Delete', tbl_layer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+
+      <%end%>
+  </tbody>
+</table>
+</div>
+<div  style="position: relative;
+        bottom: 92px;
+        right: -224px;">
+<%= link_to 'Back', tbl_slides_path, :class => "btn-submit" %>
+</div>

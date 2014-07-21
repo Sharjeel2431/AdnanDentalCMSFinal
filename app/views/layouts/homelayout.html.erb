@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AdnanDentalCMS</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+
+
+<header id="header" class="container-fluid main">
+  <div class="header-bg">
+    <div class="container">
+      <div class="decoration dec-left visible-desktop"></div>
+      <div class="decoration dec-right visible-desktop"></div>
+      <div class="row">
+        <div id="logo" class="span3">
+          <a href="/" class="" alt="Adnan Dental"><img src="/assets/logo.png"></a>
+        </div>
+        <div class="span9">
+          <!-- Social Icons -->
+          <ul class="social-icons">
+            <li class="facebook"><a href="#">Facebook</a></li>
+            <li class="twitter"><a href="#">Twitter</a></li>
+            <li class="linkedin"><a href="#">LinkedIn</a></li>
+            <li class="googleplus"><a href="#">GooglePlus</a></li>
+            <li class="youtube"><a href="#">youtube</a></li>
+            <li class="rss"><a href="#">Rss</a></li>
+          </ul>
+          <!-- Contact Details -->
+          <div class="contact-details visible-desktop">
+            <ul>
+              <li>Call us: <a href="#" class="tel">051-2290923</a></li>
+              <li>09-Hill View Plaza,Sawan Road,G-9 Markaz Islamabad</li>
+            </ul>
+          </div>
+          <!-- Search Form -->
+          <div class="search-form">
+
+            <input name="ctl00$txtsearch" type="text" id="ctl00_txtsearch" class="search-text-box">
+            <input type="image" name="ctl00$ImageButton1" id="ctl00_ImageButton1" src="/assets/04.png" style="border-width:0px;">
+
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="span12">
+          <div class="select-menu hidden-desktop">
+            <select id="selectMenu">
+              <option selected="" value="index.html">Home</option>
+              <option value="Home_Page_2.html">- Home page Version 2</option>
+              <option value="Home_Page_3.html">- Home page Version 3</option>
+              <option value="Home_Page_4.html">- Home page Version 4</option>
+              <option value="About_us.html">About_us</option>
+              <option value="Services.html">Services</option>
+              <option value="Column_1.html">Our doctors</option>
+              <option value="Column_1.html">- 1 column</option>
+              <option value="Column_2.html">- 2 column</option>
+              <option value="Column_3.html">- 3 column</option>
+              <option value="Column_4.html">- 4 column</option>
+              <option value="Column_full.html">- Full Description</option>
+              <option value="Pages_Page_Right_Sidebar.html">Pages</option>
+              <option value="Pages_Page_Right_Sidebar.html">- Page Right Sidebar</option>
+              <option value="Pages_Page_Left_Sidebar.html">- Page Left Sidebar</option>
+              <option value="Pages_Full_Width.html">- Full Width</option>
+              <option value="Pages_Navigation_Template.html">- Navigation Template</option>
+              <option value="Pages_Ask_a_Question.html">- Ask a Question</option>
+              <option value="Pages_Contact.html">- Contact</option>
+              <option value="Pages_Sitemap.html">- Sitemap</option>
+              <option value="Pages_Under_Construction.html">- Under Construction</option>
+              <option value="Pages_404.html">- 404 Page</option>
+              <option value="Blog_Large_Image.html">Health blog</option>
+              <option value="Blog_Large_Image.html">- Blog Large Image</option>
+              <option value="Blog_Small_Image.html">- Blog Small Image</option>
+              <option value="Blog_Single_Post.html">- Single Post</option>
+              <option value="Shortcode_Elements_1.html">- Shortcode</option>
+              <option value="Shortcode_Elements_1.html">- Elements 1</option>
+              <option value="Shortcode_Elements_2.html">- Elements 2</option>
+              <option value="Shortcode_Elements_3.html">- Elements 3</option>
+              <option value="Shortcode_Elements_4.html">- Elements 4</option>
+              <option value="Pages_Contact.html">Contact us</option>
+            </select>
+          </div>
+
+
+
+
+
+          <ul class="clearfix" id="menu">
+
+
+            <% @categories.each do |index| %>
+                <h1 style="display: none;"><%= @categoryInfo=TblCategory.where(CategoryTitle: index.CategoryTitle)
+                    %></h1>
+                <% @categoryInfo.each do |index|%>
+                    <h1 style="display: none;"> <%= @categoryID=index.CategoryID
+                        @pageContent=TblPageCategory.where(CategoryID: @categoryID)
+
+
+                    %></h1>
+
+                    <% @pageContent.each do |index| %>
+                        <h1 style="display: none;"> <%= @pageID=index.PageID
+                        @pageinfo=TblPage.where(PageID: @pageID)
+                    %></h1>
+                        <% @pageinfo.each do |index| %>
+                            <h1 style="display: none;">  <%= @pageURL=index.PageURL %></h1>
+                       <%end%>
+                    <%end%>
+                    <%end%>
+
+
+                <li class="active"><a href="/<%= @pageURL %>"> <%= index.CategoryTitle %>    </a></li>
+            <% end%>
+
+
+
+
+          </ul>
+
+
+
+        </div>
+      </div>
+
+      <div id="maincontent">
+
+
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdnkeyword" id="ctl00_ContentPlaceHolder1_hdnkeyword">
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdndesc" id="ctl00_ContentPlaceHolder1_hdndesc">
+
+        <script type="text/javascript">
+            //<![CDATA[
+            Sys.WebForms.PageRequestManager._initialize('ctl00$ContentPlaceHolder1$smSubmit', document.getElementById('aspnetForm'));
+            Sys.WebForms.PageRequestManager.getInstance()._updateControls([], [], [], 90);
+            //]]>
+        </script>
+
+
+     <!---SLIDER HERE--->
+
+
+
+      </div>
+    </div>
+  </div></header>
+
+
+
+
+<%= yield %>
+
+
+
+<footer id="footer" class="container-fluid" >
+  <div class="container">
+    <section class="row">
+      <article class="span3">
+
+        <div class="link">
+          Website: <a href="http://yoursitename.com">http://yoursitename.com</a><br>
+          Email: <a href="mailto:info@yoursitename.com<">info@yoursitename.com</a>
+        </div>
+        <ul class="social-icons">
+          <li class="facebook"><a href="#">Facebook</a></li>
+          <li class="twitter"><a href="#">Twitter</a></li>
+          <li class="linkedin"><a href="#">LinkedIn</a></li>
+          <li class="googleplus"><a href="#">GooglePlus</a></li>
+          <li class="youtube"><a href="#">youtube</a></li>
+          <li class="rss"><a href="#">Rss</a></li>
+        </ul>
+      </article>
+
+    </section>
+    <div class="back-top up"><a href="#top"></a></div>
+  </div>
+  <footer class="footer-line container-fluid">
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span8 alignleft">Medex - medical, doctor and health care theme | <a href="http://themeforest.net/user/Russian-Themes">RussianTheme</a></div>
+        <div class="span4 alignright hidden-phone"><a href="index.html">Home</a> | <a href="Pages_Contact.html">Contact</a> | <a href="Blog_Large_Image.html">Blog</a> | <a href="#top" class="top up">Top</a></div>
+      </div>
+    </div>
+  </footer>
+</footer>
+
+</body>
+</html>

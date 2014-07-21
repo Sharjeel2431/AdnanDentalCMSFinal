@@ -1,0 +1,63 @@
+<h1 class="index1">PicSettings Management</h1>
+<div class="index3">
+  <%= link_to 'Add New Pic Setting', new_tbl_pic_setting_path , :class => "btn_submit"%>
+</div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#picsettings").css("background-color", "red");
+
+    });
+</script>
+<table class="index2">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Title</th>
+      <th>Height</th>
+      <th>Width</th>
+      <th>Type</th>
+      <th>Mode</th>
+      <th>Constraints</th>
+      <th>Status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tbl_pic_settings.each do |tbl_pic_setting| %>
+      <tr>
+        <td><%= tbl_pic_setting.PicSettingID %></td>
+        <td><%= tbl_pic_setting.Title %></td>
+        <td><%= tbl_pic_setting.Height %></td>
+        <td><%= tbl_pic_setting.Width %></td>
+        <td><%= tbl_pic_setting.Type %></td>
+        <td><%= tbl_pic_setting.Mode %></td>
+        <td><%= tbl_pic_setting.Constraints %></td>
+        <td><%= tbl_pic_setting.Status %></td>
+        <td id="viewitem"><%= link_to 'View', tbl_pic_setting %></td>
+        <td id="edititem"><%= link_to 'Edit', edit_tbl_pic_setting_path(tbl_pic_setting) %></td>
+        <td id="deleteitem"><%= link_to 'Delete', tbl_pic_setting, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->

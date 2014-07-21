@@ -1,0 +1,11 @@
+<h1 class="new1">Add New PageContent</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pagecontent").css("background-color", "red");
+
+    });
+</script>
+<%= render 'form' %>
+<div class="new2">
+<%= link_to 'Back', tbl_page_contents_path , :class => "btn_submit"%>
+</div>

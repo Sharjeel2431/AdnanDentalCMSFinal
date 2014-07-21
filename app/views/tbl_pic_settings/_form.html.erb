@@ -1,0 +1,47 @@
+<div class="external">
+<%= form_for(@tbl_pic_setting) do |f| %>
+  <% if @tbl_pic_setting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_pic_setting.errors.count, "error") %> prohibited this tbl_pic_setting from being saved:</h2>
+
+      <ul>
+      <% @tbl_pic_setting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Title %><br>
+    <%= f.text_field :Title %>
+  </div>
+  <div class="field">
+    <%= f.label :Height %><br>
+    <%= f.text_field :Height %>
+  </div>
+  <div class="field">
+    <%= f.label :Width %><br>
+    <%= f.text_field :Width %>
+  </div>
+  <div class="field">
+    <%= f.label :Type %><br>
+    <%= f.text_field :Type %>
+  </div>
+  <div class="field">
+    <%= f.label :Mode %><br>
+    <%= f.text_field :Mode %>
+  </div>
+  <div class="field">
+    <%= f.label :Constraints %><br>
+    <%= f.text_field :Constraints %>
+  </div>
+  <div class="field">
+    <%= f.label :Status %><br>
+    <%= f.check_box :Status %>
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit", :class => "btn_submit"%>
+  </div>
+<% end %>
+</div>

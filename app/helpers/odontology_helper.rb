@@ -1,0 +1,2 @@
+module OdontologyHelper
+end

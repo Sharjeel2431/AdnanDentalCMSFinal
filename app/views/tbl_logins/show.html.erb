@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Username:</strong>
+  <%= @tbl_login.UserName %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @tbl_login.Password %>
+</p>
+
+<%= link_to 'Edit', edit_tbl_login_path(@tbl_login) %> |
+<%= link_to 'Back', tbl_logins_path %>

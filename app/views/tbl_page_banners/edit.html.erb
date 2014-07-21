@@ -1,0 +1,12 @@
+<h1 class="edit1">Editing Page Banner</h1>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pagebanner").css("background-color", "red");
+
+    });
+</script>
+<%= render 'form' %>
+<div class="edit2">
+<%= link_to 'View', @tbl_page_banner , :class => "btn_submit"%> |
+<%= link_to 'Back', tbl_page_banners_path, :class => "btn_submit" %>
+</div>

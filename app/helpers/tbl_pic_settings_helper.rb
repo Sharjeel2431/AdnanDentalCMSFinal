@@ -1,0 +1,2 @@
+module TblPicSettingsHelper
+end

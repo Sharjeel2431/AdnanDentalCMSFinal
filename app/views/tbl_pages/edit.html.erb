@@ -1,0 +1,157 @@
+<h1 class="edit1">Editing PageInformation</h1>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#pagemang").css("background-color", "red");
+
+    });
+</script>
+
+<!--<style type="text/css">
+    #viewitem  a {
+        position: relative;
+        right: -5px;
+
+    }
+    #edititem  a {
+        position: relative;
+        right: -15px;
+
+    }
+    #deleteitem  a {
+        position: relative;
+        right: -26px;
+
+    }
+</style>-->
+
+
+
+<%= render 'form1' %>
+
+<div class="edit2">
+  <%= link_to 'View', @tbl_page , :class => "btn_submit"%>
+</div>
+
+<div style="position: relative;
+        bottom: 203px;
+        right: -224px;">
+<h1>Add Content to the Page</h1>
+
+  <div style="position: relative;
+          bottom: -6px;">
+    <a href="/tbl_contents/new/<%= params[:id] %>" style="text-decoration: none;" class="btn_submit">Add New Content</a>
+  </div>
+
+  <table style="position: relative;
+        bottom: 22px;">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Value</th>
+    <th>Type</th>
+    <th>Status</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+
+<h1 style="visibility: hidden;"><%= @content=TblPageContent.where(PageID: params[:id]) %></h1>
+  <% @content.each do |content| %>
+
+
+      <h1 style="visibility: hidden;"> <%= @content_tbls=TblContent.where(ContentID: content.ContentID) %>
+      </h1>
+
+      <% @content_tbls.each do |content_tbl| %>
+          <tr>
+            <td><%= content_tbl.ContentID %></td>
+            <td><%= content_tbl.ContentName %></td>
+            <td><%= content_tbl.ContentValue %></td>
+            <td><%= content_tbl.ContentType %></td>
+            <td><%= content_tbl.ContentStatus %></td>
+            <td id="viewitem"><%= link_to 'View', content_tbl %></td>
+            <td id="edititem">  <a href="/tbl_contents/<%= content_tbl.ContentID %>/edit/<%= content_tbl.ContentID %>" >Edit</a></td>
+            <td id="deleteitem"><%= link_to 'Delete', content_tbl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+          </tr>
+      <% end %>
+
+  <%end%>
+
+  </tbody>
+
+
+</table>
+
+
+  <script language="javascript" type="text/javascript">
+      <!--
+      function popitup(url) {
+          newwindow=window.open(url,'name','height=1200,width=1150');
+          if (window.focus) {newwindow.focus()}
+          return false;
+      }
+
+      // -->
+  </script>
+
+
+<h1 style="position: relative;
+        bottom: -48px;">Add Banner to the Page</h1><br>
+  <div style="position: relative;
+          bottom: -36px;">
+    <a href="/tbl_banners/new/<%= params[:id] %>" style="text-decoration: none;" class="btn_submit">Add New Banner</a>
+
+  </div>
+<table style="position: relative;
+        bottom: -16px;">
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>Title</th>
+    <th>PlaceHolder</th>
+    <th>Type</th>
+    <th>Status</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+
+<h1 style="visibility: hidden;"><%=    @banner=TblPageBanner.where(PageID: params[:id]) %></h1>
+  <% @banner.each do |content| %>
+
+
+      <h1 style="visibility: hidden;"> <%= @banner_tbls=TblBanner.where(BannerID: content.BannerID) %>
+      </h1>
+
+      <% @banner_tbls.each do |banner_tbl| %>
+          <tr>
+            <td><%= banner_tbl.BannerID %></td>
+            <td><%= banner_tbl.Title %></td>
+            <td><%= banner_tbl.PlaceHolder %></td>
+
+            <td><%= banner_tbl.Type %></td>
+            <td><%= banner_tbl.Status %></td>
+            <td id="viewitem"><%= link_to 'View',banner_tbl %></td>
+            <td><a href="/tbl_banners/<%= banner_tbl.BannerID %>/edit/<%= banner_tbl.BannerID %>" onclick="return popitup('/tbl_banners/<%= banner_tbl.BannerID %>/edit/<%= banner_tbl.BannerID %>')">Manage</a></td>
+            <td id="deleteitem"><%= link_to 'Delete', banner_tbl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+      <% end %>
+
+  <%end%>
+
+  </tbody>
+
+
+</table>
+
+</div>
+<div  style="position: relative;
+        bottom: 92px;
+        right: -224px;">
+<%= link_to 'Back', tbl_pages_path , :class => "btn_submit"%>
+</div>
