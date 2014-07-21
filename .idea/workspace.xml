@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="19" selection-start="241" selection-end="241" vertical-scroll-proportion="0.45637584" vertical-offset="0" max-vertical-offset="816">
+            <state line="8" column="19" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -50,10 +50,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
+            <state line="16" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.62637365" vertical-offset="101" max-vertical-offset="374">
               <folding />
             </state>
           </provider>
@@ -121,6 +121,7 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -565,13 +566,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.3100304" vertical-offset="0" max-vertical-offset="329">
@@ -623,7 +617,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="241" selection-end="241" vertical-scroll-proportion="0.45637584" vertical-offset="0" max-vertical-offset="816">
+        <state line="8" column="19" selection-start="241" selection-end="241" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="816">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.62637365" vertical-offset="101" max-vertical-offset="374">
           <folding />
         </state>
       </provider>
