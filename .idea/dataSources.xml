@@ -6,7 +6,7 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql:d6h4kad8pdg0vd</jdbc-url>
       <user-name>adnan_dental_db</user-name>
-      <user-password>dfc7dff8dfcbdfd9dffedfc1dfd9dfcedfeedf93dfe0dfe4df9ddff9dfe2df9adfc4dfc3dfe0dfdcdf9ddf87dfcddfc7df93df99</user-password>
+      <user-password>df9bdf98df99</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails AdnanDentalCMS: test" uuid="720b98e6-c4cf-487c-a0c2-a76f6e3ae796">
