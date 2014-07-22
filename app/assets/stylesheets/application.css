@@ -1,0 +1,186 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+thead th
+{
+
+    background: #c3d9ff;
+}
+#asd
+{
+    position: relative;
+    bottom: 17px;
+    right: -23px;
+}
+#as
+{
+    background-color: #368ccc;
+    width: 153px;
+    border-radius: 18px;
+    position: relative;
+    right: 27px;
+    bottom: 13px;
+}
+input[type="text"]
+             {
+                 border: 1px solid;
+                 border-color: #368ccc;
+                 height: 24px;
+                 position: relative;
+                 bottom: 19px;
+             }
+input[type="number"]{
+    border: 1px solid;
+    border-color: #368ccc;
+    height: 24px;
+    position: relative;
+    bottom: 19px;
+
+}
+input[type="password"]{
+    border: 1px solid;
+    border-color: #368ccc;
+    height: 24px;
+    position: relative;
+    bottom: 19px;
+
+}
+textarea{
+    border: 1px solid;
+    border-color: #368ccc;
+    height: 24px;
+    position: relative;
+    bottom: 19px;
+    height: 250px;
+    width: 900px;
+}
+body
+{
+    /*overflow-y: scroll;
+    overflow-x: hidden;*/
+}
+table tr td{
+    border:1px solid black;
+    text-align:center;
+}
+.btn_submit{
+
+    border: 2px solid red;
+    border-radius: 6px;
+    text-transform: uppercase;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+label
+{
+    text-transform: uppercase;
+}
+.ortho
+{
+    position: relative;
+    bottom: 84px;
+    right: 330px;
+}
+.ortho2
+{
+    width:1046px;
+}
+select{
+    border: 1px solid;
+    border-color: #368ccc;
+    height: 24px;
+    width: 153px;
+    position: relative;
+    bottom: 17px;
+}
+.external
+{
+    position: relative;
+    bottom: 277px;
+    right: -226px;
+}
+.index1
+{
+    position: relative;
+    bottom: 288px;
+    right: -206px;
+}
+
+th {
+    text-transform: uppercase;
+}
+.index_2
+{
+    position: relative;
+    bottom: 256px;
+    right: -207px;
+}
+.index2
+{
+    position: relative;
+    bottom: 256px;
+    right: -207px;
+    width: 1000px;
+}
+.index3
+{
+    position: relative;
+    bottom: 281px;
+    right: -206px;
+}
+.new1
+{
+    position: relative;
+    bottom: 300px;
+    right: -227px;
+}
+.new2
+{
+    position: relative;
+    right: -225px;
+    bottom: 265px;
+}
+.edit1
+{
+    position: relative;
+    bottom: 300px;
+    right: -227px;
+}
+.edit2
+{
+    position: relative;
+    right: -225px;
+    bottom: 265px;
+}
+.show1
+{
+    position: relative;
+    bottom: 288px;
+    right: -206px;
+}
+
+.show2
+{
+    position: relative;
+    bottom: 277px;
+    right: -226px;
+}
+.show3
+{
+    position: relative;
+    right: -225px;
+    bottom: 265px;
+}
