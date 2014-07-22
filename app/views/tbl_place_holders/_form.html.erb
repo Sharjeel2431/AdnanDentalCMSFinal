@@ -19,8 +19,8 @@
   </div>
       <div class="field">
         <%= f.label :PlaceHolderType %><br>
-
-        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql('SELECT "Type","PlaceHolderID" FROM tbl_place_holders GROUP by "Type" order by "PlaceHolderID"; '), :PlaceHolderID, :Type , {:selected => TblPlaceHolder.where(Type: @placeTitle).map(&:PlaceHolderID)} )%>
+                                                                                                                                               <!-- GROUP by "Type"-->
+        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql('SELECT "Type","PlaceHolderID" FROM tbl_place_holders order by "PlaceHolderID"; '), :PlaceHolderID, :Type , {:selected => TblPlaceHolder.where(Type: @placeTitle).map(&:PlaceHolderID)} )%>
       </div>
       <script type="text/javascript">
 
