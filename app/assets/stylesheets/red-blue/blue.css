@@ -3,7 +3,7 @@ a{color:#368ccc}
 .logo{background:url(images/logo.png) no-repeat}   
 #header{background:url(images/02.png) repeat-x top #fff}
 #header.main{background:url(images/01.png) repeat-x top #fff}
-#header .header-bg{background:url(images/06.jpg) no-repeat center top}
+#header .header-bg{background:url(/assets/06.jpg) no-repeat center top}
 #header.main .dec-left{background:url(images/07.jpg) no-repeat bottom right}
 #header.main .dec-right{background:url(images/08.jpg) no-repeat bottom right}
 	/* Social Contact */	
