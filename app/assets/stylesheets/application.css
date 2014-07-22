@@ -13,9 +13,7 @@
  *= require_tree .
  *= require_self
  */
-#header .header-bg {
-    background: url(/assets/06.jpg) no-repeat center top;
-}
+
 thead th
 {
 
