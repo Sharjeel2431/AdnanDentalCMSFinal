@@ -29,9 +29,10 @@ thead th
 {
     background-color: #368ccc;
     width: 153px;
-    border-radius: 18px;
+    border-radius: 25px;
     position: relative;
-    right: 27px;
+    right: 7px;
+    height: 34px;
     bottom: 13px;
 }
 input[type="text"]
