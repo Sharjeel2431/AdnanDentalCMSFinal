@@ -19,7 +19,7 @@
       <div class="field">
         <%= f.label :PlaceHolder %><br>
 
-        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql("select PlaceHolderTitle,PlaceHolderID from tbl_place_holders where PlaceHolderID IN (select PlaceHolderID from tbl_layout_placeholders where LayoutID=(select LayoutID from tbl_pages where PageID=#{params[:id]}));"), :PlaceHolderID, :PlaceHolderTitle , {:selected => TblPlaceHolder.where(PlaceHolderTitle: @placeTitle).map(&:PlaceHolderID)} )%>
+        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql('select "PlaceHolderTitle","PlaceHolderID" from tbl_place_holders where "PlaceHolderID" IN (select "PlaceHolderID" from tbl_layout_placeholders where "LayoutID"=(select "LayoutID" from tbl_pages where "PageID"='+"#{params[:id]}));"), :PlaceHolderID, :PlaceHolderTitle , {:selected => TblPlaceHolder.where(PlaceHolderTitle: @placeTitle).map(&:PlaceHolderID)} )%>
       </div>
       <script type="text/javascript">
 

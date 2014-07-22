@@ -16,7 +16,7 @@ class TblLayoutsController < ApplicationController
   # GET /tbl_layouts/new
   def new
     @tbl_layout = TblLayout.new
-    @type=TblLayout.find_by_sql("select DISTINCT Type from tbl_layouts;")
+    @type=TblLayout.find_by_sql('select DISTINCT "Type" from tbl_layouts;')
   end
 
   # GET /tbl_layouts/1/edit

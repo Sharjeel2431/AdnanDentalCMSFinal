@@ -23,7 +23,7 @@
   </div>
   <div class="field">
     <%= f.label :Type %><br>
-    <%= collection_select(:TblLayout, :Type, TblLayout.find_by_sql("select Distinct Type from tbl_layouts;"), :Type, :Type , {prompt: @layoutType, :selected => @type_layout} )%>
+    <%= collection_select(:TblLayout, :Type, TblLayout.find_by_sql('select Distinct "Type" from tbl_layouts;'), :Type, :Type , {prompt: @layoutType, :selected => @type_layout} )%>
     <script type="text/javascript">
 
         $('#TblLayout_Type').on('change', function() {

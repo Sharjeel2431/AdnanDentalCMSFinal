@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140718103004) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "cms", force: true do |t|
     t.string   "username"
     t.string   "password"

@@ -33,7 +33,7 @@
       </div>
       <div class="field">
         <%= f.label :PlaceHolder %><br>
-        <%= collection_select(:TblBanner, :BannerID, TblBanner.find_by_sql("SELECT PlaceHolder from tbl_banners where BannerID=#{params[:id]};"), :BannerID, :PlaceHolder , {:selected => TblBanner.where(PlaceHolder: @placeTitle).map(&:BannerID)} )%>
+        <%= collection_select(:TblBanner, :BannerID, TblBanner.find_by_sql('SELECT "PlaceHolder" from tbl_banners where "BannerID"='+"#{params[:id]};"), :BannerID, :PlaceHolder , {:selected => TblBanner.where(PlaceHolder: @placeTitle).map(&:BannerID)} )%>
       </div>
       <script type="text/javascript">
 
@@ -94,7 +94,7 @@
         </thead>
 
         <tbody>
-        <% @tbl_slides=TblSlide.find_by_sql("SELECT * from tbl_slides where BannerID=#{params[:id]};")
+        <% @tbl_slides=TblSlide.find_by_sql('SELECT * from tbl_slides where "BannerID"='+"#{params[:id]};")
            @tbl_slides.each do |tbl_slide| %>
             <tr>
               <td><%= tbl_slide.SlideID %></td>
