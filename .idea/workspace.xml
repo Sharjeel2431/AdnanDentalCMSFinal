@@ -26,7 +26,7 @@
       <file leaf-file-name="tbl_pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="54" selection-start="5655" selection-end="5655" vertical-scroll-proportion="0.4888179" vertical-offset="2907" max-vertical-offset="6137">
+            <state line="207" column="0" selection-start="6280" selection-end="6280" vertical-scroll-proportion="0.65625" vertical-offset="3330" max-vertical-offset="6188">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="tbl_contents_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="202" column="34" selection-start="5080" selection-end="5080" vertical-scroll-proportion="0.0" vertical-offset="3196" max-vertical-offset="3927">
+            <state line="222" column="55" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.0" vertical-offset="3614" max-vertical-offset="3927">
               <folding />
             </state>
           </provider>
@@ -81,8 +81,8 @@
         <option value="$PROJECT_DIR$/app/views/tbl_slides/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/tbl_slide.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slides/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb" />
       </list>
     </option>
@@ -411,7 +411,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -733,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="202" column="34" selection-start="5080" selection-end="5080" vertical-scroll-proportion="0.0" vertical-offset="3196" max-vertical-offset="3927">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="163" column="31" selection-start="4741" selection-end="4742" vertical-scroll-proportion="0.0" vertical-offset="2237" max-vertical-offset="3315">
@@ -747,9 +740,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="222" column="55" selection-start="5735" selection-end="5735" vertical-scroll-proportion="0.0" vertical-offset="3614" max-vertical-offset="3927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="54" selection-start="5655" selection-end="5655" vertical-scroll-proportion="0.4888179" vertical-offset="2907" max-vertical-offset="6137">
+        <state line="207" column="0" selection-start="6280" selection-end="6280" vertical-scroll-proportion="0.65625" vertical-offset="3330" max-vertical-offset="6188">
           <folding />
         </state>
       </provider>

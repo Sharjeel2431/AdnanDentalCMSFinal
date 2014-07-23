@@ -34,6 +34,7 @@ class TblPagesController < ApplicationController
       end
 
     if session[:new_page]==1
+
       @querylast=  TblPage.last()
 
 
@@ -203,6 +204,8 @@ class TblPagesController < ApplicationController
     session[:oneditpage]=1
     session[:pageidonedit]=params[:id]
     session[:fromeditpage]=1
+    session[:new_page]=0
+
 
     @pageinfo=TblPage.find_by_PageID(params[:id])
     @LastLayout=@pageinfo.LayoutID

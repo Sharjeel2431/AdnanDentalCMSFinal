@@ -145,8 +145,8 @@ end
           @querylastcontent=TblContent.last
           @Contentid=@querylastcontent.ContentID
 
-          querycontentaddpage="INSERT INTO tbl_page_contents (PageID,ContentID) values (#{session[:forupdate]},#{@Contentid});"
-          querycontentadd="INSERT INTO tbl_place_holder_contents (PlaceHolderID,ContentID) values(#{params[:placehold_hid]},#{@Contentid});"
+          querycontentaddpage='INSERT INTO tbl_page_contents ("PageID","ContentID") values ('+"#{session[:forupdate]}"+','+"#{@Contentid});"
+          querycontentadd='INSERT INTO tbl_place_holder_contents ("PlaceHolderID","ContentID") values('+"#{params[:placehold_hid]}"+','+"#{@Contentid});"
 
           ActiveRecord::Base.connection.execute(querycontentaddpage);
           ActiveRecord::Base.connection.execute(querycontentadd);
