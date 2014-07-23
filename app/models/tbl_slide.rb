@@ -1,4 +1,4 @@
 class TblSlide < ActiveRecord::Base
- has_attached_file :avatar
- do_not_validate_attachment_file_type :avatar
+  has_attached_file :avatar, styles: { small: "64x64", medium: "100x100", large: "200x200" }
+
 end

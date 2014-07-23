@@ -39,7 +39,7 @@ class TblSlidesController < ApplicationController
   # POST /tbl_slides.json
   def create
     @tbl_slide = TblSlide.new(tbl_slide_params)
-
+    @tbl_slide = TblSlide.create(tbl_slide_params)
     respond_to do |format|
       if @tbl_slide.save
 
@@ -52,7 +52,7 @@ class TblSlidesController < ApplicationController
           @querylast=TblSlide.last()
           @last=@querylast.SlideID
 
-          query="UPDATE tbl_slides SET BannerID=#{session[:bannerID]} Where SlideID=#{@last};"
+          query='UPDATE tbl_slides SET "BannerID"='+"#{session[:bannerID]}" +'Where "SlideID"='+"#{@last}"+';'
           ActiveRecord::Base.connection.execute(query);
 
           #########################################################################################
@@ -72,7 +72,7 @@ class TblSlidesController < ApplicationController
           @SlideTrans=@info.TransitionName
 
 
-          quer="UPDATE tbl_slides SET SlideTransition='#{@SlideTrans}' Where SlideID=#{@lastID};"
+          quer='UPDATE tbl_slides SET "SlideTransition"='+"'"+"#{@SlideTrans}"+"'"+' Where "SlideID"='+"#{@lastID}"+';'
           ActiveRecord::Base.connection.execute(quer);
 
           #############################################################################################################
@@ -93,7 +93,7 @@ if session[:contentlayerslider] == 1
 
 
 
-  quernil="UPDATE tbl_contents SET ContentValue='#{contentlayerslider}' WHERE PlaceHolder='#{@placeholder}';"
+  quernil='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentlayerslider}"+"'"+' WHERE "PlaceHolder"='+"'"+"#{@placeholder}"+"'"+';'
   ActiveRecord::Base.connection.execute(quernil);
 
 else
@@ -117,7 +117,8 @@ else
 
     contentnew=@contentinfor.ContentValue+slides+'</div>'
 
-    dasd="UPDATE tbl_contents SET ContentValue='#{contentnew}' where PlaceHolder='#{@placeh}';"
+    dasd='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentnew}"+"'"+'where "PlaceHolder"='+"'"+"#{@placeh}"+"'"+';'
+
 
 
     ActiveRecord::Base.connection.execute(dasd);
@@ -166,7 +167,7 @@ end
         @transinfo=Transition.find_by_TransitionID(params[:slidetrans_hid])
         @transname=@transinfo.TransitionName
 
-        querup="UPDATE tbl_slides SET SlideTransition='#{@transname}' Where SlideID=#{params[:id]}"
+        querup='UPDATE tbl_slides SET "SlideTransition"='+"'"+"#{@transname}"+"'"+' Where "SlideID"='+"#{params[:id]}"+';'
         ActiveRecord::Base.connection.execute(querup);
 
         end
@@ -184,7 +185,7 @@ end
     @tbl_slide.destroy
 
     if session[:fromeditpage] == 1
-      qu="DELETE FROM tbl_slide_layers WHERE SlideID=#{params[:id]};"
+      qu='DELETE FROM tbl_slide_layers WHERE "SlideID"='+"#{params[:id]}"+';'
       ActiveRecord::Base.connection.execute(qu);
     end
     respond_to do |format|
@@ -201,7 +202,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tbl_slide_params
-      params.require(:tbl_slide).permit(:SlideID, :SlideClass, :SlideDelay, :Transition, :BackgroundImage, :SlideTransition, :BannerID,:avatar_file_name,:avatar_content_type,:avatar_file_size,:avatar_updated_at,:avatar)
+      params.require(:tbl_slide).permit(:SlideID, :SlideClass, :SlideDelay, :Transition, :BackgroundImage, :SlideTransition, :BannerID,:avatar)
     end
 
 end
