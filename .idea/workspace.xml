@@ -32,10 +32,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tbl_contents_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tbl_contents_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="190" column="61" selection-start="4516" selection-end="4516" vertical-scroll-proportion="0.4345048" vertical-offset="3094" max-vertical-offset="3927">
+            <state line="202" column="34" selection-start="5080" selection-end="5080" vertical-scroll-proportion="0.0" vertical-offset="3196" max-vertical-offset="3927">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tbl_banners_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="165" column="0" selection-start="4872" selection-end="4872" vertical-scroll-proportion="-0.629393" vertical-offset="3002" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -74,6 +83,7 @@
         <option value="$PROJECT_DIR$/app/views/tbl_slides/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb" />
       </list>
     </option>
   </component>
@@ -443,11 +453,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config.ru">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="466" selection-end="466" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="374" />
@@ -737,7 +742,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="190" column="61" selection-start="4516" selection-end="4516" vertical-scroll-proportion="0.4345048" vertical-offset="3094" max-vertical-offset="3927">
+        <state line="202" column="34" selection-start="5080" selection-end="5080" vertical-scroll-proportion="0.0" vertical-offset="3196" max-vertical-offset="3927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="165" column="0" selection-start="4872" selection-end="4872" vertical-scroll-proportion="-0.629393" vertical-offset="3002" max-vertical-offset="3315">
           <folding />
         </state>
       </provider>

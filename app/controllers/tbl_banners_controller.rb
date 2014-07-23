@@ -105,7 +105,7 @@ class TblBannersController < ApplicationController
             params[:picsetting_hid]=@picsettingID
           end
 
-          query="UPDATE tbl_banners SET PicSettingID=#{params[:picsetting_hid]} Where BannerID=#{params[:id]};"
+          query='UPDATE tbl_banners SET "PicSettingID"='+"#{params[:picsetting_hid]}"+' Where "BannerID"='+"#{params[:id]};"
           ActiveRecord::Base.connection.execute(query);
 
       ###########################################################################################################################
@@ -117,7 +117,7 @@ class TblBannersController < ApplicationController
               params[:banner_hid]=@placeholder
             end
 
-          quer="UPDATE tbl_banners SET PlaceHolder='#{params[:banner_hid]}' Where BannerID=#{params[:id]};"
+          quer='UPDATE tbl_banners SET "PlaceHolder"='+"'"+"#{params[:banner_hid]}"+"'"+' Where "BannerID"='+"#{params[:id]};"
           ActiveRecord::Base.connection.execute(quer);
 
       ###########################################################################################################################
@@ -129,7 +129,7 @@ class TblBannersController < ApplicationController
             params[:type_hid]=@placeholder
           end
 
-          quers="UPDATE tbl_banners SET Type='#{params[:type_hid]}' Where BannerID=#{params[:id]};"
+          quers='UPDATE tbl_banners SET "Type"='+"'"+"#{params[:type_hid]}"+"'"+' Where "BannerID"='+"#{params[:id]};"
           ActiveRecord::Base.connection.execute(quers);
 
       ###########################################################################################################################
@@ -155,14 +155,14 @@ class TblBannersController < ApplicationController
 
    if params[:id] != nil
         if  session[:bannerdeletionedit] == 1
-       query = "DELETE FROM tbl_page_banners where PageID =#{session[:pageid]} and BannerID =#{params[:id]};"
+       query = 'DELETE FROM tbl_page_banners where "PageID" ='+"#{session[:pageid]}"+' and "BannerID" ='+"#{params[:id]};"
 
         ActiveRecord::Base.connection.execute(query);
        end
    end
 
    if session[:bannerdeletionedit] == 0
-     query = "DELETE FROM tbl_page_banners where PageID =#{session[:pageid]} and BannerID =#{params[:id]};"
+     query = 'DELETE FROM tbl_page_banners where "PageID" ='+"#{session[:pageid]}"+' and "BannerID" ='+"#{params[:id]};"
 
      ActiveRecord::Base.connection.execute(query);
 
