@@ -40,7 +40,7 @@ class TblPagesController < ApplicationController
       @page_last=@querylast.PageID
        #@datetime=Time.now.strftime("%d/%m/%Y%H:%M") +" UTC"
 
-        query1='UPDATE tbl_pages SET LayoutID='+"#{session[:hidden_layout]}"+'where "PageID"='+"#{@page_last}"+';'
+        query1='UPDATE tbl_pages SET "LayoutID"='+"#{session[:hidden_layout]}"+'where "PageID"='+"#{@page_last}"+';'
        # query2="UPDATE tbl_pages SET DateTime=#{@datetime} where PageID=#{@page_last}"
 
         ActiveRecord::Base.connection.execute(query1);
@@ -74,16 +74,16 @@ class TblPagesController < ApplicationController
 
              #   @PlaceHolderinfo=TblPlaceHolder.find_by_Type(index.Type)
 
-              bannerquery="INSERT INTO tbl_banners (Title,PlaceHolder,Description,ToolTip,RedirectLink,Type,Status) values
-                         ('Default Primary','#{index.PlaceHolderTitle}','None','None','None','Rotating','true');"
+              bannerquery='INSERT INTO tbl_banners ("Title","PlaceHolder","Description","ToolTip","RedirectLink","Type","Status") values
+                         ('+"'"+"Default Primary"+"'"+","+"'"+"#{index.PlaceHolderTitle}"+"'"+","+"'"+"None"+"'"+","+"'"+"None"+"'"+","+"'"+"None"+"'"+","+"'"+"Rotating"+"'"+","+"'"+"true"+"'"+");"
 
               ActiveRecord::Base.connection.execute(bannerquery);
 
               @bannerin=TblBanner.where(PlaceHolder: index.PlaceHolderTitle)
 
               @bannerin.each do |index|
-                qq="INSERT INTO tbl_page_Banners (BannerID,PageID) values
-                  (#{index.BannerID},#{@querylast.PageID});"
+                qq='INSERT INTO tbl_page_Banners ("BannerID","PageID") values
+                  ('+"#{index.BannerID}"+","+"#{@querylast.PageID});"
 
                 ActiveRecord::Base.connection.execute(qq);
 
@@ -100,8 +100,8 @@ class TblPagesController < ApplicationController
               contentval='<br/><h1>Please Add Your Content!</h1>'
             end
 
-          querycon="INSERT INTO tbl_contents (ContentName,PlaceHolder,ContentValue,ContentType,ContentStatus) values
-                ('Default','#{@placeHolderTitle}','#{contentval}','pages','true');"
+          querycon='INSERT INTO tbl_contents ("ContentName","PlaceHolder","ContentValue","ContentType","ContentStatus") values
+                ('+'Default'+","+"'"+"#{@placeHolderTitle}"+"'"+","+"'"+"#{contentval}"+"'"+","+"'pages'"+","+"'true'"+");"
 
           ActiveRecord::Base.connection.execute(querycon);
 
@@ -111,7 +111,7 @@ class TblPagesController < ApplicationController
 
           @content.each do |index|
 
-            queryconn1='INSERT INTO tbl_place_holder_contents ('+ "PlaceHolderID" +','+"ContentID" +') values
+            queryconn1='INSERT INTO tbl_place_holder_contents ("PlaceHolderID" ,"ContentID" ) values
                   ('+"#{@placeholdID}"+','+"#{index.ContentID});"
 
             ActiveRecord::Base.connection.execute(queryconn1);
@@ -124,7 +124,7 @@ class TblPagesController < ApplicationController
 
              @ContentID=index.ContentID
 
-             queryfornewpagecon="Insert into tbl_page_contents (PageID,ContentID) values (#{@querylast.PageID},#{@ContentID});"
+             queryfornewpagecon='Insert into tbl_page_contents ("PageID","ContentID") values ('+"#{@querylast.PageID}"+","+"#{@ContentID});"
              ActiveRecord::Base.connection.execute(queryfornewpagecon);
 
 
@@ -177,7 +177,7 @@ class TblPagesController < ApplicationController
         #@content=TblContent.find_by_ContentID(1)
         #@contentName=@content.ContentName
 
-        query3="UPDATE tbl_pages SET PageURL='#{@OnStateTag}"+"/"+"#{@pagetitle}"+"/"+"#{@page_last}'  where PageID=#{@page_last};"
+        query3='UPDATE tbl_pages SET "PageURL"='+"'"+"#{@OnStateTag}"+'/'+"#{@pagetitle}"+'/'+"#{@page_last}"+"'"+ 'where "PageID"='+"#{@page_last};"
         ActiveRecord::Base.connection.execute(query3);
     end
   end
@@ -258,7 +258,7 @@ class TblPagesController < ApplicationController
         @page_last=@querylast.PageID
 
         if params[:id]==nil
-          query="INSERT INTO tbl_page_categories (PageID,CategoryID) values (#{@page_last},#{params[:cat_hid]});"
+          query='INSERT INTO tbl_page_categories ("PageID","CategoryID") values ('+"#{@page_last}"+','+"#{params[:cat_hid]});"
 
           ActiveRecord::Base.connection.execute(query);
         end
@@ -289,14 +289,14 @@ class TblPagesController < ApplicationController
 
           end
 
-        query="UPDATE tbl_page_categories SET CategoryID=#{params[:cat_hid]} where PageID = #{session[:forupdate]};"
+        query='UPDATE tbl_page_categories SET "CategoryID"='+"#{params[:cat_hid]}"+' where "PageID" ='+"#{session[:forupdate]};"
 
           if params[:layout_hid] == ""
             @info=TblPage.find_by_PageID(session[:forupdate])
             params[:layout_hid]=@info.LayoutID
           end
 
-        query1="UPDATE tbl_pages SET LayoutID=#{params[:layout_hid]} where PageID = #{session[:forupdate]};"
+        query1='UPDATE tbl_pages SET "LayoutID"='+"#{params[:layout_hid]}"+' where "PageID" ='+"#{session[:forupdate]};"
 
           ActiveRecord::Base.connection.execute(query);
 

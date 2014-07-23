@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tbl_pages_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tbl_pages_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="333" column="0" selection-start="9409" selection-end="9409" vertical-scroll-proportion="0.0" vertical-offset="5484" max-vertical-offset="6137">
+            <state line="180" column="54" selection-start="5655" selection-end="5655" vertical-scroll-proportion="0.4888179" vertical-offset="2907" max-vertical-offset="6137">
               <folding />
             </state>
           </provider>
@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tbl_banners_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tbl_banners_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="165" column="0" selection-start="4872" selection-end="4872" vertical-scroll-proportion="-0.629393" vertical-offset="3002" max-vertical-offset="3315">
+            <state line="163" column="31" selection-start="4741" selection-end="4742" vertical-scroll-proportion="0.0" vertical-offset="2237" max-vertical-offset="3315">
               <folding />
             </state>
           </provider>
@@ -81,9 +81,9 @@
         <option value="$PROJECT_DIR$/app/views/tbl_slides/show.html.erb" />
         <option value="$PROJECT_DIR$/app/models/tbl_slide.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slides/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb" />
       </list>
     </option>
   </component>
@@ -733,13 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="333" column="0" selection-start="9409" selection-end="9409" vertical-scroll-proportion="0.0" vertical-offset="5484" max-vertical-offset="6137">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="202" column="34" selection-start="5080" selection-end="5080" vertical-scroll-proportion="0.0" vertical-offset="3196" max-vertical-offset="3927">
@@ -749,7 +742,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="165" column="0" selection-start="4872" selection-end="4872" vertical-scroll-proportion="-0.629393" vertical-offset="3002" max-vertical-offset="3315">
+        <state line="163" column="31" selection-start="4741" selection-end="4742" vertical-scroll-proportion="0.0" vertical-offset="2237" max-vertical-offset="3315">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="54" selection-start="5655" selection-end="5655" vertical-scroll-proportion="0.4888179" vertical-offset="2907" max-vertical-offset="6137">
           <folding />
         </state>
       </provider>
