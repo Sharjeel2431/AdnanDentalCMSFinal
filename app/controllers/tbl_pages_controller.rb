@@ -25,7 +25,8 @@ class TblPagesController < ApplicationController
         @OnStateTag=@layoutinfo.OnStateTag
 
         if session[:last_layout] != @layoutID
-          query12="Update tbl_pages SET PageURL='#{@OnStateTag}"+"/"+"#{@pagetitle}"+"/"+"#{params[:id]}' where PageID=#{params[:id]};"
+          query12='Update tbl_pages SET "PageURL"='+"'"+"#{@OnStateTag}"+"/"+"#{@pagetitle}"+"/"+"#{params[:id]}"+"'"+' where "PageID"='+"#{params[:id]}"+';'
+
 
           ActiveRecord::Base.connection.execute(query12);
         end
@@ -39,7 +40,7 @@ class TblPagesController < ApplicationController
       @page_last=@querylast.PageID
        #@datetime=Time.now.strftime("%d/%m/%Y%H:%M") +" UTC"
 
-        query1="UPDATE tbl_pages SET LayoutID=#{session[:hidden_layout]} where PageID=#{@page_last};"
+        query1='UPDATE tbl_pages SET LayoutID='+"#{session[:hidden_layout]}"+'where "PageID"='+"#{@page_last}"+';'
        # query2="UPDATE tbl_pages SET DateTime=#{@datetime} where PageID=#{@page_last}"
 
         ActiveRecord::Base.connection.execute(query1);
@@ -110,8 +111,8 @@ class TblPagesController < ApplicationController
 
           @content.each do |index|
 
-            queryconn1="INSERT INTO tbl_place_holder_contents (PlaceHolderID,ContentID) values
-                  (#{@placeholdID},#{index.ContentID});"
+            queryconn1='INSERT INTO tbl_place_holder_contents ('+ "PlaceHolderID" +','+"ContentID" +') values
+                  ('+"#{@placeholdID}"+','+"#{index.ContentID});"
 
             ActiveRecord::Base.connection.execute(queryconn1);
 
@@ -322,9 +323,9 @@ class TblPagesController < ApplicationController
 
     if session[:pageindex]==1
 
-      query="DELETE FROM tbl_page_contents WHERE PageID=#{params[:id]};"
-      query1="DELETE FROM tbl_page_banners WHERE PageID=#{params[:id]};"
-      query2="DELETE FROM tbl_page_categories WHERE PageID=#{params[:id]};"
+      query='DELETE FROM tbl_page_contents WHERE "PageID"='+"#{params[:id]};"
+      query1='DELETE FROM tbl_page_banners WHERE "PageID"='+"#{params[:id]};"
+      query2='DELETE FROM tbl_page_categories WHERE "PageID"='+"#{params[:id]};"
       ActiveRecord::Base.connection.execute(query);
       ActiveRecord::Base.connection.execute(query1);
       ActiveRecord::Base.connection.execute(query2);
