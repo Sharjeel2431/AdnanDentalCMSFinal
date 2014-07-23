@@ -101,7 +101,7 @@
               <td><%= tbl_slide.SlideClass %></td>
               <td><%= tbl_slide.SlideDelay %></td>
               <td><%= tbl_slide.Transition %></td>
-              <td><%= tbl_slide.BackgroundImage %></td>
+              <td>  <%= image_tag tbl_slide.avatar.url(:medium) %></td>
               <td><%= tbl_slide.SlideTransition %></td>
               <td><%= tbl_slide.BannerID %></td>
               <td><%= link_to 'View', tbl_slide %></td>

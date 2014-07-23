@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="185" column="0" selection-start="5578" selection-end="5578" vertical-scroll-proportion="0.68601584" vertical-offset="2885" max-vertical-offset="3638">
+            <state line="185" column="0" selection-start="5578" selection-end="5578" vertical-scroll-proportion="0.0" vertical-offset="2885" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="tbl_slide.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/tbl_slide.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+            <state line="3" column="3" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,16 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/tbl_slides/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="4" selection-start="475" selection-end="475" vertical-scroll-proportion="-11.769231" vertical-offset="204" max-vertical-offset="867">
+            <state line="28" column="0" selection-start="420" selection-end="469" vertical-scroll-proportion="-8.5" vertical-offset="255" max-vertical-offset="867">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form1.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/tbl_banners/_form1.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="50" selection-start="3507" selection-end="3507" vertical-scroll-proportion="0.5261324" vertical-offset="1532" max-vertical-offset="2023">
               <folding />
             </state>
           </provider>
@@ -84,7 +93,6 @@
         <option value="$PROJECT_DIR$/config/application.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/app/views/tbl_contents/_addcontentonedit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/tbl_banners/_form1.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tbl_layouts/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_layouts_controller.rb" />
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
@@ -95,9 +103,10 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/tbl_slides/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slides/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/tbl_slide.rb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/tbl_slide.rb" />
+        <option value="$PROJECT_DIR$/app/views/tbl_banners/_form1.html.erb" />
       </list>
     </option>
   </component>
@@ -222,6 +231,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tbl_slides" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMSFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tbl_banners" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,11 +434,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31587562" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.42389524" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -569,11 +600,6 @@
         <state line="21" column="251" selection-start="907" selection-end="907" vertical-scroll-proportion="-4.730769" vertical-offset="234" max-vertical-offset="969" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tbl_banners/_form1.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="45" selection-start="3181" selection-end="3181" vertical-scroll-proportion="0.42735043" vertical-offset="1431" max-vertical-offset="2023" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tbl_layouts/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="27" selection-start="27" selection-end="285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385" />
@@ -712,20 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/tbl_slides/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="4" selection-start="475" selection-end="475" vertical-scroll-proportion="-11.769231" vertical-offset="204" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tbl_slide.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="8" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0" vertical-offset="10" max-vertical-offset="816">
@@ -735,7 +747,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="185" column="0" selection-start="5578" selection-end="5578" vertical-scroll-proportion="0.68601584" vertical-offset="2885" max-vertical-offset="3638">
+        <state line="185" column="0" selection-start="5578" selection-end="5578" vertical-scroll-proportion="0.0" vertical-offset="2885" max-vertical-offset="3638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tbl_slide.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="3" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tbl_slides/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="420" selection-end="469" vertical-scroll-proportion="-8.5" vertical-offset="255" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/tbl_banners/_form1.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="50" selection-start="3507" selection-end="3507" vertical-scroll-proportion="0.5261324" vertical-offset="1532" max-vertical-offset="2023">
           <folding />
         </state>
       </provider>
