@@ -53,6 +53,7 @@ Rails.application.routes.draw do
   resources :tbl_layouts
 
   resources :tbl_logins
+  get 'slider/index'
   get 'tbl_layers/new/:id' => 'tbl_layers#new', as: :layersnew
   get 'tbl_slides/:id/edit/:id' => 'tbl_slides#edit', as: :slidesedit
   get 'tbl_slides/new/:id' => 'tbl_slides#new', as: :slide
