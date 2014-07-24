@@ -85,13 +85,12 @@ class TblSlidesController < ApplicationController
           @infobanner=TblBanner.find_by_BannerID(session[:bannerID])
           @placeholder=@infobanner.PlaceHolder
 
-          contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="ls-slide"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
-          contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="ls-slide"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
-          slides='<div class="ls-slide"></div>'
+          contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
+          contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
+          slides='<div class="'+@querylastID.SlideClass+'"></div>'
 
 
       if session[:contentlayerslider] == 1
-
 
 
         quernil='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentlayerslider}"+"'"+' WHERE "PlaceHolder"='+"'"+"#{@placeholder}"+"'"+';'

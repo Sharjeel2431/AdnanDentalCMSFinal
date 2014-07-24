@@ -41,10 +41,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Home.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Home.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/Home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.1153846" vertical-offset="90" max-vertical-offset="442">
+            <state line="14" column="38" selection-start="377" selection-end="377" vertical-scroll-proportion="0.42045453" vertical-offset="90" max-vertical-offset="442">
               <folding />
             </state>
           </provider>
@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="0" selection-start="2932" selection-end="2932" vertical-scroll-proportion="0.44383562" vertical-offset="1368" max-vertical-offset="3655">
+            <state line="91" column="0" selection-start="2990" selection-end="2990" vertical-scroll-proportion="0.0" vertical-offset="1409" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
@@ -114,8 +114,8 @@
         <option value="$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_contents/_editcontent.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/Home.html.erb" />
       </list>
     </option>
@@ -285,6 +285,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tbl_banners" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMSFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,13 +765,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="31" selection-start="4798" selection-end="4798" vertical-scroll-proportion="0.26495728" vertical-offset="2185" max-vertical-offset="3536">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="17" selection-start="789" selection-end="789" vertical-scroll-proportion="0.23835616" vertical-offset="338" max-vertical-offset="3281">
@@ -875,13 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/Home.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="178" selection-end="178" vertical-scroll-proportion="-1.1153846" vertical-offset="90" max-vertical-offset="442">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="218" column="7" selection-start="5562" selection-end="5562" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="3927">
@@ -891,7 +899,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="2932" selection-end="2932" vertical-scroll-proportion="0.44383562" vertical-offset="1368" max-vertical-offset="3655">
+        <state line="91" column="0" selection-start="2990" selection-end="2990" vertical-scroll-proportion="0.0" vertical-offset="1409" max-vertical-offset="3638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="145" column="10" selection-start="5027" selection-end="5027" vertical-scroll-proportion="4.2123895" vertical-offset="918" max-vertical-offset="3536">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/Home.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="38" selection-start="377" selection-end="377" vertical-scroll-proportion="0.42045453" vertical-offset="90" max-vertical-offset="442">
           <folding />
         </state>
       </provider>
