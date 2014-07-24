@@ -85,9 +85,9 @@ class TblSlidesController < ApplicationController
           @infobanner=TblBanner.find_by_BannerID(session[:bannerID])
           @placeholder=@infobanner.PlaceHolder
 
-          contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
-          contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
-          slides='<div class="'+@querylastID.SlideClass+'"></div>'
+          contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition3d: all;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
+          contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition3d: all;"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
+          slides='<div class="'+@querylastID.SlideClass+'" data-ls="slidedelay:'+@querylastID.SlideDelay.to_s+'; transition3d: all;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
 
 
       if session[:contentlayerslider] == 1
