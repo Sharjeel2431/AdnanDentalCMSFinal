@@ -45,20 +45,37 @@ class TblLayersController < ApplicationController
         @layerid=@querylast.LayerID
         if session[:fromslides] == 1
 
-        query="INSERT INTO tbl_slide_layers (SlideID,LayerID) values (#{session[:slideid]},#{@layerid});"
+        query='INSERT INTO tbl_slide_layers ("SlideID","LayerID") values ('+"#{session[:slideid]}"+",#{@layerid});"
         ActiveRecord::Base.connection.execute(query);
 
         @type=@querylast.Type
           if @type == "Image"
-            content='<!-- Layer --> <br/> <img  class="'+@querylast.Class+'"/>'
-            quer="UPDATE tbl_layers SET Content='#{content}' Where LayerID=#{@layerid};"
+            content='<!-- Image Layer --> <br/> <img  class="'+@querylast.Class+'"/>'
+            quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
           end
           if @type == "Text"
-            content='<!-- Layer --> <br/> <h1 class="'+@querylast.Class+'"></h1>'
-            quer="UPDATE tbl_layers SET Content='#{content}' Where LayerID=#{@layerid};"
+            content='<!-- Text Layer --> <br/> <h1 class="'+@querylast.Class+'">Here is the text layer</h1>'
+            quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
           end
+
+        ######################### added to add layer content to the banner content #####################################
+        @infobann=TblBanner.find_by_BannerID(session[:bannerID])
+        @placeh=@infobann.PlaceHolder
+        @placeinfo=TblPlaceHolder.find_by_PlaceHolderTitle(@placeh)
+        @placeholID=@placeinfo.PlaceHolderID
+        @placcontentInfor=TblPlaceHolderContent.find_by_PlaceHolderID(@placeholID)
+        @Contentid=@placcontentInfor.ContentID
+        @contentinfor=TblContent.find_by_ContentID(@Contentid)
+
+        @layerinfo=TblLayer.find_by_LayerID(@layerid)
+
+
+          @contentnew="'"+@contentinfor.ContentValue+@layerinfo.Content+"'"
+          querlayer='UPDATE tbl_contents SET "ContentValue"='+"#{@contentnew}"+'WHERE "ContentID" ='+"#{@Contentid}"+';'
+         ActiveRecord::Base.connection.execute(querlayer);
+        ################################################################################################################
         end
 
         format.json { render :show, status: :created, location: @tbl_layer }

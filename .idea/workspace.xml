@@ -23,37 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="tbl_contents_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="205" column="7" selection-start="5211" selection-end="5211" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="3927">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slider_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/slider_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="69" selection-end="69" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="3791">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slider.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="slider.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/slider.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="33" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.59327215" vertical-offset="860" max-vertical-offset="1530">
+            <state line="60" column="35" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-8.137255" vertical-offset="605" max-vertical-offset="1530">
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -61,33 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="18" selection-start="3569" selection-end="3569" vertical-scroll-proportion="0.0" vertical-offset="1403" max-vertical-offset="3859">
+            <state line="108" column="0" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.43801653" vertical-offset="1677" max-vertical-offset="3876">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="tbl_layers_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/tbl_layers_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="11" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-11.730769" vertical-offset="18" max-vertical-offset="3723">
-              <folding>
-                <element signature="tag#script#4;tag#head#0;tag#html#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lay.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/lay.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="11" selection-start="1260" selection-end="1260" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="2873">
-              <folding>
-                <element signature="tag#script#4;tag#head#0;tag#html#0" expanded="false" />
-              </folding>
+            <state line="75" column="76" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="2193">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -104,7 +64,7 @@
       <file leaf-file-name="lay_services.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/lay_services.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="11" selection-start="1260" selection-end="1260" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="4029">
+            <state line="8" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="4029">
               <folding>
                 <element signature="tag#script#4;tag#head#0;tag#html#0" expanded="false" />
               </folding>
@@ -115,9 +75,8 @@
       <file leaf-file-name="homelayout.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/homelayout.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="259" selection-end="1261" vertical-scroll-proportion="-3.2692308" vertical-offset="51" max-vertical-offset="2210">
+            <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2533">
               <folding>
-                <element signature="tag#script#4;tag#head#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#input#1;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="tag#div#3;tag#div#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
                 <element signature="n#style#0;n#h1#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -125,6 +84,33 @@
                 <element signature="n#style#0;n#h1#2;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h1#3;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="100" column="32" selection-start="0" selection-end="10531" vertical-scroll-proportion="0.0" vertical-offset="1565" max-vertical-offset="3893">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="23" selection-start="0" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="3281">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layerslider.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/layerslider.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="400" column="0" selection-start="5595" selection-end="5595" vertical-scroll-proportion="0.0" vertical-offset="6541" max-vertical-offset="15164">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,12 +154,14 @@
         <option value="$PROJECT_DIR$/app/views/slider/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/slider_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/slider.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/homelayout.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/lay.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/lay_cms.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/lay_services.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/layerslider.css" />
+        <option value="$PROJECT_DIR$/app/views/layouts/homelayout.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/tbl_layers_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
       </list>
     </option>
   </component>
@@ -226,6 +214,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="AdnanDentalCMSFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMSFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AdnanDentalCMSFinal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -498,6 +518,22 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
+      <module name="" />
+      <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RUBY_RUN_CONFIG NAME="WORK DIR" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RUBY_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
+      <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
@@ -566,7 +602,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30441898" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30541873" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -604,28 +640,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/tbl_layouts/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="30" selection-start="1384" selection-end="1384" vertical-scroll-proportion="-6.0384617" vertical-offset="642" max-vertical-offset="1020" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_layouts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="33" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1921">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="389" selection-end="389" vertical-scroll-proportion="0.46575344" vertical-offset="0" max-vertical-offset="374" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/about_us.js.coffee">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="392" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="41" selection-start="162" selection-end="162" vertical-scroll-proportion="0.13010204" vertical-offset="0" max-vertical-offset="392" />
@@ -649,13 +663,6 @@
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/home.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="371" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="15" selection-start="4196" selection-end="4198" vertical-scroll-proportion="0.33333334" vertical-offset="1565" max-vertical-offset="3893">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/switcher.js">
@@ -773,34 +780,16 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/layerslider.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="187" column="1" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.17989418" vertical-offset="3111" max-vertical-offset="15164">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tbl_contents/_editcontent.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="37" selection-start="781" selection-end="781" vertical-scroll-proportion="11.807693" vertical-offset="664" max-vertical-offset="1003">
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="135" column="0" selection-start="3866" selection-end="3866" vertical-scroll-proportion="0.0" vertical-offset="2932" max-vertical-offset="3315">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="17" selection-start="789" selection-end="789" vertical-scroll-proportion="0.23015873" vertical-offset="338" max-vertical-offset="3281">
           <folding />
         </state>
       </provider>
@@ -850,10 +839,7 @@
     <entry file="file://$PROJECT_DIR$/app/views/home/Home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="31" selection-start="338" selection-end="338" vertical-scroll-proportion="0.62784094" vertical-offset="0" max-vertical-offset="442">
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#1;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -885,34 +871,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="18" selection-start="3569" selection-end="3569" vertical-scroll-proportion="0.0" vertical-offset="1403" max-vertical-offset="3859">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/homelayout.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="259" selection-end="1261" vertical-scroll-proportion="-3.2692308" vertical-offset="51" max-vertical-offset="2210">
-          <folding>
-            <element signature="tag#script#4;tag#head#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#input#1;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
-            <element signature="n#style#0;n#h1#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#1;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#2;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#3;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="11" selection-start="1264" selection-end="1264" vertical-scroll-proportion="-11.730769" vertical-offset="18" max-vertical-offset="3723">
-          <folding>
-            <element signature="tag#script#4;tag#head#0;tag#html#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -932,21 +894,131 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/slider.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="35" selection-start="1638" selection-end="1638" vertical-scroll-proportion="-8.137255" vertical-offset="605" max-vertical-offset="1530">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="23" selection-start="0" selection-end="3119" vertical-scroll-proportion="0.0" vertical-offset="338" max-vertical-offset="3281">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="32" selection-start="0" selection-end="10531" vertical-scroll-proportion="0.0" vertical-offset="1565" max-vertical-offset="3893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/layerslider.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="400" column="0" selection-start="5595" selection-end="5595" vertical-scroll-proportion="0.0" vertical-offset="6541" max-vertical-offset="15164">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/homelayout.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="6" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="2533">
+          <folding>
+            <element signature="n#style#0;n#input#1;n#div#1;n#div#1;n#div#2;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="tag#div#3;tag#div#0;tag#div#0;tag#header#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="n#style#0;n#h1#0;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#1;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#2;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#3;n#ul#0;n#div#0;n#div#3;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/lay_services.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="11" selection-start="1260" selection-end="1260" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="4029">
+        <state line="8" column="0" selection-start="331" selection-end="331" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="4029">
           <folding>
             <element signature="tag#script#4;tag#head#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/slider.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20140717085529_create_tbl_layers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="33" selection-start="1682" selection-end="1682" vertical-scroll-proportion="0.59327215" vertical-offset="860" max-vertical-offset="1530">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tbl_layer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="376">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://RailsDependency/#AdnanDentalCMS">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>RailsDependency</ID>
+          <OriginalElement>#AdnanDentalCMS</OriginalElement>
+          <nodes>
+            <node x="" y="">TblContent</node>
+            <node x="" y="">TblCategory</node>
+            <node x="" y="">TblPageBanner</node>
+            <node x="" y="">TblPlaceHolder</node>
+            <node x="" y="">TblSlide</node>
+            <node x="" y="">TblForm</node>
+            <node x="" y="">TblConfig</node>
+            <node x="" y="">TblCm</node>
+            <node x="" y="">TblFormField</node>
+            <node x="" y="">TblFormFieldHelper</node>
+            <node x="" y="">TblMedium</node>
+            <node x="" y="">PlaceHolderNew</node>
+            <node x="" y="">TblPage</node>
+            <node x="" y="">TblPicSetting</node>
+            <node x="" y="">TblBannerMedium</node>
+            <node x="" y="">TblLayer</node>
+            <node x="" y="">TblGlobal</node>
+            <node x="" y="">TblBanner</node>
+            <node x="" y="">TblPageCategory</node>
+            <node x="" y="">TblSlideLayer</node>
+            <node x="" y="">TblPlaceHolderContent</node>
+            <node x="" y="">TblLayout</node>
+            <node x="" y="">TblPageContent</node>
+            <node x="" y="">Cms</node>
+            <node x="" y="">TblLayoutPlaceholder</node>
+            <node x="" y="">Transition</node>
+            <node x="" y="">TblPageForm</node>
+            <node x="" y="">TblLogin</node>
+            <node x="" y="">TblBannerSlide</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.8280977312390924" x="566.0" y="521.8537234042553" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Association fields</Category>
+            <Category>Migration fields</Category>
+          </Categories>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_layers_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="76" selection-start="2461" selection-end="2461" vertical-scroll-proportion="0.0" vertical-offset="1035" max-vertical-offset="2193">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="108" column="0" selection-start="3617" selection-end="3617" vertical-scroll-proportion="0.43801653" vertical-offset="1677" max-vertical-offset="3876">
+          <folding />
         </state>
       </provider>
     </entry>

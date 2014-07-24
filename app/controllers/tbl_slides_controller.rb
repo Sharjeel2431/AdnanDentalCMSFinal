@@ -82,6 +82,7 @@ class TblSlidesController < ApplicationController
 
           ################################## Add Div of Layer Slider #################################################
 
+
           @infobanner=TblBanner.find_by_BannerID(session[:bannerID])
           @placeholder=@infobanner.PlaceHolder
 
