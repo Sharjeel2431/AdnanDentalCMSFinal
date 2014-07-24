@@ -18,8 +18,10 @@
       </div>
       <div class="field" style="display: none;">
         <%= f.label :PlaceHolder %><br>
-
-        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql('select "PlaceHolderTitle","PlaceHolderID" from tbl_place_holders where "PlaceHolderID" IN (select "PlaceHolderID" from tbl_layout_placeholders where "LayoutID"=(select "LayoutID" from tbl_pages where "PageID"='+"#{session[:forupdate]}));"), :PlaceHolderID, :PlaceHolderTitle , {:selected => TblPlaceHolder.where(PlaceHolderTitle: @placeTitle).map(&:PlaceHolderID)} )%>
+        <%= @pageinfo=TblPage.find_by_PageID(session[:forupdate])
+            @layID=@pageinfo.LayoutID
+        %>
+        <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql('select "PlaceHolderTitle","PlaceHolderID" from tbl_place_holders where "PlaceHolderID" IN (select "PlaceHolderID" from tbl_layout_placeholders where "LayoutID"='+@layID+");"), :PlaceHolderID, :PlaceHolderTitle , {:selected => TblPlaceHolder.where(PlaceHolderTitle: @placeTitle).map(&:PlaceHolderID)} )%>
       </div>
       <script type="text/javascript">
 
@@ -31,7 +33,7 @@
 
       </script>
       <input type="hidden" id="hidfield" name="placehold_hid"  />
-      <div class="field">
+        <div class="field">
         <%= f.label :ContentValue %><br>
         <%= f.text_area :ContentValue %>
       </div>

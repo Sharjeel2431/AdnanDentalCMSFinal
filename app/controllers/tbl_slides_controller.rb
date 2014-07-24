@@ -90,46 +90,46 @@ class TblSlidesController < ApplicationController
           slides='<div class="ls-slide"></div>'
 
 
-if session[:contentlayerslider] == 1
+      if session[:contentlayerslider] == 1
 
 
 
-  quernil='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentlayerslider}"+"'"+' WHERE "PlaceHolder"='+"'"+"#{@placeholder}"+"'"+';'
-  ActiveRecord::Base.connection.execute(quernil);
+        quernil='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentlayerslider}"+"'"+' WHERE "PlaceHolder"='+"'"+"#{@placeholder}"+"'"+';'
+        ActiveRecord::Base.connection.execute(quernil);
 
-else
+      else
 
-  #qunil="UPDATE tbl_contents SET ContentValue='#{contentlayerslid}' WHERE PlaceHolder='#{@placeholder}';"
-  #ActiveRecord::Base.connection.execute(qunil);
+        #qunil="UPDATE tbl_contents SET ContentValue='#{contentlayerslid}' WHERE PlaceHolder='#{@placeholder}';"
+        #ActiveRecord::Base.connection.execute(qunil);
 
-  @infobann=TblBanner.find_by_BannerID(session[:bannerID])
-  @placeh=@infobann.PlaceHolder
-  @placeinfo=TblPlaceHolder.find_by_PlaceHolderTitle(@placeh)
-  @placeholID=@placeinfo.PlaceHolderID
-  @placcontentInfor=TblPlaceHolderContent.find_by_PlaceHolderID(@placeholID)
-  @Contentid=@placcontentInfor.ContentID
-  @contentinfor=TblContent.find_by_ContentID(@Contentid)
-
-
-  @SlideInfo=TblSlide.where(BannerID: session[:bannerID])
-
-  @SlideInfo.each do |index|
+        @infobann=TblBanner.find_by_BannerID(session[:bannerID])
+        @placeh=@infobann.PlaceHolder
+        @placeinfo=TblPlaceHolder.find_by_PlaceHolderTitle(@placeh)
+        @placeholID=@placeinfo.PlaceHolderID
+        @placcontentInfor=TblPlaceHolderContent.find_by_PlaceHolderID(@placeholID)
+        @Contentid=@placcontentInfor.ContentID
+        @contentinfor=TblContent.find_by_ContentID(@Contentid)
 
 
-    contentnew=@contentinfor.ContentValue+slides+'</div>'
+        @SlideInfo=TblSlide.where(BannerID: session[:bannerID])
 
-    dasd='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentnew}"+"'"+'where "PlaceHolder"='+"'"+"#{@placeh}"+"'"+';'
-
-
-
-    ActiveRecord::Base.connection.execute(dasd);
+        @SlideInfo.each do |index|
 
 
-  end
+          contentnew=@contentinfor.ContentValue+slides+'</div>'
+
+          dasd='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentnew}"+"'"+'where "PlaceHolder"='+"'"+"#{@placeh}"+"'"+';'
 
 
 
-  #############################################################################################################
+          ActiveRecord::Base.connection.execute(dasd);
+
+
+        end
+
+
+
+        #############################################################################################################
 
 
 
