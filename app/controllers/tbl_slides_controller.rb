@@ -85,9 +85,22 @@ class TblSlidesController < ApplicationController
           @infobanner=TblBanner.find_by_BannerID(session[:bannerID])
           @placeholder=@infobanner.PlaceHolder
 
-          contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition3d: all;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
-          contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition3d: all;"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
-          slides='<div class="'+@querylastID.SlideClass+'" data-ls="slidedelay:'+@querylastID.SlideDelay.to_s+'; transition3d: all;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
+          contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
+          contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
+          slides='<div class="'+@querylastID.SlideClass+'" data-ls="slidedelay:'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" data-ls="
+					offsetxin: right;
+					offsetxout: 0;
+					offsetyin: 200;
+					offsetyout: bottom;
+					rotatein: 50;
+					rotateout: -20;
+					fadein: false;
+					fadeout: false;
+					easingin: easeoutquart;
+					easingout: easeinquart;
+					durationin: 2500;
+					delayin: 500;
+				"/></div>'
 
 
       if session[:contentlayerslider] == 1
