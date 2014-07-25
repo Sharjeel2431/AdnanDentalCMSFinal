@@ -5,7 +5,7 @@ class TblLayersController < ApplicationController
   # GET /tbl_layers.json
   def index
     @tbl_layers = TblLayer.all
-
+    session[:oneditslide]=0
   end
 
   # GET /tbl_layers/1
@@ -33,7 +33,9 @@ class TblLayersController < ApplicationController
   # POST /tbl_layers.json
   def create
     @tbl_layer = TblLayer.new(tbl_layer_params)
-
+    ################### Require For Paper Clip ##########################
+    @tbl_layer = TblLayer.create(tbl_layer_params)
+    #####################################################################
     respond_to do |format|
       if @tbl_layer.save
 
@@ -56,7 +58,7 @@ class TblLayersController < ApplicationController
 
 
           if params[:layertype_hid] == "Image"
-            content='<!-- Image Layer --> <br/> <img  class="'+@querylast.Class+'"/>'
+            content='<!-- Image Layer --> <br/> <img src="'+@tbl_layer.avatar.url(:small)+'" class="'+@querylast.Class+'"/>'
             quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
           end
@@ -111,6 +113,10 @@ class TblLayersController < ApplicationController
   # DELETE /tbl_layers/1.json
   def destroy
     @tbl_layer.destroy
+    if session[:oneditslide] == 1
+    quer='DELETE FROM tbl_slide_layers Where "LayerID"='+params[:id]+";"
+    ActiveRecord::Base.connection.execute(quer);
+    end
     respond_to do |format|
       format.html { redirect_to tbl_layers_url, notice: 'Tbl layer was successfully destroyed.' }
       format.json { head :no_content }
@@ -125,6 +131,6 @@ class TblLayersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tbl_layer_params
-      params.require(:tbl_layer).permit(:LayerID, :Class, :Type, :Content)
+      params.require(:tbl_layer).permit(:LayerID, :Class, :Type, :Content,:avatar)
     end
 end

@@ -33,13 +33,16 @@ class TblSlidesController < ApplicationController
   def edit
     @slideinfo=TblSlide.find_by_SlideID(params[:id])
     @Transname=@slideinfo.SlideTransition
+    session[:oneditslide]=1
   end
 
   # POST /tbl_slides
   # POST /tbl_slides.json
   def create
     @tbl_slide = TblSlide.new(tbl_slide_params)
+    ################### Require For Paper Clip ##########################
     @tbl_slide = TblSlide.create(tbl_slide_params)
+    #####################################################################
     respond_to do |format|
       if @tbl_slide.save
 

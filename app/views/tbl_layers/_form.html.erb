@@ -24,13 +24,31 @@
       <script type="text/javascript">
 
           $('#tbl_layer_Type').on('change', function() {
+
               var id=$(this).val()
               $("#hidfieldcat").val(id);
+               if ($(this).val() == "Image")
+               {
+              $("#image").css("display","block");
+
+               }
+              else
+               {
+                   $("#image").css("display","none");
+
+               }
           });
 
       </script>
 
       <input type="hidden" id="hidfieldcat" name="layertype_hid"  />
+
+
+      <div class="field" id="image" style="display: none;">
+        <%= f.label :Image %><br>
+        <%= f.file_field :avatar %>
+      </div>
+
   <div class="actions">
     <%= f.submit "Save" , :class => "btn_submit" %>
   </div>

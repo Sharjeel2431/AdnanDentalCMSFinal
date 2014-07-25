@@ -20,7 +20,15 @@
     <strong>Content:</strong>
     <%= @tbl_layer.Content %>
   </p>
+  <p>
+    <strong>Image:</strong>
+
+    <%= image_tag @tbl_layer.avatar.url(:small) %>
+
+  </p>
+
 </div>
+
 <div class="show3">
 <%= link_to 'Edit', edit_tbl_layer_path(@tbl_layer), :class => "btn_submit" %> |
 <%= link_to 'Back', tbl_layers_path, :class => "btn_submit" %>
