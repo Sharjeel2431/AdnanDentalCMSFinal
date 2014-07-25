@@ -19,8 +19,18 @@
   </div>
   <div class="field">
     <%= f.label :Type %><br>
-    <%= f.text_field :Type %>
+    <%= f.select :Type, [['Text','Text'],['Image','Image']] %>
   </div>
+      <script type="text/javascript">
+
+          $('#tbl_layer_Type').on('change', function() {
+              var id=$(this).val()
+              $("#hidfieldcat").val(id);
+          });
+
+      </script>
+
+      <input type="hidden" id="hidfieldcat" name="layertype_hid"  />
   <div class="actions">
     <%= f.submit "Save" , :class => "btn_submit" %>
   </div>

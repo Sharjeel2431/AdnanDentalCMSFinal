@@ -24,8 +24,19 @@
   <div class="field">
     <%= f.label :Transition %><br>
 
-    <%= f.text_field :Transition %>
+
+    <%= f.select :Transition, [['2d','2d'],['3d','3d']] %>
   </div>
+      <script type="text/javascript">
+
+          $('#tbl_slide_Transition').on('change', function() {
+              var id=$(this).val()
+              $("#hidfieldcat").val(id);
+          });
+
+      </script>
+
+      <input type="hidden" id="hidfieldcat" name="transition_hid"  />
   <div class="field">
     <%= f.label :BackgroundImage %><br>
 

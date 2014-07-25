@@ -88,7 +88,11 @@ class TblBannersController < ApplicationController
       end
     end
   end
+  def settings
+    if session[:fromeditpage] == 1
 
+    end
+  end
   # PATCH/PUT /tbl_banners/1
   # PATCH/PUT /tbl_banners/1.json
   def update

@@ -77,6 +77,13 @@ class TblSlidesController < ApplicationController
 
           #############################################################################################################
 
+          ################################# Transition Select from the DropDown #######################################
+            if params[:transition_hid] == ""
+                  params[:transition_hid]="2d"
+            end
+             qy='UPDATE tbl_slides SET "Transition"='+"'"+params[:transition_hid]+"'"+'Where "SlideID"='+"#{@lastID}"+';'
+             ActiveRecord::Base.connection.execute(qy);
+          #############################################################################################################
 
 
 

@@ -48,13 +48,20 @@ class TblLayersController < ApplicationController
         query='INSERT INTO tbl_slide_layers ("SlideID","LayerID") values ('+"#{session[:slideid]}"+",#{@layerid});"
         ActiveRecord::Base.connection.execute(query);
 
-        @type=@querylast.Type
-          if @type == "Image"
+       ######################## IF DROPDOWN IS NOT CHANGED THE  BY DEFAULT SELECT  TEXT LAYER ###########################
+          if params[:layertype_hid] == ""
+            params[:layertype_hid] ="Text"
+          end
+       ##################################################################################################################
+
+
+          if params[:layertype_hid] == "Image"
             content='<!-- Image Layer --> <br/> <img  class="'+@querylast.Class+'"/>'
             quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
           end
-          if @type == "Text"
+
+          if params[:layertype_hid] == "Text"
             content='<!-- Text Layer --> <br/> <h1 class="'+@querylast.Class+'">Here is the text layer</h1>'
             quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
