@@ -11,7 +11,7 @@
 
         <%=
             if params[:id] != 0
-              sanitize   @contentVal
+                 @contentVal.html_safe
             end
         %>
 
