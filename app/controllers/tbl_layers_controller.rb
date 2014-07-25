@@ -69,6 +69,23 @@ class TblLayersController < ApplicationController
             ActiveRecord::Base.connection.execute(quer);
           end
 
+          if params[:layertype_hid] == "LinkImage"
+            content='<!-- Link Image Layer --> <br/>
+                      <a href="http://'+@querylast.Path+'" class="'+@querylast.Class+'" data-ls="offsetxin: -100; fadein: false; rotatein: 90;">
+                          <img src="'+@tbl_layer.linkimage.url(:small)+'" alt="layer image">
+                      </a>'
+            quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
+            ActiveRecord::Base.connection.execute(quer);
+          end
+        if params[:layertype_hid] == "Video/Audio"
+          content='<!-- Video/Audio Layer --><div class="ls-l" data-ls="offsetxin: 0; offsetyin: 0;">
+          <iframe width="560" height="315" src="'+@tbl_layer.video.url+'" frameborder="0" allowfullscreen></iframe>
+         </div>'
+          quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
+          ActiveRecord::Base.connection.execute(quer);
+
+        end
+
         ######################### added to add layer content to the banner content #####################################
         @infobann=TblBanner.find_by_BannerID(session[:bannerID])
         @placeh=@infobann.PlaceHolder
@@ -131,6 +148,6 @@ class TblLayersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tbl_layer_params
-      params.require(:tbl_layer).permit(:LayerID, :Class, :Type, :Content,:avatar)
+      params.require(:tbl_layer).permit(:LayerID, :Class, :Type, :Content,:avatar,:video,:Path,:linkimage)
     end
 end

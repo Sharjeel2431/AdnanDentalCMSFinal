@@ -19,7 +19,7 @@
   </div>
   <div class="field">
     <%= f.label :Type %><br>
-    <%= f.select :Type, [['Text','Text'],['Image','Image']] %>
+    <%= f.select :Type, [['Text','Text'],['Image','Image'],['LinkImage','LinkImage'],['Video/Audio','Video/Audio']] %>
   </div>
       <script type="text/javascript">
 
@@ -29,14 +29,37 @@
               $("#hidfieldcat").val(id);
                if ($(this).val() == "Image")
                {
-              $("#image").css("display","block");
+                   $("#image").css("display","block");
+                   $("#linklayerimage").css("display","none");
+                   $("#linklayerimage1").css("display","none");
+                   $("#videolayer").css("display","none");
+
 
                }
-              else
+              else if($(this).val() == "LinkImage")
+               {
+                   $("#linklayerimage").css("display","block");
+                   $("#linklayerimage1").css("display","block");
+                   $("#image").css("display","none");
+                   $("#videolayer").css("display","none");
+               }
+               else if ($(this).val() == "Video/Audio")
+               {
+                   $("#videolayer").css("display","block");
+                   $("#image").css("display","none");
+                   $("#linklayerimage").css("display","none");
+                   $("#linklayerimage1").css("display","none");
+               }
+               else
                {
                    $("#image").css("display","none");
+                   $("#linklayerimage").css("display","none");
+                   $("#linklayerimage1").css("display","none");
+                   $("#videolayer").css("display","none");
 
                }
+
+
           });
 
       </script>
@@ -48,8 +71,21 @@
         <%= f.label :Image %><br>
         <%= f.file_field :avatar %>
       </div>
+      <div class="field" id="linklayerimage" style="display: none;">
+        <%= f.label :Path %><br>
+        <%= f.text_field :Path %>
+        </div>
+      <div class="field" id="linklayerimage1" style="display: none;">
+        <%= f.label :Image %><br>
+        <%= f.file_field :linkimage %>
+      </div>
 
-  <div class="actions">
+      <div class="field" id="videolayer" style="display: none;">
+        <%= f.label :Video %><br>
+        <%= f.file_field :video %>
+      </div>
+
+      <div class="actions">
     <%= f.submit "Save" , :class => "btn_submit" %>
   </div>
 <% end %>
