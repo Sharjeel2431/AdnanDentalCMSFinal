@@ -31,6 +31,21 @@ class TblSlideSettingsController < ApplicationController
 
       if @tbl_slide_setting.save
 
+        if params[:fadein_hid] == ""
+
+          params[:fadein_hid]="true"
+        end
+
+        if params[:fadeout_hid] == ""
+          params[:fadeout_hid]="true"
+        end
+
+        @slidesettinfo=TblSlideSetting.last()
+
+        quer='UPDATE tbl_slide_settings SET "fadein"='+"'"+"#{params[:fadein_hid]}"+"'"+' WHERE "SlideSettingID"='+"#{@slidesettinfo.SlideSettingID}"+';'
+        quer_second='UPDATE tbl_slide_settings SET "fadeout"='+"'"+"#{params[:fadeout_hid]}"+"'"+' WHERE "SlideSettingID"='+"#{@slidesettinfo.SlideSettingID}"+';'
+        ActiveRecord::Base.connection.execute(quer);
+        ActiveRecord::Base.connection.execute(quer_second);
         format.html { redirect_to @tbl_slide_setting}
         format.json { render :show, status: :created, location: @tbl_slide_setting }
       else
@@ -72,6 +87,6 @@ class TblSlideSettingsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tbl_slide_setting_params
-      params.require(:tbl_slide_setting).permit(:SlideSettingID,:Setting,:offsetxin, :offsetxout, :offsetyin, :offsetyout, :rotatein, :rotateout, :fadein, :fadeout, :easingin, :easingout, :durationin, :delayin, :transition2d, :transition3d)
+      params.require(:tbl_slide_setting).permit(:SlideSettingID,:Setting,:offsetxin, :offsetxout, :offsetyin, :offsetyout, :rotatein, :rotateout, :fadein, :fadeout,:showuntil,:rotatexin,:rotatexout,:rotateyin,:rotateyout,:scalexin,:scalexout,:scaleyin,:scaleyout,:skewxin,:skewxout,:skewyin,:skewyout,:transformoriginin,:transformoriginout, :easingin, :easingout, :durationin,:durationout, :delayin, :transition2d, :transition3d)
     end
 end

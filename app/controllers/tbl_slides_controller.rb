@@ -134,21 +134,21 @@ class TblSlidesController < ApplicationController
 					easingout: '+@slidesetinfo.easingout+';
 					durationin: '+@slidesetinfo.durationin+';
 					delayin: '+@slidesetinfo.delayin+';
-          showuntil: 0;
-          rotatexin: 0;
-          rotatexout: 0;
-          rotateyin: 0;
-          rotateyout: 0;
-          scalexin: 1;
-          scalexout: 1;
-          scaleyin: 1;
-          scaleyout: 1;
-          skewxin: 0;
-          skewxout: 0;
-          skewyin: 0;
-          skewyout: 0;
-          transformoriginin: 50% 50% 0;
-          transformoriginout: 50% 50% 0;
+          showuntil:'+@slidesetinfo.showuntil.to_s+';
+          rotatexin: '+@slidesetinfo.rotatexin.to_s+';
+          rotatexout: '+@slidesetinfo.rotatexout.to_s+';
+          rotateyin: '+@slidesetinfo.rotateyin.to_s+';
+          rotateyout: '+@slidesetinfo.rotateyout.to_s+';
+          scalexin: '+@slidesetinfo.scalexin.to_s+';
+          scalexout: '+@slidesetinfo.scalexout.to_s+';
+          scaleyin: '+@slidesetinfo.scaleyin.to_s+';
+          scaleyout: '+@slidesetinfo.scaleyout.to_s+';
+          skewxin: '+@slidesetinfo.skewxin.to_s+';
+          skewxout: '+@slidesetinfo.skewxout.to_s+';
+          skewyin: '+@slidesetinfo.skewyin.to_s+';
+          skewyout: '+@slidesetinfo.skewyout.to_s+';
+          transformoriginin: '+@slidesetinfo.transformoriginin+';
+          transformoriginout: '+@slidesetinfo.transformoriginout+';
 				"/></div>'
 
 

@@ -11,42 +11,89 @@
       </ul>
     </div>
   <% end %>
+      <style type="text/css">
+        .partition4
+        {
+            position: relative;
+            bottom: 1904px;
+            right: -786px;
+        }
+              .partition3
+              {
+                  position: relative;
+                  bottom: 1423px;
+                  right: -610px;
+              }
+              .partition2
+              {
+                  position: relative;
+                  bottom: 943px;
+                  right: -417px;
+              }
+              .partition
+              {
+                  position: relative;
+                  bottom: 480px;
+                  right: -217px;
+              }
+      </style>
       <div class="field">
         <%= f.label :Setting %><br>
         <%= f.text_field :Setting %>
       </div>
   <div class="field">
   <%= f.label :offsetxin %><br>
-  <%= f.text_field :offsetxin %>
+  <%= f.text_field :offsetxin,:value => 80 %>
 </div>
       <div class="field">
         <%= f.label :offsetxout %><br>
-        <%= f.text_field :offsetxout %>
+        <%= f.text_field :offsetxout,:value => 80  %>
       </div>
       <div class="field">
         <%= f.label :offsetyin %><br>
-        <%= f.text_field :offsetyin %>
+        <%= f.text_field :offsetyin,:value => 0   %>
       </div>
       <div class="field">
         <%= f.label :offsetyout %><br>
-        <%= f.text_field :offsetyout %>
+        <%= f.text_field :offsetyout,:value => 0   %>
       </div>
       <div class="field">
         <%= f.label :rotatein %><br>
         <%= f.text_field :rotatein %>
       </div>
+      <div class="partition">
       <div class="field">
         <%= f.label :rotateout %><br>
         <%= f.text_field :rotateout %>
       </div>
       <div class="field">
         <%= f.label :fadein %><br>
-        <%= f.check_box :fadein %>
+        <%= f.select :fadein, [['true','true'],['false','false']] %>
       </div>
+        <script type="text/javascript">
+
+            $('#tbl_slide_setting_fadein').on('change', function() {
+                var id=$(this).val()
+                $("#hidfieldcat").val(id);
+            });
+
+        </script>
+
+        <input type="hidden" id="hidfieldcat" name="fadein_hid"  />
       <div class="field">
         <%= f.label :fadeout %><br>
-        <%= f.check_box :fadeout %>
+        <%= f.select :fadeout, [['true','true'],['false','false']] %>
       </div>
+        <script type="text/javascript">
+
+            $('#tbl_slide_setting_fadeout').on('change', function() {
+                var id=$(this).val()
+                $("#hidfieldcas").val(id);
+            });
+
+        </script>
+
+        <input type="hidden" id="hidfieldcas" name="fadeout_hid"  />
       <div class="field">
         <%= f.label :easingin %><br>
         <%= f.text_field :easingin %>
@@ -55,14 +102,23 @@
         <%= f.label :easingout %><br>
         <%= f.text_field :easingout %>
       </div>
+
       <div class="field">
         <%= f.label :durationin %><br>
-        <%= f.text_field :durationin %>
+        <%= f.number_field :durationin ,:value => 1000 %>
       </div>
+</div>
+      <div class="partition2">
+      <div class="field">
+        <%= f.label :durationout %><br>
+        <%= f.number_field :durationout,:value => 1000 %>
+      </div>
+
       <div class="field">
         <%= f.label :delayin %><br>
-        <%= f.text_field :delayin %>
+        <%= f.number_field :delayin,:value => 0  %>
       </div>
+
       <div class="field">
         <%= f.label :transition2d %><br>
         <%= f.text_field :transition2d %>
@@ -71,8 +127,91 @@
         <%= f.label :transition3d %><br>
         <%= f.text_field :transition3d %>
       </div>
+      <div class="field">
+        <%= f.label :showuntil %><br>
+        <%= f.number_field :showuntil,:value => 0   %>
+      </div>
+      <div class="field">
+        <%= f.label :rotatexin %><br>
+        <%= f.number_field :rotatexin,:value => 0   %>
+      </div>
+        </div>
+      <div class="partition3">
+      <div class="field">
+        <%= f.label :rotatexout %><br>
+        <%= f.number_field :rotatexout,:value => 0    %>
+      </div>
+      <div class="field">
+        <%= f.label :rotateyin %><br>
+        <%= f.number_field :rotateyin,:value => 0    %>
+      </div>
+      <div class="field">
+        <%= f.label :rotateyout %><br>
+        <%= f.number_field :rotateyout,:value => 0    %>
+      </div>
+      <div class="field">
+        <%= f.label :scalexin %><br>
+        <%= f.number_field :scalexin,:value => 1     %>
+      </div>
+      <div class="field">
+        <%= f.label :scalexout %><br>
+        <%= f.number_field :scalexout,:value => 1    %>
+      </div>
+
+      <div class="field">
+        <%= f.label :scaleyin %><br>
+        <%= f.number_field :scaleyin,:value => 1 %>
+      </div>
+</div>
+      <div class="partition4">
+      <div class="field">
+        <%= f.label :scaleyout %><br>
+        <%= f.number_field :scaleyout ,:value => 1%>
+      </div>
+
+      <div class="field">
+        <%= f.label :skewxin %><br>
+        <%= f.number_field :skewxin,:value => 0     %>
+      </div>
+
+
+      <div class="field">
+        <%= f.label :skewxout %><br>
+        <%= f.number_field :skewxout ,:value => 0    %>
+      </div>
+
+
+      <div class="field">
+        <%= f.label :skewyin %><br>
+        <%= f.number_field :skewyin ,:value => 0    %>
+      </div>
+      <div class="field">
+        <%= f.label :skewyout %><br>
+        <%= f.number_field :skewyout ,:value => 0    %>
+      </div>
+      <div class="field">
+        <%= f.label :transformoriginin %><br>
+        <%= f.text_field :transformoriginin,:value => "50% 50% 0" %>
+      </div>
+
+</div>
+<div>
+  <div class="field" style="position: relative;
+          bottom: 2385px;
+          right: -955px;">
+    <%= f.label :transformoriginout %><br>
+    <%= f.text_field :transformoriginout,:value => "50% 50% 0"  %>
+  </div>
+</div>
+
+<div style="position: absolute;
+        bottom: 77%;
+        right: 60%;">
+
   <div class="actions">
     <%= f.submit "Add New SlideSetting", :class => "btn_submit"%>
   </div>
+
+</div>
 <% end %>
 </div>

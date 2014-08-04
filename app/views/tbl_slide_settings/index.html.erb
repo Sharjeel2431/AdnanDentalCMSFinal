@@ -13,13 +13,12 @@
       <th>Rotatein</th>
       <th>Rotateout</th>
       <th>Fadein</th>
-      <th>Fadeout</th>
+
       <th>Easingin</th>
-      <th>Easingout</th>
-      <th>Durationin</th>
-      <th>Delayin</th>
+
+
       <th>Transition2d</th>
-      <th>Transition3d</th>
+
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -35,13 +34,10 @@
         <td><%= tbl_slide_setting.rotatein %></td>
         <td><%= tbl_slide_setting.rotateout %></td>
         <td><%= tbl_slide_setting.fadein %></td>
-        <td><%= tbl_slide_setting.fadeout %></td>
+
         <td><%= tbl_slide_setting.easingin %></td>
-        <td><%= tbl_slide_setting.easingout %></td>
-        <td><%= tbl_slide_setting.durationin %></td>
-        <td><%= tbl_slide_setting.delayin %></td>
         <td><%= tbl_slide_setting.transition2d %></td>
-        <td><%= tbl_slide_setting.transition3d %></td>
+
         <td><%= link_to 'View', tbl_slide_setting , :class => "btn_submit" %></td>
         <td><%= link_to 'Edit', edit_tbl_slide_setting_path(tbl_slide_setting) , :class => "btn_submit" %></td>
         <td><%= link_to 'Delete', tbl_slide_setting, method: :delete, data: { confirm: 'Are you sure?' } , :class => "btn_submit" %></td>

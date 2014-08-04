@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140804065204) do
+ActiveRecord::Schema.define(version: 20140804113433) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -257,13 +257,6 @@ ActiveRecord::Schema.define(version: 20140804065204) do
     t.datetime "updated_at"
   end
 
-  create_table "tbl_slide_setting_bridges", force: true do |t|
-    t.integer  "SlideID"
-    t.integer  "SlideSettingID"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "tbl_slide_settings", primary_key: "SlideSettingID", force: true do |t|
     t.string   "offsetxin"
     t.string   "offsetxout"
@@ -282,6 +275,22 @@ ActiveRecord::Schema.define(version: 20140804065204) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "Setting"
+    t.integer  "showuntil"
+    t.integer  "rotatexin"
+    t.integer  "rotatexout"
+    t.integer  "rotateyin"
+    t.integer  "rotateyout"
+    t.integer  "scaleyin"
+    t.integer  "scaleyout"
+    t.integer  "skewxin"
+    t.integer  "skewxout"
+    t.integer  "skewyin"
+    t.integer  "skewyout"
+    t.string   "transformoriginin"
+    t.string   "transformoriginout"
+    t.integer  "scalexin"
+    t.integer  "scalexout"
+    t.integer  "durationout"
   end
 
   create_table "tbl_slides", primary_key: "SlideID", force: true do |t|
