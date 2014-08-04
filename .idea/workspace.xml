@@ -61,11 +61,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="184" column="8" selection-start="6730" selection-end="6730" vertical-scroll-proportion="0.33333334" vertical-offset="3008" max-vertical-offset="4420">
+            <state line="184" column="0" selection-start="6722" selection-end="6722" vertical-scroll-proportion="-4.8" vertical-offset="3008" max-vertical-offset="4420">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="194" column="3" selection-start="7336" selection-end="7336" vertical-scroll-proportion="0.65384614" vertical-offset="2958" max-vertical-offset="4046">
+              <folding>
+                <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#21;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,7 +134,6 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140804065204_fix.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slide_settings/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_slide_settings_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slide_settings/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slide_settings/show.html.erb" />
@@ -131,6 +143,7 @@
         <option value="$PROJECT_DIR$/app/views/tbl_slides/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/tbl_banners/_form1.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
@@ -990,19 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="195" column="117" selection-start="7461" selection-end="7461" vertical-scroll-proportion="-9.153846" vertical-offset="2958" max-vertical-offset="4080">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#21;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tbl_slide_settings/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="36" selection-start="530" selection-end="530" vertical-scroll-proportion="0.72649574" vertical-offset="0" max-vertical-offset="1411">
@@ -1123,8 +1123,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="184" column="8" selection-start="6730" selection-end="6730" vertical-scroll-proportion="0.33333334" vertical-offset="3008" max-vertical-offset="4420">
+        <state line="184" column="0" selection-start="6722" selection-end="6722" vertical-scroll-proportion="-4.8" vertical-offset="3008" max-vertical-offset="4420">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="194" column="3" selection-start="7336" selection-end="7336" vertical-scroll-proportion="0.65384614" vertical-offset="2958" max-vertical-offset="4046">
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#21;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -182,7 +182,7 @@ class TblSlidesController < ApplicationController
 end
 
 
-        
+
         end
         format.json { render :show, status: :created, location: @tbl_slide }
       else
