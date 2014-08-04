@@ -205,7 +205,7 @@ class TblPagesController < ApplicationController
     session[:pageidonedit]=params[:id]
     session[:fromeditpage]=1
     session[:new_page]=0
-
+    session[:pageid]=params[:id]
 
     @pageinfo=TblPage.find_by_PageID(params[:id])
     @LastLayout=@pageinfo.LayoutID
