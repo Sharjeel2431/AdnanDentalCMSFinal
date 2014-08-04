@@ -70,15 +70,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="194" column="3" selection-start="7336" selection-end="7336" vertical-scroll-proportion="0.65384614" vertical-offset="2958" max-vertical-offset="4046">
+            <state line="197" column="9" selection-start="7345" selection-end="7345" vertical-scroll-proportion="-10.461538" vertical-offset="2958" max-vertical-offset="4046">
               <folding>
                 <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#21;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="106" column="25" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.31564987" vertical-offset="1683" max-vertical-offset="3893">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,7 +140,6 @@
         <option value="$PROJECT_DIR$/db/migrate/20140804055302_adsad.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slide_settings/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20140804065204_fix.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_slide_settings/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_slide_settings_controller.rb" />
@@ -144,6 +152,7 @@
         <option value="$PROJECT_DIR$/app/views/tbl_banners/_form1.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -1010,13 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="3893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/tbl_slide_settings/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="71" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.73504275" vertical-offset="1051" max-vertical-offset="1428">
@@ -1130,12 +1132,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="3" selection-start="7336" selection-end="7336" vertical-scroll-proportion="0.65384614" vertical-offset="2958" max-vertical-offset="4046">
+        <state line="197" column="9" selection-start="7345" selection-end="7345" vertical-scroll-proportion="-10.461538" vertical-offset="2958" max-vertical-offset="4046">
           <folding>
             <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#14;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#21;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="25" selection-start="2390" selection-end="2390" vertical-scroll-proportion="0.31564987" vertical-offset="1683" max-vertical-offset="3893">
+          <folding />
         </state>
       </provider>
     </entry>
