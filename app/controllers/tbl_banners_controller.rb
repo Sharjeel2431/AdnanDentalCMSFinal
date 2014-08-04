@@ -38,7 +38,7 @@ class TblBannersController < ApplicationController
   def edit
 
       if session[:fromeditpage] == 1
-
+        session[:fromaddslidebanner]=1
         @SlideInfo=TblSlide.find_by_BannerID(params[:id])
 
         if @SlideInfo == nil
@@ -88,11 +88,7 @@ class TblBannersController < ApplicationController
       end
     end
   end
-  def settings
-    if session[:fromeditpage] == 1
 
-    end
-  end
   # PATCH/PUT /tbl_banners/1
   # PATCH/PUT /tbl_banners/1.json
   def update

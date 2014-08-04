@@ -78,6 +78,17 @@
         <a href="/tbl_slides/new/<%= params[:id] %>" style="text-decoration: none;" class="btn_submit">Add New Slide</a>
 
       </div>
+      <script language="javascript" type="text/javascript">
+          <!--
+          function popitup(url) {
+              newwindow=window.open(url,'name','height=1200,width=1150');
+              if (window.focus) {newwindow.focus()}
+              return false;
+          }
+
+          // -->
+      </script>
+
       <table style="position: relative;
               bottom: -54px;">
         <thead>
@@ -105,6 +116,7 @@
               <td><%= tbl_slide.SlideTransition %></td>
               <td><%= tbl_slide.BannerID %></td>
               <td><%= link_to 'View', tbl_slide %></td>
+
               <td><a href="/tbl_slides/<%= tbl_slide.SlideID %>/edit/<%= tbl_slide.SlideID %>">Edit</a></td>
               <td><%= link_to 'Delete', tbl_slide, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>

@@ -1,0 +1,78 @@
+<div class="external">
+<%= form_for(@tbl_slide_setting) do |f| %>
+  <% if @tbl_slide_setting.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tbl_slide_setting.errors.count, "error") %> prohibited this tbl_slide_setting from being saved:</h2>
+
+      <ul>
+      <% @tbl_slide_setting.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+      <div class="field">
+        <%= f.label :Setting %><br>
+        <%= f.text_field :Setting %>
+      </div>
+  <div class="field">
+  <%= f.label :offsetxin %><br>
+  <%= f.text_field :offsetxin %>
+</div>
+      <div class="field">
+        <%= f.label :offsetxout %><br>
+        <%= f.text_field :offsetxout %>
+      </div>
+      <div class="field">
+        <%= f.label :offsetyin %><br>
+        <%= f.text_field :offsetyin %>
+      </div>
+      <div class="field">
+        <%= f.label :offsetyout %><br>
+        <%= f.text_field :offsetyout %>
+      </div>
+      <div class="field">
+        <%= f.label :rotatein %><br>
+        <%= f.text_field :rotatein %>
+      </div>
+      <div class="field">
+        <%= f.label :rotateout %><br>
+        <%= f.text_field :rotateout %>
+      </div>
+      <div class="field">
+        <%= f.label :fadein %><br>
+        <%= f.check_box :fadein %>
+      </div>
+      <div class="field">
+        <%= f.label :fadeout %><br>
+        <%= f.check_box :fadeout %>
+      </div>
+      <div class="field">
+        <%= f.label :easingin %><br>
+        <%= f.text_field :easingin %>
+      </div>
+      <div class="field">
+        <%= f.label :easingout %><br>
+        <%= f.text_field :easingout %>
+      </div>
+      <div class="field">
+        <%= f.label :durationin %><br>
+        <%= f.text_field :durationin %>
+      </div>
+      <div class="field">
+        <%= f.label :delayin %><br>
+        <%= f.text_field :delayin %>
+      </div>
+      <div class="field">
+        <%= f.label :transition2d %><br>
+        <%= f.text_field :transition2d %>
+      </div>
+      <div class="field">
+        <%= f.label :transition3d %><br>
+        <%= f.text_field :transition3d %>
+      </div>
+  <div class="actions">
+    <%= f.submit "Add New SlideSetting", :class => "btn_submit"%>
+  </div>
+<% end %>
+</div>

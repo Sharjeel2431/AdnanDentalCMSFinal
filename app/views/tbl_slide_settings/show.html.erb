@@ -1,0 +1,79 @@
+<div class="show1">
+<h1 class="new1">Slide Setting Information</h1>
+</div>
+<p id="notice"><%= notice %></p>
+<div>
+<p>
+  <strong>Offsetxin:</strong>
+  <%= @tbl_slide_setting.offsetxin %>
+</p>
+
+<p>
+  <strong>Offsetxout:</strong>
+  <%= @tbl_slide_setting.offsetxout %>
+</p>
+
+<p>
+  <strong>Offsetyin:</strong>
+  <%= @tbl_slide_setting.offsetyin %>
+</p>
+
+<p>
+  <strong>Offsetyout:</strong>
+  <%= @tbl_slide_setting.offsetyout %>
+</p>
+
+<p>
+  <strong>Rotatein:</strong>
+  <%= @tbl_slide_setting.rotatein %>
+</p>
+
+<p>
+  <strong>Rotateout:</strong>
+  <%= @tbl_slide_setting.rotateout %>
+</p>
+
+<p>
+  <strong>Fadein:</strong>
+  <%= @tbl_slide_setting.fadein %>
+</p>
+
+<p>
+  <strong>Fadeout:</strong>
+  <%= @tbl_slide_setting.fadeout %>
+</p>
+
+<p>
+  <strong>Easingin:</strong>
+  <%= @tbl_slide_setting.easingin %>
+</p>
+
+<p>
+  <strong>Easingout:</strong>
+  <%= @tbl_slide_setting.easingout %>
+</p>
+
+<p>
+  <strong>Durationin:</strong>
+  <%= @tbl_slide_setting.durationin %>
+</p>
+
+<p>
+  <strong>Delayin:</strong>
+  <%= @tbl_slide_setting.delayin %>
+</p>
+
+<p>
+  <strong>Transition2d:</strong>
+  <%= @tbl_slide_setting.transition2d %>
+</p>
+
+<p>
+  <strong>Transition3d:</strong>
+  <%= @tbl_slide_setting.transition3d %>
+</p>
+</div>
+<div class="show3">
+<%= link_to 'Edit' , edit_tbl_slide_setting_path(@tbl_slide_setting), :class => "btn_submit" %>  |
+<%= link_to 'Back', tbl_slide_settings_path, :class => "btn_submit" %>
+</div>

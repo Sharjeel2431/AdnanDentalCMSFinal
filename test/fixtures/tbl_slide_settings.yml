@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  offsetxin: MyString
+  offsetxout: MyString
+  offsetyin: MyString
+  offsetyout: MyString
+  rotatein: MyString
+  rotateout: MyString
+  fadein: false
+  fadeout: false
+  easingin: MyString
+  easingout: MyString
+  durationin: MyString
+  delayin: MyString
+  transition2d: MyString
+  transition3d: MyString
+
+two:
+  offsetxin: MyString
+  offsetxout: MyString
+  offsetyin: MyString
+  offsetyout: MyString
+  rotatein: MyString
+  rotateout: MyString
+  fadein: false
+  fadeout: false
+  easingin: MyString
+  easingout: MyString
+  durationin: MyString
+  delayin: MyString
+  transition2d: MyString
+  transition3d: MyString

@@ -1,0 +1,2 @@
+module TblSlideSettingsHelper
+end

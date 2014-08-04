@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  resources :tbl_slide_setting_bridges
+
+  resources :tbl_slide_settings
+
   resources :tbl_layers
 
   resources :tbl_slide_layers
@@ -53,7 +57,8 @@ Rails.application.routes.draw do
   resources :tbl_layouts
 
   resources :tbl_logins
-  get 'tbl_banners/:id/settings/:id' => 'tbl_banners#settings', as: :settingbanner
+
+  get 'tbl_slides/:id/settings/:id' => 'tbl_slides#settings', as: :settingslides
   get 'slider/index'
   get 'tbl_layers/new/:id' => 'tbl_layers#new', as: :layersnew
   get 'tbl_slides/:id/edit/:id' => 'tbl_slides#edit', as: :slidesedit
@@ -99,7 +104,7 @@ Rails.application.routes.draw do
          #OnStateTag field present in layout's table
 
             if @OnStateTag == "FW"
-                  get 'FW/'+@PageTitle+'/:id' =>'vol#Volunteers'
+                  get 'FW'+'/'+@PageTitle+'/:id' =>'vol#Volunteers'
             end
 
             if @OnStateTag == "H"

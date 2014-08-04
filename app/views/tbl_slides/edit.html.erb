@@ -1,6 +1,17 @@
 <h1 class="edit1">Editing Slide Information</h1>
 
-<%= render 'form' %>
+
+<%=
+    if  session[:oneditslide]=1
+      render 'form1'
+      else
+        render 'form'
+
+    end
+
+
+
+%>
 
 
 <div style="position: relative;

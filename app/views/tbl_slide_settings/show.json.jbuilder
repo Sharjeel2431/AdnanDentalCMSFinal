@@ -1,0 +1,1 @@
+json.extract! @tbl_slide_setting, :id, :offsetxin, :offsetxout, :offsetyin, :offsetyout, :rotatein, :rotateout, :fadein, :fadeout, :easingin, :easingout, :durationin, :delayin, :transition2d, :transition3d, :created_at, :updated_at

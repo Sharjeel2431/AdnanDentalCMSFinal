@@ -189,7 +189,6 @@ end
     if params[:id] != nil
       if  session[:contentdeleteedit] == 1
         query = 'DELETE FROM tbl_page_contents where "PageID" ='+"#{session[:pageid]}"+' and "ContentID" ='+"#{params[:id]};"
-
         ActiveRecord::Base.connection.execute(query);
       end
     end

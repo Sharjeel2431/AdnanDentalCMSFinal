@@ -34,8 +34,14 @@ class TblSlidesController < ApplicationController
     @slideinfo=TblSlide.find_by_SlideID(params[:id])
     @Transname=@slideinfo.SlideTransition
     session[:oneditslide]=1
+
   end
 
+  def settings
+    if session[:fromeditpage] == 1
+
+    end
+  end
   # POST /tbl_slides
   # POST /tbl_slides.json
   def create
@@ -66,9 +72,11 @@ class TblSlidesController < ApplicationController
           @lastID=@querylastID.SlideID
 
           if params[:slidetrans_hid] ==  ""
+
             @queryfirst=Transition.first()
-            @last=@queryfirst.TransitionID
-            params[:slidetrans_hid]=@last
+
+            params[:slidetrans_hid]=@queryfirst.TransitionID
+
           end
 
           @info=Transition.find_by_TransitionID(params[:slidetrans_hid])
@@ -96,21 +104,36 @@ class TblSlidesController < ApplicationController
           @infobanner=TblBanner.find_by_BannerID(session[:bannerID])
           @placeholder=@infobanner.PlaceHolder
 
+          #################################### Settings Info #####################################################
+          if params[:slidesetting_hid]==""
+            @slidesettinginfo=TblSlideSetting.first()
+            params[:slidesetting_hid]=@slidesettinginfo.SlideSettingID
+
+          end
+          quer_sett='UPDATE tbl_slides SET "Setting"='+"'"+"#{params[:slidesetting_hid]}"+"'"+' Where "SlideID"='+"#{@lastID};"
+          ActiveRecord::Base.connection.execute(quer_sett);
+
+
+          ####info of slide setting table on the basis of the setting selected in the dropdown list####
+          @slidesetinfo=TblSlideSetting.find_by_SlideSettingID(params[:slidesetting_hid])
+
+          ########################################################################################################
+
           contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
           contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
           slides='<div class="'+@querylastID.SlideClass+'" data-ls="slidedelay:'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" data-ls="
-					offsetxin: right;
-					offsetxout: 0;
-					offsetyin: 200;
-					offsetyout: bottom;
-					rotatein: 50;
-					rotateout: -20;
-					fadein: false;
-					fadeout: false;
-					easingin: easeoutquart;
-					easingout: easeinquart;
-					durationin: 2500;
-					delayin: 500;
+					offsetxin: '+@slidesetinfo.offsetxin+';
+					offsetxout:'+@slidesetinfo.offsetxout+';
+					offsetyin: '+@slidesetinfo.offsetyin+';
+					offsetyout: '+@slidesetinfo.offsetyout+';
+					rotatein: '+@slidesetinfo.rotatein+';
+					rotateout: '+@slidesetinfo.rotateout+';
+					fadein: '+@slidesetinfo.fadein.to_s+';
+					fadeout: '+@slidesetinfo.fadeout.to_s+';
+					easingin: '+@slidesetinfo.easingin+';
+					easingout: '+@slidesetinfo.easingout+';
+					durationin: '+@slidesetinfo.durationin+';
+					delayin: '+@slidesetinfo.delayin+';
 				"/></div>'
 
 
@@ -159,8 +182,7 @@ class TblSlidesController < ApplicationController
 end
 
 
-
-
+        
         end
         format.json { render :show, status: :created, location: @tbl_slide }
       else
@@ -226,7 +248,7 @@ end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def tbl_slide_params
-      params.require(:tbl_slide).permit(:SlideID, :SlideClass, :SlideDelay, :Transition, :BackgroundImage, :SlideTransition, :BannerID,:avatar)
+      params.require(:tbl_slide).permit(:SlideID, :SlideClass, :SlideDelay, :Transition, :BackgroundImage, :SlideTransition, :BannerID,:avatar,:Setting)
     end
 
 end

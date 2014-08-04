@@ -44,6 +44,7 @@
 
 
   </div>
+
   <div class="field">
     <%= f.label :SlideTransition %><br>
     <%= collection_select(:Transitions, :TransitionID, Transition.all, :TransitionID, :TransitionName , {:selected => Transition.where(TransitionName: @Transname).map(&:TransitionID)} )%>
@@ -58,7 +59,27 @@
 
       </script>
       <input type="hidden" id="hidfield" name="slidetrans_hid"  />
-  <div class="actions">
+
+      <div class="field">
+        <%= f.label :Setting %><br>
+        <%= collection_select(:Setting, :SlideSettingID, TblSlideSetting.all, :SlideSettingID, :Setting , {:selected => TblSlideSetting.where(Setting: :@SettingName).map(&:SlideSettingID)} )%>
+      </div>
+      <script type="text/javascript">
+
+          $('#Setting_SlideSettingID').on('change', function() {
+              var id=$(this).val()
+              $("#hidsfield").val(id);
+
+          });
+
+      </script>
+      <input type="hidden" id="hidsfield" name="slidesetting_hid"  />
+
+
+
+
+      <div class="actions">
+    <br/>
     <%= f.submit :class => "btn_submit"%>
   </div>
 <% end %>

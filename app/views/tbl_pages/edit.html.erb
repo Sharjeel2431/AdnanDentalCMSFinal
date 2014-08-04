@@ -137,7 +137,7 @@
             <td><%= banner_tbl.Type %></td>
             <td><%= banner_tbl.Status %></td>
             <td id="viewitem"><%= link_to 'View',banner_tbl %></td>
-            <td><a href="/tbl_banners/<%= banner_tbl.BannerID %>/settings/<%= banner_tbl.BannerID %>" onclick="return popitup('/tbl_banners/<%= banner_tbl.BannerID %>/settings/<%= banner_tbl.BannerID %>')">Settings</a></td>
+
             <td><a href="/tbl_banners/<%= banner_tbl.BannerID %>/edit/<%= banner_tbl.BannerID %>" onclick="return popitup('/tbl_banners/<%= banner_tbl.BannerID %>/edit/<%= banner_tbl.BannerID %>')">Manage</a></td>
             <td id="deleteitem"><%= link_to 'Delete', banner_tbl, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>

@@ -1,0 +1,89 @@
+<div class="external">
+  <%= form_for(@tbl_slide ,:html => { :multipart => true}) do |f| %>
+      <% if @tbl_slide.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(@tbl_slide.errors.count, "error") %> prohibited this tbl_slide from being saved:</h2>
+
+            <ul>
+              <% @tbl_slide.errors.full_messages.each do |message| %>
+                  <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+      <% end %>
+
+
+      <div class="field">
+        <%= f.label :SlideClass %><br>
+        <%= f.text_field :SlideClass %>
+      </div>
+      <div class="field">
+        <%= f.label :SlideDelay %><br>
+        <%= f.text_field :SlideDelay %>
+      </div>
+      <div class="field">
+        <%= f.label :Transition %><br>
+
+
+        <%= f.select :Transition, [['2d','2d'],['3d','3d']] %>
+      </div>
+      <script type="text/javascript">
+
+          $('#tbl_slide_Transition').on('change', function() {
+              var id=$(this).val()
+              $("#hidfieldcat").val(id);
+          });
+
+      </script>
+
+      <input type="hidden" id="hidfieldcat" name="transition_hid"  />
+      <div class="field">
+        <%= f.label :BackgroundImage %><br>
+
+        <%= f.file_field :avatar %>
+
+
+      </div>
+
+      <div class="field">
+        <%= f.label :SlideTransition %><br>
+        <%= collection_select(:Transitions, :TransitionID, Transition.all, :TransitionID, :TransitionName , {:selected => Transition.where(TransitionName: @Transname).map(&:TransitionID)} )%>
+      </div>
+      <script type="text/javascript">
+
+          $('#Transitions_TransitionID').on('change', function() {
+              var id=$(this).val()
+              $("#hidfield").val(id);
+
+          });
+
+      </script>
+      <input type="hidden" id="hidfield" name="slidetrans_hid"  />
+
+      <div style="display: none;">
+
+      <div class="field">
+        <%= f.label :Setting %><br>
+        <%= collection_select(:Setting, :SlideSettingID, TblSlideSetting.all, :SlideSettingID, :Setting , {:selected => TblSlideSetting.where(Setting: :@SettingName).map(&:SlideSettingID)} )%>
+      </div>
+
+      <script type="text/javascript">
+
+          $('#Setting_SlideSettingID').on('change', function() {
+              var id=$(this).val()
+              $("#hidsfield").val(id);
+
+          });
+
+      </script>
+      <input type="hidden" id="hidsfield" name="slidesetting_hid"  />
+
+      </div>
+
+
+      <div class="actions">
+        <br/>
+        <%= f.submit :class => "btn_submit"%>
+      </div>
+  <% end %>
+</div>

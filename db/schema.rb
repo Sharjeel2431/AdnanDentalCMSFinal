@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140725103123) do
+ActiveRecord::Schema.define(version: 20140804065204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -128,17 +128,17 @@ ActiveRecord::Schema.define(version: 20140725103123) do
     t.string   "Type"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "Content"
+    t.text     "Content"
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.string   "video_file_name"
-    t.string   "video_content_type"
+    t.text     "video_file_name"
+    t.text     "video_content_type"
     t.integer  "video_file_size"
     t.datetime "video_updated_at"
-    t.string   "linkimage_file_name"
-    t.string   "linkimage_content_type"
+    t.text     "linkimage_file_name"
+    t.text     "linkimage_content_type"
     t.integer  "linkimage_file_size"
     t.datetime "linkimage_updated_at"
     t.string   "Path"
@@ -257,6 +257,33 @@ ActiveRecord::Schema.define(version: 20140725103123) do
     t.datetime "updated_at"
   end
 
+  create_table "tbl_slide_setting_bridges", force: true do |t|
+    t.integer  "SlideID"
+    t.integer  "SlideSettingID"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tbl_slide_settings", primary_key: "SlideSettingID", force: true do |t|
+    t.string   "offsetxin"
+    t.string   "offsetxout"
+    t.string   "offsetyin"
+    t.string   "offsetyout"
+    t.string   "rotatein"
+    t.string   "rotateout"
+    t.boolean  "fadein"
+    t.boolean  "fadeout"
+    t.string   "easingin"
+    t.string   "easingout"
+    t.string   "durationin"
+    t.string   "delayin"
+    t.string   "transition2d"
+    t.string   "transition3d"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "Setting"
+  end
+
   create_table "tbl_slides", primary_key: "SlideID", force: true do |t|
     t.string   "SlideClass"
     t.float    "SlideDelay"
@@ -270,6 +297,7 @@ ActiveRecord::Schema.define(version: 20140725103123) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "Setting"
   end
 
   create_table "transitions", primary_key: "TransitionID", force: true do |t|
