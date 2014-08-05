@@ -43,6 +43,7 @@ input[type="text"]
                  position: relative;
                  bottom: 19px;
              }
+
 input[type="number"]{
     border: 1px solid;
     border-color: #368ccc;
@@ -85,6 +86,15 @@ table tr td{
     padding: 5px;
     text-decoration: none;
     font-weight: bold;
+}
+.slider_align
+{
+    position: relative;
+    width: 845px;
+    height: 450px;
+
+    bottom: 0px;
+    right: -241px;
 }
 label
 {

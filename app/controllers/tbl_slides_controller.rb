@@ -46,10 +46,13 @@ class TblSlidesController < ApplicationController
   # POST /tbl_slides.json
   def create
     @tbl_slide = TblSlide.new(tbl_slide_params)
+
     ################### Require For Paper Clip ##########################
     @tbl_slide = TblSlide.create(tbl_slide_params)
     #####################################################################
+
     respond_to do |format|
+
       if @tbl_slide.save
 
         format.html { redirect_to @tbl_slide, notice: 'Tbl slide was successfully created.' }
@@ -119,7 +122,35 @@ class TblSlidesController < ApplicationController
 
           ########################################################################################################
 
-          contentlayerslider='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" /></div>'
+          contentlayerslider='<div class="slider_align"><div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+'; transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" data-ls="
+					offsetxin: '+@slidesetinfo.offsetxin+';
+					offsetxout:'+@slidesetinfo.offsetxout+';
+					offsetyin: '+@slidesetinfo.offsetyin+';
+					offsetyout: '+@slidesetinfo.offsetyout+';
+					rotatein: '+@slidesetinfo.rotatein+';
+					rotateout: '+@slidesetinfo.rotateout+';
+					fadein: '+@slidesetinfo.fadein.to_s+';
+					fadeout: '+@slidesetinfo.fadeout.to_s+';
+					easingin: '+@slidesetinfo.easingin+';
+					easingout: '+@slidesetinfo.easingout+';
+					durationin: '+@slidesetinfo.durationin+';
+					delayin: '+@slidesetinfo.delayin+';
+          showuntil:'+@slidesetinfo.showuntil.to_s+';
+          rotatexin: '+@slidesetinfo.rotatexin.to_s+';
+          rotatexout: '+@slidesetinfo.rotatexout.to_s+';
+          rotateyin: '+@slidesetinfo.rotateyin.to_s+';
+          rotateyout: '+@slidesetinfo.rotateyout.to_s+';
+          scalexin: '+@slidesetinfo.scalexin.to_s+';
+          scalexout: '+@slidesetinfo.scalexout.to_s+';
+          scaleyin: '+@slidesetinfo.scaleyin.to_s+';
+          scaleyout: '+@slidesetinfo.scaleyout.to_s+';
+          skewxin: '+@slidesetinfo.skewxin.to_s+';
+          skewxout: '+@slidesetinfo.skewxout.to_s+';
+          skewyin: '+@slidesetinfo.skewyin.to_s+';
+          skewyout: '+@slidesetinfo.skewyout.to_s+';
+          transformoriginin: '+@slidesetinfo.transformoriginin+';
+          transformoriginout: '+@slidesetinfo.delayin+';
+				"/></div>'
           contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
           slides='<div class="'+@querylastID.SlideClass+'" data-ls="slidedelay:'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" data-ls="
 					offsetxin: '+@slidesetinfo.offsetxin+';
@@ -148,7 +179,7 @@ class TblSlidesController < ApplicationController
           skewyin: '+@slidesetinfo.skewyin.to_s+';
           skewyout: '+@slidesetinfo.skewyout.to_s+';
           transformoriginin: '+@slidesetinfo.transformoriginin+';
-          transformoriginout: '+@slidesetinfo.transformoriginout+';
+          transformoriginout: '+@slidesetinfo.delayin+';
 				"/></div>'
 
 
@@ -177,7 +208,7 @@ class TblSlidesController < ApplicationController
         @SlideInfo.each do |index|
 
 
-          contentnew=@contentinfor.ContentValue+slides+'</div>'
+          contentnew=@contentinfor.ContentValue+slides+'</div></div>'
 
           dasd='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentnew}"+"'"+'where "PlaceHolder"='+"'"+"#{@placeh}"+"'"+';'
 
@@ -199,7 +230,11 @@ end
 
 
         end
-        format.json { render :show, status: :created, location: @tbl_slide }
+      format.json { render :show, status: :created, location: @tbl_slide }
+
+
+
+
       else
         format.html { render :new }
         format.json { render json: @tbl_slide.errors, status: :unprocessable_entity }

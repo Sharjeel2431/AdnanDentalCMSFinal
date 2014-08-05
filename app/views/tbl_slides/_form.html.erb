@@ -1,5 +1,6 @@
 <div class="external">
-<%= form_for(@tbl_slide ,:html => { :multipart => true}) do |f| %>
+
+  <%= form_for(@tbl_slide ,:html => { :multipart => true}) do |f| %>
   <% if @tbl_slide.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@tbl_slide.errors.count, "error") %> prohibited this tbl_slide from being saved:</h2>

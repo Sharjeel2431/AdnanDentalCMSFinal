@@ -1,4 +1,10 @@
 <h1  class="show1">Slide Information</h1>
+
+<script type="text/javascript">
+    $(function() {
+        $('#cropbox').Jcrop();
+    });
+</script>
 <div class="show2">
 <p id="notice"><%= notice %></p>
 
@@ -26,7 +32,7 @@
 <p>
   <strong>Backgroundimage:</strong>
 
-  <%= image_tag @tbl_slide.avatar.url(:small) %>
+  <%= image_tag @tbl_slide.avatar.url(:small), :id => "cropbox"  %>
 
 </p>
 
