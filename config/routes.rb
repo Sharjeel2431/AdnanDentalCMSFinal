@@ -104,7 +104,7 @@ Rails.application.routes.draw do
          #OnStateTag field present in layout's table
 
             if @OnStateTag == "FW"
-                  get 'FW/'+@PageTitle+'/:id' =>'vol#Volunteers'
+                  get 'FW'+'/'+@PageTitle+'/:id' =>'vol#Volunteers'
             end
 
             if @OnStateTag == "H"
