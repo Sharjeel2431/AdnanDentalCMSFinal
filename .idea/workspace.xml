@@ -59,10 +59,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="tbl_slides_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="240" column="78" selection-start="9266" selection-end="9266" vertical-scroll-proportion="0.23351648" vertical-offset="3995" max-vertical-offset="5287">
+            <state line="241" column="9" selection-start="9283" selection-end="9283" vertical-scroll-proportion="0.0" vertical-offset="3995" max-vertical-offset="5287">
               <folding />
             </state>
           </provider>
@@ -95,10 +95,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="18" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3893">
+            <state line="106" column="25" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.0530504" vertical-offset="1782" max-vertical-offset="3893">
               <folding />
             </state>
           </provider>
@@ -169,11 +169,11 @@
         <option value="$PROJECT_DIR$/app/views/tbl_slides/_form1.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/tbl_pages/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_pages_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_contents_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_banners_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/tbl_layers_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
       </list>
     </option>
   </component>
@@ -956,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="18" selection-start="1747" selection-end="1747" vertical-scroll-proportion="0.0" vertical-offset="1071" max-vertical-offset="3893">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20140625072837_fixx.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="4" selection-start="111" selection-end="111" vertical-scroll-proportion="0.40583554" vertical-offset="0" max-vertical-offset="377">
@@ -1007,7 +1000,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/tbl_slides_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="240" column="78" selection-start="9266" selection-end="9266" vertical-scroll-proportion="0.23351648" vertical-offset="3995" max-vertical-offset="5287">
+        <state line="241" column="9" selection-start="9283" selection-end="9283" vertical-scroll-proportion="0.0" vertical-offset="3995" max-vertical-offset="5287">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="25" selection-start="2401" selection-end="2401" vertical-scroll-proportion="0.0530504" vertical-offset="1782" max-vertical-offset="3893">
           <folding />
         </state>
       </provider>
