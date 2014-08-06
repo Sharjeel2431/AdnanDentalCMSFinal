@@ -20,7 +20,7 @@
 
 
 
-              <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql(" SELECT PlaceHolderTitle,PlaceHolderID from tbl_place_holders where PlaceHolderID IN (Select PlaceHolderID from tbl_layout_placeholders where LayoutID=#{@layoutID});"), :PlaceHolderID, :PlaceHolderTitle , {:selected => TblPlaceHolder.where(PlaceHolderTitle: @placeTitle).map(&:PlaceHolderID)} )%>
+              <%= collection_select(:TblPlaceHolder, :PlaceHolderID, TblPlaceHolder.find_by_sql(" SELECT PlaceHolderTitle,PlaceHolderID from tbl_place_holders where PlaceHolderID Equal (Select PlaceHolderID from tbl_layout_placeholders where LayoutID=#{@layoutID});"), :PlaceHolderID, :PlaceHolderTitle , {:selected => TblPlaceHolder.where(PlaceHolderTitle: @placeTitle).map(&:PlaceHolderID)} )%>
             </div>
             <script type="text/javascript">
 

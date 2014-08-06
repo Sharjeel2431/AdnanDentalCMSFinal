@@ -48,7 +48,7 @@ class TblPlaceHoldersController < ApplicationController
 
         if params[:id] = @placeholderID_last
           if session[:decision_placeholder] == 1
-            query="INSERT INTO tbl_layout_placeholders (PlaceHolderID,LayoutID) values (#{@placeholderID_last},#{session[:layoutID]});"
+            query='INSERT INTO tbl_layout_placeholders ("PlaceHolderID","LayoutID") values ('+"#{@placeholderID_last}"+','+"#{session[:layoutID]}"+");"
 
             ActiveRecord::Base.connection.execute(query);
           end
@@ -62,7 +62,7 @@ class TblPlaceHoldersController < ApplicationController
             end
             @placeinfo=TblPlaceHolder.find_by_PlaceHolderID(params[:placehold_hid])
             @placetype=@placeinfo.Type
-          query="UPDATE tbl_place_holders SET Type='#{@placetype}' where PlaceHolderID=#{@placeholderID_last};"
+          query='UPDATE tbl_place_holders SET "Type"='+"'"+"#{@placetype}"+"'"+'where "PlaceHolderID"='+"#{@placeholderID_last};"
             ActiveRecord::Base.connection.execute(query);
         end
 
@@ -92,7 +92,7 @@ class TblPlaceHoldersController < ApplicationController
           @placeinfo=TblPlaceHolder.find_by_PlaceHolderID(params[:placehold_hid])
           @placetype=@placeinfo.Type
 
-          query="UPDATE tbl_place_holders SET Type='#{@placetype}' where PlaceHolderID=#{params[:id]};"
+          query='UPDATE tbl_place_holders SET "Type"='+"'"+"#{@placetype}"+"'"+ 'where "PlaceHolderID"='+"#{params[:id]}"+';'
           ActiveRecord::Base.connection.execute(query);
 
         end
@@ -114,7 +114,7 @@ class TblPlaceHoldersController < ApplicationController
 
     if params[:id] != nil
       if  session[:placeholderdeleted] == 1
-        query = "DELETE FROM tbl_layout_placeholders where LayoutID =#{session[:layoutID]} and PlaceHolderID =#{params[:id]};"
+        query = 'DELETE FROM tbl_layout_placeholders where "LayoutID" ='+"#{session[:layoutID]}"+' and "PlaceHolderID" =#'+"#{params[:id]}"+';'
 
         ActiveRecord::Base.connection.execute(query);
       end
@@ -125,7 +125,7 @@ class TblPlaceHoldersController < ApplicationController
 
     if session[:placeholderdeleted] == 0
 
-      query = "DELETE FROM tbl_layout_placeholders where LayoutID =#{session[:layoutID]} and PlaceHolderID =#{params[:id]};"
+      query = 'DELETE FROM tbl_layout_placeholders where "LayoutID" ='+"#{session[:layoutID]}"+' and "PlaceHolderID" ='+"#{params[:id]}"+';'
 
       ActiveRecord::Base.connection.execute(query);
       @tbl_place_holder.destroy

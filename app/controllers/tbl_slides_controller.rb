@@ -209,9 +209,9 @@ class TblSlidesController < ApplicationController
         @SlideInfo.each do |index|
 
 
-          contentnew=@contentinfor.ContentValue+slides+'</div></div>'
+          contentnew=@contentinfor.ContentValue+slides
 
-          dasd='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentnew}"+"'"+'where "PlaceHolder"='+"'"+"#{@placeh}"+"'"+';'
+          dasd='UPDATE tbl_contents SET "ContentValue"='+"'"+"#{contentnew+'</div></div>'}"+"'"+'where "PlaceHolder"='+"'"+"#{@placeh}"+"'"+';'
 
 
 
