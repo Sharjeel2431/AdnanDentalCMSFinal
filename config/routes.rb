@@ -108,7 +108,7 @@ Rails.application.routes.draw do
             end
 
             if @OnStateTag == "H"
-              get 'H'+'/'+@PageTitle+'/:id' => 'home#Home'
+              get 'H/'+@PageTitle+'/:id' => 'home#Home'
             end
 
             if @OnStateTag == "A"
