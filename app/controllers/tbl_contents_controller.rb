@@ -197,7 +197,7 @@ end
     #as from the bridge table
 
     if session[:contentdeleteedit] == 0
-      query = 'DELETE FROM tbl_page_contents where "PageID" ='+"#{session[:pageid]}"+'and "ContentID" ='+"#{params[:id]};"
+      query = 'DELETE FROM tbl_page_contents where "ContentID" ='+"#{params[:id]};"
       query1='DELETE FROM tbl_place_holder_contents where "ContentID"='+"#{params[:id]};"
       ActiveRecord::Base.connection.execute(query);
       ActiveRecord::Base.connection.execute(query1);

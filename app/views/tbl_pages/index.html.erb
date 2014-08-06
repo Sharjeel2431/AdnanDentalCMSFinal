@@ -42,7 +42,7 @@
         <td style="display: none;"><%= tbl_page.DateTime %></td>
 
         <td id="viewitem"><a href="<%= tbl_page.PageURL %>" target="_blank">View</a><td>
-        <td id="edititem">   <a href="/<%= tbl_page.PageID %>/edit/<%= tbl_page.PageID %>" >Edit</a>
+        <td id="edititem">   <a href="/tbl_pages/<%= tbl_page.PageID %>/edit/<%= tbl_page.PageID %>" >Edit</a>
         <td id="deleteitem"><%= link_to 'Delete', tbl_page, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

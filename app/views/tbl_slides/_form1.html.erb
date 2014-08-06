@@ -64,7 +64,7 @@
 
       <div class="field">
         <%= f.label :Setting %><br>
-        <%= collection_select(:Setting, :SlideSettingID, TblSlideSetting.all, :SlideSettingID, :Setting , {:selected => TblSlideSetting.where(Setting: :@SettingName).map(&:SlideSettingID)} )%>
+        <%= collection_select(:Setting, :SlideSettingID, TblSlideSetting.all, :SlideSettingID, :Setting , {:selected => TblSlideSetting.where(Setting: :@SettingName).map(&:SlideSettingID),:prompt => "asd" })%>
       </div>
 
       <script type="text/javascript">

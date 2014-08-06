@@ -54,8 +54,9 @@ class TblSlidesController < ApplicationController
     respond_to do |format|
 
       if @tbl_slide.save
-
-        format.html { redirect_to @tbl_slide, notice: 'Tbl slide was successfully created.' }
+        @querylast=TblSlide.last()
+        @last=@querylast.SlideID
+        format.html { redirect_to '/tbl_slides/'+@last.to_s+'/edit/'+@last.to_s, notice: 'Tbl slide was successfully created.' }
 
         if session[:fromeditpage] == 1
 
@@ -150,7 +151,7 @@ class TblSlidesController < ApplicationController
           skewyout: '+@slidesetinfo.skewyout.to_s+';
           transformoriginin: '+@slidesetinfo.transformoriginin+';
           transformoriginout: '+@slidesetinfo.delayin+';
-				"/></div>'
+				"/>'
           contentlayerslid='<div id="layerslider" style="width: 800px; height: 400px;"><div class="'+@querylastID.SlideClass+'" data-ls="slidedelay: "'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+@tbl_slide.avatar.url(:small)+'" class="ls-bg" />'
           slides='<div class="'+@querylastID.SlideClass+'" data-ls="slidedelay:'+@querylastID.SlideDelay.to_s+';  transition2d: 75,79;"><img src="'+ @tbl_slide.avatar.url(:small)+'" class="ls-bg" data-ls="
 					offsetxin: '+@slidesetinfo.offsetxin+';
@@ -180,7 +181,7 @@ class TblSlidesController < ApplicationController
           skewyout: '+@slidesetinfo.skewyout.to_s+';
           transformoriginin: '+@slidesetinfo.transformoriginin+';
           transformoriginout: '+@slidesetinfo.delayin+';
-				"/></div>'
+				"/>'
 
 
       if session[:contentlayerslider] == 1
@@ -230,7 +231,7 @@ end
 
 
         end
-      format.json { render :show, status: :created, location: @tbl_slide }
+      format.json { render :edit, status: :created, location: @tbl_slide }
 
 
 

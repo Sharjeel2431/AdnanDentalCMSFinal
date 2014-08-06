@@ -162,7 +162,7 @@ class TblBannersController < ApplicationController
    end
 
    if session[:bannerdeletionedit] == 0
-     query = 'DELETE FROM tbl_page_banners where "PageID" ='+"#{session[:pageid]}"+' and "BannerID" ='+"#{params[:id]};"
+     query = 'DELETE FROM tbl_page_banners where "BannerID" ='+"#{params[:id]};"
 
      ActiveRecord::Base.connection.execute(query);
 

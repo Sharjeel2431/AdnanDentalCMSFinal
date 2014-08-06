@@ -76,7 +76,7 @@ Rails.application.routes.draw do
 
   get 'edit/:id' => 'tbl_layouts#edit', as: :editlayout
 
-  get ':id/edit/:id' => 'tbl_pages#edit', as: :edit
+  get '/tbl_pages/:id/edit/:id' => 'tbl_pages#edit', as: :edit
 
   get '/tbl_contents/new/:id' => 'tbl_contents#new' , as: :new
   get '/tbl_banners/new/:id' => 'tbl_banners#new' , as: :newbanner

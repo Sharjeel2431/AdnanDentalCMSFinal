@@ -39,7 +39,7 @@ class TblLayersController < ApplicationController
     respond_to do |format|
       if @tbl_layer.save
 
-        format.html { redirect_to @tbl_layer, notice: 'Tbl layer was successfully created.' }
+        format.html { redirect_to '/tbl_banners/'+session[:bannerID]+'/edit/'+session[:bannerID], notice: 'Tbl layer was successfully created.' }
 
 
 
@@ -58,13 +58,13 @@ class TblLayersController < ApplicationController
 
 
           if params[:layertype_hid] == "Image"
-            content='<!-- Image Layer --> <br/> <img src="'+@tbl_layer.avatar.url(:small)+'" class="'+@querylast.Class+'"/>'
+            content='<!-- Image Layer --> <br/> <img src="'+@tbl_layer.avatar.url(:small)+'" class="'+@querylast.Class+'"/></div>'
             quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
           end
 
           if params[:layertype_hid] == "Text"
-            content='<!-- Text Layer --> <br/> <h1 class="'+@querylast.Class+'">Here is the text layer</h1>'
+            content='<!-- Text Layer --> <br/> <h1 class="'+@querylast.Class+'">Here is the text layer</h1></div>'
             quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
           end
@@ -73,14 +73,14 @@ class TblLayersController < ApplicationController
             content='<!-- Link Image Layer --> <br/>
                       <a href="http://'+@querylast.Path+'" class="'+@querylast.Class+'" data-ls="offsetxin: -100; fadein: false; rotatein: 90;">
                           <img src="'+@tbl_layer.linkimage.url(:small)+'" alt="layer image">
-                      </a>'
+                      </a></div>'
             quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
             ActiveRecord::Base.connection.execute(quer);
           end
         if params[:layertype_hid] == "Video/Audio"
           content='<!-- Video/Audio Layer --><div class="ls-l" data-ls="offsetxin: 0; offsetyin: 0;">
           <iframe width="560" height="315" src="'+@tbl_layer.video.url+'" frameborder="0" allowfullscreen></iframe>
-         </div>'
+         </div></div>'
           quer='UPDATE tbl_layers SET "Content"='+"'"+"#{content}"+"'"+' Where "LayerID"='+"#{@layerid};"
           ActiveRecord::Base.connection.execute(quer);
 

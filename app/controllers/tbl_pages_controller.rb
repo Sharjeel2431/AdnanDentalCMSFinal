@@ -181,6 +181,11 @@ class TblPagesController < ApplicationController
         query3='UPDATE tbl_pages SET "PageURL"='+"'"+"#{@OnStateTag}"+'/'+"#{@pagetitle}"+'/'+"#{@page_last}"+"'"+ 'where "PageID"='+"#{@page_last};"
         ActiveRecord::Base.connection.execute(query3);
     end
+
+      @lastinfo=TblPage.last()
+      @lastpageadded=@lastinfo.PageID
+   redirect_to '/tbl_pages/'+@lastpageadded.to_s+'/edit/'+@lastpageadded.to_s
+
   end
 
   # GET /tbl_pages/new
@@ -205,7 +210,7 @@ class TblPagesController < ApplicationController
     session[:pageidonedit]=params[:id]
     session[:fromeditpage]=1
     session[:new_page]=0
-    session[:pageid]=params[:id]
+    session[:pageid]=params[:i]
 
     @pageinfo=TblPage.find_by_PageID(params[:id])
     @LastLayout=@pageinfo.LayoutID
@@ -244,7 +249,7 @@ class TblPagesController < ApplicationController
       if @tbl_page.save
 
 
-
+        format.html { redirect_to @tbl_page, notice: 'Tbl page was successfully created.' }
 
         if params[:cat_hid]== ""
           params[:cat_hid]=1
@@ -254,7 +259,7 @@ class TblPagesController < ApplicationController
         end
 
 
-        format.html { redirect_to @tbl_page, notice: 'Tbl page was successfully created.' }
+
 
         @querylast=  TblPage.last()
 
